@@ -1,0 +1,287 @@
+---
+modelFingerprint: "AC62EFFC7DB05A1B660DD76A94E134F0"
+methods:
+- method:
+    name: "initialize"
+    returnType: "void"
+    signature: "initialize(org.springframework.context.ConfigurableApplicationContext)\
+      \ : void"
+    instructionFingerprint: "6A068C45CEA4AF35B96D781B283C9D34"
+    parametersTypes:
+    - "org.springframework.context.ConfigurableApplicationContext"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "initializeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "51D5CE42462F9A7D8AB6106C594662B3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "7E67CF021398B1B7D0C5EAFE92089514"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "6E02D6C535EBD3B93064B973B89E1E08"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getChecks"
+        parameters: []
+        signature: "getChecks(): ConfigurationWarningsApplicationContextInitializer$Check[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+          uuid: "initialize_configurationWarningsApplicationContextInitializer.Check[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "62E32482C5DA5CFD8843F1F729B5CE4C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "context"
+        name: "addBeanFactoryPostProcessor"
+        parameters:
+        - name: "postProcessor"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ConfigurationWarningsPostProcessor"
+              parameters:
+              - name: "checks"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+                  uuid: "initialize_configurationWarningsApplicationContextInitializer.Check[]1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ConfigurationWarningsPostProcessor"
+              parameters:
+              - name: "checks"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+                  uuid: "initialize_configurationWarningsApplicationContextInitializer.Check[]1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ConfigurationWarningsPostProcessor"
+            uuid: "initialize_configurationWarningsApplicationContextInitializer.ConfigurationWarningsPostProcessor1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "addBeanFactoryPostProcessor(ConfigurationWarningsApplicationContextInitializer$ConfigurationWarningsPostProcessor):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6900b201-d101-33a9-a69b-7a761e98aa93"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getChecks"
+    returnType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+    signature: "getChecks() : org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+    instructionFingerprint: "FE5F4E2A516B16DFA24656DE327A093F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getChecksTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9333A0A6BDAFE8AC8D4A0593DAB549B0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EEB9D4840AFAC816957B5F38CABB9558"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+              uuid: "getChecks_configurationWarningsApplicationContextInitializer.ComponentScanPackageCheck1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$ComponentScanPackageCheck"
+              uuid: "getChecks_configurationWarningsApplicationContextInitializer.ComponentScanPackageCheck1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer$Check[]"
+        uuid: "getChecks_configurationWarningsApplicationContextInitializer.Check[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad008f60-d535-3494-abc5-28e276736026"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

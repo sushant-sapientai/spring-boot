@@ -1,0 +1,1094 @@
+---
+modelFingerprint: "D21DA7951992D45B19A564D29A669E90"
+methods:
+- method:
+    name: "resolve"
+    returnType: "java.util.List"
+    signature: "resolve(org.springframework.boot.context.config.ConfigDataLocationResolverContext,org.springframework.boot.context.config.ConfigDataLocation,org.springframework.boot.context.config.Profiles)\
+      \ : java.util.List<org.springframework.boot.context.config.ConfigDataResolutionResult>"
+    instructionFingerprint: "F8838A004E095EF2A58F8C2D6C736CA5"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+    - "org.springframework.boot.context.config.ConfigDataLocation"
+    - "org.springframework.boot.context.config.Profiles"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "resolveWhenLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext,org.springframework.boot.context.properties.bind.Binder,org.springframework.core.io.ResourceLoader,org.springframework.core.io.support.SpringFactoriesLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0EFE72A90B4BE880DAED0C50EBB23D7A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4F4CB8D0ED890ABF75FB8332A4BC5795"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.bind.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "<init>_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "springFactoriesLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+              uuid: "<init>_springFactoriesLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "binder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.bind.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "<init>_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "springFactoriesLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+              uuid: "<init>_springFactoriesLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "AC637B13FF2570D57E49C01CC594D610"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolve_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "location"
+      modelFingerprint: "F4B8C955943A1290366CC9B2D1A2BFAD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolve_configDataLocation1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "profiles"
+      modelFingerprint: "A62AA08999B671CD83466EB560A2C844"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.Profiles"
+        uuid: "resolve_profiles1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SpringFactoriesLoader.ArgumentResolver"
+      modelFingerprint: "C62A0B28F966AEA9BDAD2567A3FEA3A9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        name: "of"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.logging.DeferredLogFactory"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.logging.DeferredLogFactory"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.DeferredLogFactory"
+            uuid: "<init>_deferredLogFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Class,DeferredLogFactory): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "3E4569C08507C8FC1E28B5E640ED06FB"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.bind.Binder"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.bind.Binder"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.bind.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,Binder): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "D1561F4D8F6C36F4CDA7D1F593EF0FEA"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.core.io.ResourceLoader"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.core.io.ResourceLoader"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "<init>_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ResourceLoader): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "CFBA0DDF1633F041BAE1F40904DBD6A4"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.ConfigurableBootstrapContext"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "4EC0601AE60F487119618B017F8BB208"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver4"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.BootstrapContext"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.BootstrapContext"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "D562F82ECCAF2C25DACBC20BFB1D4389"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver5"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.BootstrapRegistry"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.BootstrapRegistry"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "8C26CE585CA232F6D8C547ED88FE73A1"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver6"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "andSupplied"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.apache.commons.logging.Log"
+            valueType: "java.lang.Class"
+            genericValueType: "org.apache.commons.logging.Log"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "valueSupplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "andSupplied(Class,Supplier): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "34E43D40FC3D16C68C61091D0C2DFF02"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "resolve_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3cb1073a-8690-31ab-b987-15b38abd03c3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "NO_CONSTRUCTOR_PATH_WITHOUT_EXCEPTION"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "resolveWhenLocationIsNotNullThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext,org.springframework.boot.context.properties.bind.Binder,org.springframework.core.io.ResourceLoader,org.springframework.core.io.support.SpringFactoriesLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E49EACE86BF709612CCB1CAD6C32636F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4F4CB8D0ED890ABF75FB8332A4BC5795"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.bind.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "<init>_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "springFactoriesLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+              uuid: "<init>_springFactoriesLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "binder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.bind.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "<init>_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "springFactoriesLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+              uuid: "<init>_springFactoriesLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "AC637B13FF2570D57E49C01CC594D610"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolve_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "location"
+      modelFingerprint: "7FF5B3182EB4F3025A108333158B65BF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolve_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "profiles"
+      modelFingerprint: "A62AA08999B671CD83466EB560A2C844"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.Profiles"
+        uuid: "resolve_profiles1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SpringFactoriesLoader.ArgumentResolver"
+      modelFingerprint: "C62A0B28F966AEA9BDAD2567A3FEA3A9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        name: "of"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.logging.DeferredLogFactory"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.logging.DeferredLogFactory"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.DeferredLogFactory"
+            uuid: "<init>_deferredLogFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Class,DeferredLogFactory): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "3E4569C08507C8FC1E28B5E640ED06FB"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.bind.Binder"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.bind.Binder"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.bind.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,Binder): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "D1561F4D8F6C36F4CDA7D1F593EF0FEA"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.core.io.ResourceLoader"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.core.io.ResourceLoader"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "<init>_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ResourceLoader): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "CFBA0DDF1633F041BAE1F40904DBD6A4"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.ConfigurableBootstrapContext"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "4EC0601AE60F487119618B017F8BB208"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver4"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.BootstrapContext"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.BootstrapContext"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "D562F82ECCAF2C25DACBC20BFB1D4389"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver5"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "and"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.BootstrapRegistry"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.BootstrapRegistry"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "<init>_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "and(Class,ConfigurableBootstrapContext): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "argumentResolver"
+      modelFingerprint: "8C26CE585CA232F6D8C547ED88FE73A1"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+        uuid: "<init>_springFactoriesLoader.ArgumentResolver6"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "argumentResolver"
+        name: "andSupplied"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.apache.commons.logging.Log"
+            valueType: "java.lang.Class"
+            genericValueType: "org.apache.commons.logging.Log"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "valueSupplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "andSupplied(Class,Supplier): SpringFactoriesLoader$ArgumentResolver"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader$ArgumentResolver"
+          uuid: "<init>_springFactoriesLoader.ArgumentResolver7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8ca5cb1f-f519-3f47-b0dd-9a36e07de474"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "NO_CONSTRUCTOR_PATH_WITHOUT_EXCEPTION"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getResolvers"
+    returnType: "java.util.List"
+    signature: "getResolvers() : java.util.List<org.springframework.boot.context.config.ConfigDataLocationResolver<?>>"
+    instructionFingerprint: "E4CB7D58187D417CE649A16E37EF2ED8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getResolversTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext,org.springframework.boot.context.properties.bind.Binder,org.springframework.core.io.ResourceLoader,org.springframework.core.io.support.SpringFactoriesLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2EF838B92ECFDD1FCA3AE8F6A5E5474C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d204b690-f2df-366e-9d6e-0ef0c17cfb24"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "NO_CONSTRUCTOR_PATH_WITHOUT_EXCEPTION"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

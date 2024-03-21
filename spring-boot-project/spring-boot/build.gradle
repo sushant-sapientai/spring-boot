@@ -185,3 +185,16 @@ sourceSets {
 test {
 	jvmArgs += "--add-opens=java.base/java.net=ALL-UNNAMED"
 }
+
+dependencies {
+	testImplementation("org.junit.vintage:junit-vintage-engine:5.10.2")
+}
+dependencies {
+	testImplementation("org.mockito:mockito-core:5.6.0")
+}
+dependencies {
+	testImplementation("org.mockito:mockito-inline:5.2.0")
+}
+dependencies {
+	testImplementation("net.bytebuddy:byte-buddy:1.14.8")
+}

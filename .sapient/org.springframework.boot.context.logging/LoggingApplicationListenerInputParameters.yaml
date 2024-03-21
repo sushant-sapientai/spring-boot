@@ -1,0 +1,5208 @@
+---
+modelFingerprint: "92F2C244A3D0A5E832D877F7565FD940"
+methods:
+- method:
+    name: "supportsEventType"
+    returnType: "boolean"
+    signature: "supportsEventType(org.springframework.core.ResolvableType) : boolean"
+    instructionFingerprint: "8D83954BEC49A63D6776B8B2DF862BC0"
+    parametersTypes:
+    - "org.springframework.core.ResolvableType"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "supportsEventTypeWhenTypeIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9CDDD5DB9EDCB9CA0A0E0CE46EC47F22"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "34811332-9f1e-3299-9053-9889102380f6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "supportsEventTypeWhenSupportedTypeIsAssignableFromType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EBB4B2342706D00CB427C9ED37BDAC77"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resolvableType"
+      modelFingerprint: "C116755F9850E75F40F17AE079CAD551"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "supportsEventType_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resolvableType"
+      modelFingerprint: "F5E9836337D228C2B6CDE8A40D3D7188"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "supportsEventType_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resolvableType"
+        name: "getRawClass"
+        parameters: []
+        signature: "getRawClass(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "supportsEventType_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd22d811-8ef9-377b-9a2d-5d154bbbaca1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "supportsEventTypeWhenSupportedTypeNotIsAssignableFromType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FC7DEBEA2BAC6F83432B34F7343F581"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resolvableType"
+      modelFingerprint: "C116755F9850E75F40F17AE079CAD551"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "supportsEventType_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resolvableType"
+      modelFingerprint: "F5E9836337D228C2B6CDE8A40D3D7188"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "supportsEventType_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resolvableType"
+        name: "getRawClass"
+        parameters: []
+        signature: "getRawClass(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "supportsEventType_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fdc090e8-4f7c-3656-8fb2-8d898b42f85d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "supportsSourceType"
+    returnType: "boolean"
+    signature: "supportsSourceType(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "4E18904AA6D18B248DE294A930AA4AA4"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "supportsSourceTypeWhenTypeIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "73699E24E8D395558765D315DEE4D64E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4ca0f838-c8ec-3f89-be9b-4f8b39528ca0"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "supportsSourceTypeWhenSupportedTypeIsAssignableFromType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C1B4FD28BC5D927B80079FDCA6C47F2F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "A5D5B95525E804CE7F17531A1C731D86"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "supportsSourceType_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3cda323b-4b79-38e4-acde-73aae126c217"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "supportsSourceTypeWhenSupportedTypeNotIsAssignableFromType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E0069AB6F0F954B1A3BA7D4CB2E81DF9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "C0C873FFD70EC142903A2A9B26DDF89F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "supportsSourceType_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fcf2e665-d547-39c0-b041-182e6bd19db1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "onApplicationEvent"
+    returnType: "void"
+    signature: "onApplicationEvent(org.springframework.context.ApplicationEvent) :\
+      \ void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "0131761AA87D373FDE8595E70ECCAD8C"
+    parametersTypes:
+    - "org.springframework.context.ApplicationEvent"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "onApplicationEventWhenEventInstanceOfApplicationStartingEvent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "51F6727414E434FB58E8137FF2D0F856"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            loggingSystem:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.LoggingSystem"
+              uuid: "onApplicationStartingEvent_loggingSystem1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            loggingSystem:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.LoggingSystem"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.LoggingSystem"
+              uuid: "onApplicationStartingEvent_loggingSystem1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "52ECC883D628BE071E43F29BAF38992A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationStartingEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "8DBA1CF6FFB1F6F77188FFC8AD114940"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationStartingEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getSpringApplication"
+        parameters: []
+        signature: "getSpringApplication(): SpringApplication"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.SpringApplication"
+          uuid: "onApplicationStartingEvent_springApplication1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D72CDB388C1AC85EF82788C9C5C17492"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "onApplicationStartingEvent_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.SpringApplication"
+        name: "getClassLoader"
+        parameters: []
+        signature: "getClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "onApplicationStartingEvent_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LoggingSystem"
+      modelFingerprint: "8C75BFFD04C3BDCE58D16C38771C639F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "org.springframework.boot.logging.LoggingSystem"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystem"
+        name: "get"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "onApplicationStartingEvent_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ClassLoader): LoggingSystem"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LoggingSystem"
+          uuid: "onApplicationStartingEvent_loggingSystem1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "loggingSystem"
+      modelFingerprint: "E82F38D102A6F7D7BCDFB22AAF02D311"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "onApplicationStartingEvent_loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.loggingSystem"
+        name: "beforeInitialize"
+        parameters: []
+        signature: "beforeInitialize(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onApplicationStartingEvent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "202c3ac3-60ab-3f94-abec-02a9db1ab1da"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "onApplicationEventWhenThisLoggingSystemIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9C2B8D2E29836720B65189AFA172CBDD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "61A426467A3D0CD6A53C9FEA816E1B10"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "007C9EDEEE47CE2557576A55A613141D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getSpringApplication"
+        parameters: []
+        signature: "getSpringApplication(): SpringApplication"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.SpringApplication"
+          uuid: "onApplicationEnvironmentPreparedEvent_springApplication1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "springApplication"
+      modelFingerprint: "D72CDB388C1AC85EF82788C9C5C17492"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "onApplicationEnvironmentPreparedEvent_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "springApplication"
+        name: "getClassLoader"
+        parameters: []
+        signature: "getClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "onApplicationEnvironmentPreparedEvent_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LoggingSystem"
+      modelFingerprint: "B42FB395F03C987A72E611D4CAAAA39A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "org.springframework.boot.logging.LoggingSystem"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystem"
+        name: "get"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "onApplicationEnvironmentPreparedEvent_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ClassLoader): LoggingSystem"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LoggingSystem"
+          uuid: "onApplicationEnvironmentPreparedEvent_loggingSystem1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "362CE573C82BBE4562485651D580CA8D"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "onApplicationEnvironmentPreparedEvent_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "springApplication"
+      modelFingerprint: "D72CDB388C1AC85EF82788C9C5C17492"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "onApplicationEnvironmentPreparedEvent_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "springApplication"
+        name: "getClassLoader"
+        parameters: []
+        signature: "getClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "onApplicationEnvironmentPreparedEvent_classLoader2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "EE724899F6E1001A4455C2858BC07EC1"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "initialize"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "onApplicationEnvironmentPreparedEvent_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "onApplicationEnvironmentPreparedEvent_classLoader2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(ConfigurableEnvironment,ClassLoader): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onApplicationEnvironmentPreparedEvent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "456afd42-df2d-3323-bbcd-0682321e780e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path11"
+    pathIdForUser: "path3"
+    testPathName: "onApplicationEventWhenApplicationContextGetParentIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "212CA61653C3A80EDB26A5F2851DD92E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4e05e036-9ddc-335f-9ba7-74280edc7d31"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path12"
+    pathIdForUser: "path4"
+    testPathName: "onApplicationEventWhenEventInstanceOfApplicationFailedEvent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55F868E0BE219A5C60459886B2753543"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "154FC40635EA0EA686071DB1AE5679CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationFailedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0AA014C09EAF471E811F62658078CD69"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "cleanupLoggingSystem"
+        parameters: []
+        signature: "cleanupLoggingSystem(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onApplicationFailedEvent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "727d1b11-625e-3e25-a64c-fa793f19efdb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path13"
+    pathIdForUser: "path5"
+    testPathName: "onApplicationEventWhenEventNotInstanceOfApplicationFailedEvent"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EC46DDFE39EC2D70F1AF488B42184BF6"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "96de07db-48db-3b65-be48-c6e3ff3edeb2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path9"
+    pathIdForUser: "path6"
+    testPathName: "onApplicationEventWhenApplicationContextContainsBeanLOGGING_LIFECYCLE_BEAN_NAME"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8D6DE7DCE1547E6900BE929348938EC7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "6DF01074293775DF50393B04B5C0D19A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.event.ContextClosedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "D1DF73BE5FFACB0B63025F9800D45EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.event.ContextClosedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getApplicationContext"
+        parameters: []
+        signature: "getApplicationContext(): ApplicationContext"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.context.ApplicationContext"
+          uuid: "onContextClosedEvent_applicationContext1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "A26F3F392D01ED644B8A3101AE72630B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "onContextClosedEvent_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getParent"
+        parameters: []
+        signature: "getParent(): ApplicationContext"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.context.ApplicationContext"
+          uuid: "onContextClosedEvent_applicationContext2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "AE3A08A4306149B97E11042444330631"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "onContextClosedEvent_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "containsBean"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingLifecycle"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBean(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "onContextClosedEvent_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1fe6a34d-1953-3eba-8e93-5ca7b284df37"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path10"
+    pathIdForUser: "path7"
+    testPathName: "onApplicationEventWhenApplicationContextNotContainsBeanLOGGING_LIFECYCLE_BEAN_NAME"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D8704AEBC56D8FC449391BD7DE40F938"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "6DF01074293775DF50393B04B5C0D19A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.event.ContextClosedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "D1DF73BE5FFACB0B63025F9800D45EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.event.ContextClosedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getApplicationContext"
+        parameters: []
+        signature: "getApplicationContext(): ApplicationContext"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.context.ApplicationContext"
+          uuid: "onContextClosedEvent_applicationContext1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "A26F3F392D01ED644B8A3101AE72630B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "onContextClosedEvent_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getParent"
+        parameters: []
+        signature: "getParent(): ApplicationContext"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.context.ApplicationContext"
+          uuid: "onContextClosedEvent_applicationContext2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "27CA0BA34B73C0F0B9041DC13EC43F60"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "onContextClosedEvent_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "containsBean"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingLifecycle"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBean(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "onContextClosedEvent_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0AA014C09EAF471E811F62658078CD69"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "cleanupLoggingSystem"
+        parameters: []
+        signature: "cleanupLoggingSystem(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onContextClosedEvent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7fe7cd1d-b7fb-3e4f-8584-cbb2c06b6899"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path8"
+    testPathName: "onApplicationEventWhenBeanFactoryContainsBeanLOGGING_LIFECYCLE_BEAN_NAME"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C2ABF99AD390976B5DB256245C8DFAC0"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9b4a478c-9c88-3003-9e22-a91cf340c39d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path8"
+    pathIdForUser: "path9"
+    testPathName: "onApplicationEventWhenThisLoggerGroupsIsNullAndBeanFactoryContainsBeanLOGGING_LIFECYCLE_BEAN_NAME"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EAE7DE20A1E280F3A434EEC6656ADF8F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "f7e41a31-e7bf-3604-a25f-89af69d880ac"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path10"
+    testPathName: "onApplicationEventWhenApplicationContextGetParentIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F0434336038D9578008D7D50A7F88872"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "8EE49D1ADD91490AACE098B069E3ECE7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationPreparedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "EFA619B707BBE6983FE7377C7013FF58"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.event.ApplicationPreparedEvent"
+        uuid: "onApplicationEvent_applicationEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getApplicationContext"
+        parameters: []
+        signature: "getApplicationContext(): ConfigurableApplicationContext"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.context.ConfigurableApplicationContext"
+          uuid: "onApplicationPreparedEvent_configurableApplicationContext1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "66B6BB16CE2C6DD025CF3F9D54A315B5"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "onApplicationPreparedEvent_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getBeanFactory"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.IllegalStateException"
+        signature: "getBeanFactory(): ConfigurableListableBeanFactory throws java.lang.IllegalStateException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+          uuid: "onApplicationPreparedEvent_configurableListableBeanFactory1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "B7624C362B51AFB38AB9AB2DB7511709"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "onApplicationPreparedEvent_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "containsBean"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingSystem"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBean(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "onApplicationPreparedEvent_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "35D4F3D62A5A854DD05A93ADE2774298"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "onApplicationPreparedEvent_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "registerSingleton"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingSystem"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "singletonObject"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.boot.logging.LoggingSystem"
+            uuid: "loggingSystem1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerSingleton(String,LoggingSystem): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onApplicationPreparedEvent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "84ED5BD8CC6B83D6CC7F3F675891ACBE"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "onApplicationPreparedEvent_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "containsBean"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingLifecycle"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBean(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "onApplicationPreparedEvent_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "DF9475A50C6FE9705DE765FDD63676DD"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "onApplicationPreparedEvent_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getParent"
+        parameters: []
+        signature: "getParent(): ApplicationContext"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.context.ApplicationContext"
+          uuid: "onApplicationPreparedEvent_applicationContext1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "76E6CD00F11908E7193D18602EC2B380"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "onApplicationPreparedEvent_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "registerSingleton"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "springBootLoggingLifecycle"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "singletonObject"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.lang.Object"
+            uuid: "onApplicationPreparedEvent_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerSingleton(String,Object): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "onApplicationPreparedEvent_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9efb9ef3-47c8-3c6d-a3f9-26c88a9a30fd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path4"
+    pathIdForUser: "path11"
+    testPathName: "onApplicationEventWhenBeanFactoryNotContainsBeanLOGGING_LIFECYCLE_BEAN_NAMEAndApplicationContextGetParentIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B41C4B5EAA0B8326B8A15088652A99A8"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0de72e1a-f9fe-3eeb-b460-b63afdfd62bb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path12"
+    testPathName: "onApplicationEventWhenBeanFactoryNotContainsBeanLOGGING_LIFECYCLE_BEAN_NAMEAndApplicationContextGetParentIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "06286946ACAC972CAE2D19415A47F7AE"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c149713a-afdb-3362-940c-d1befc9d014d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path13"
+    testPathName: "onApplicationEventWhenThisLoggerGroupsIsNullAndBeanFactoryNotContainsBeanLOGGING_LIFECYCLE_BEAN_NAMEAndApplicationConte"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4F19402B63C9854DD83816BEC643105F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "7e3106c1-1cf0-343a-86b3-6d56193444e4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "cleanupLoggingSystem"
+    returnType: "void"
+    signature: "cleanupLoggingSystem() : void"
+    instructionFingerprint: "353FCF4E7B6A0F6189739B317094EEF6"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "cleanupLoggingSystemWhenThisLoggingSystemIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6449E04368F5B7E4C2F4E34581FEB999"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "72793170-e16d-392a-88d0-53b0efc41381"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "initialize"
+    returnType: "void"
+    signature: "initialize(org.springframework.core.env.ConfigurableEnvironment,java.lang.ClassLoader)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "186B0C353F2FD5101A33C46DB2C03D01"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path12"
+    pathIdForUser: "path1"
+    testPathName: "initializeWhenExceptionToReportIsNullThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FF810AF2FCE081DD7C25A6E8BE13E9D1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3c5954a5-b69e-38eb-8f09-b36c652bb173"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path13"
+    pathIdForUser: "path2"
+    testPathName: "initializeWhenExceptionToReportIsNullAndExceptionToReportIsNullThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "83DC97662DA1D5E5BA15BB7283730B84"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e5b3433e-47cf-3eb6-a866-d9d834ec97f7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path3"
+    testPathName: "initializeWhenIgnoreLogConfigLogConfigAndExceptionToReportIsNullAndExceptionToReportIsNullThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "3CE9744D66833E244F219C7DA4FCEB90"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "23ace540-0497-3900-9bab-7d5c0aee77ac"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path8"
+    pathIdForUser: "path4"
+    testPathName: "initializeWhenStringUtilsNotHasLengthLogConfigAndIgnoreLogConfigLogConfigAndExceptionToReportThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "47E3AA51793536278209042CB4CB440E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5906b4df-1fd7-3725-ba6f-78d04d4bcded"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path9"
+    pathIdForUser: "path5"
+    testPathName: "initializeWhenIgnoreLogConfigLogConfigAndExceptionToReportIsNullAndExceptionToReportIsNull2ThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "74269793B846FB065C8A4E3B916ADB03"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "23c75610-dcd8-3994-b5c5-8129b5fda323"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path10"
+    pathIdForUser: "path6"
+    testPathName: "initializeWhenIgnoreLogConfigLogConfigAndExceptionToReportIsNullAndExceptionToReportIsNull3ThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "CC3B031B40DBA64F32BEF8328E688538"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a0f6fab6-0005-3a18-9117-099d93c960f7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path11"
+    pathIdForUser: "path7"
+    testPathName: "initializeWhenIgnoreLogConfigLogConfigAndExceptionToReportIsNullAndExceptionToReportIsNull4ThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "577C692E5A40173038F4B9A8391EFFAF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.LogFile"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "81E728D1D9282AF5B8509F27D0207EB4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "initialize_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "018366B40AF2EF32C80AB23315354E66"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.logging.LoggingSystemProperties"
+        uuid: "getLoggingSystemProperties_loggingSystemProperties1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystemProperties"
+        name: "apply"
+        parameters: []
+        signature: "apply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogFile"
+      modelFingerprint: "FCBCD3BED84657252DCC766B0E6AC863"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "org.springframework.boot.logging.LogFile"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LogFile"
+        name: "get"
+        parameters:
+        - name: "propertyResolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "initialize_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ConfigurableEnvironment): LogFile"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LogFile"
+          uuid: "initialize_logFile1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "logFile"
+      modelFingerprint: "D228F2F2F611F2202EEDC89EC241AA05"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "initialize_logFile1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.logFile"
+        name: "applyToSystemProperties"
+        parameters: []
+        signature: "applyToSystemProperties(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "422E5855FD2A71D44C83E2D588B7C03F"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "debug"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "false"
+          suggestedContent: !<regular>
+            value: "false"
+          valueType: "java.lang.String"
+          uuid: "isSet_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "01C40D160EBC780B4781BEB4D31CB7A0"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "trace"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "isSet_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "AB9484573D5672D22252A30672D931FB"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "logging.config"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "initializeSystem_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "9EDA9A1C8D1A5B62C977015D2D0E2DB7"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "initializeSystem_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "9EDA9A1C8D1A5B62C977015D2D0E2DB7"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "ignoreLogConfig_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "system"
+      modelFingerprint: "215CD06DD0759199E40B89F6EBF10552"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "system"
+        name: "initialize"
+        parameters:
+        - name: "initializationContext"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.env.ConfigurableEnvironment"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.logging.LoggingInitializationContext"
+            uuid: "initializeSystem_loggingInitializationContext1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "configLocation"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "logFile"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.LogFile"
+            uuid: "initialize_logFile1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(LoggingInitializationContext,not-detected,LogFile):\
+          \ void"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.NullPointerException"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A9C0B8A4B62A9A54759EDABADCA3EC1"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dfe143bb-2b9b-31f5-873f-992cb7f9dbae"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "initializeWhenLogConfigStartsWith_DAndIgnoreLogConfigLogConfigAndExceptionToReportIsNullAndExThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "BF0E056C96D4C6BC5B800EBCBC79BA5D"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6a460807-630d-3879-80da-1eed46c2d373"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "initializeWhenIgnoreLogConfigNotLogConfigAndExceptionToReportIsNullAndExceptionToReportIsNullThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5FE4FBD19434B5613C98064B09D68E66"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.LogFile"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "81E728D1D9282AF5B8509F27D0207EB4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "initialize_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "018366B40AF2EF32C80AB23315354E66"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.logging.LoggingSystemProperties"
+        uuid: "getLoggingSystemProperties_loggingSystemProperties1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystemProperties"
+        name: "apply"
+        parameters: []
+        signature: "apply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogFile"
+      modelFingerprint: "FCBCD3BED84657252DCC766B0E6AC863"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "org.springframework.boot.logging.LogFile"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LogFile"
+        name: "get"
+        parameters:
+        - name: "propertyResolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "initialize_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ConfigurableEnvironment): LogFile"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LogFile"
+          uuid: "initialize_logFile1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "logFile"
+      modelFingerprint: "D228F2F2F611F2202EEDC89EC241AA05"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "initialize_logFile1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.logFile"
+        name: "applyToSystemProperties"
+        parameters: []
+        signature: "applyToSystemProperties(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "559FE16BC23C9BE65537CA8876C15932"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "debug"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "isSet_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "BBED415F262AB03B9C7DEB81AFBD45E9"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "trace"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "C"
+          suggestedContent: !<regular>
+            value: "C"
+          valueType: "java.lang.String"
+          uuid: "isSet_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "60C8D0858052FF2452BC757EDF48A1BE"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "logging.config"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "F"
+          suggestedContent: !<regular>
+            value: "F"
+          valueType: "java.lang.String"
+          uuid: "initializeSystem_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "DBDC9BD1B65B7809900186964729BFC7"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "F"
+            suggestedContent: !<regular>
+              value: "F"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "initializeSystem_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "DBDC9BD1B65B7809900186964729BFC7"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "F"
+            suggestedContent: !<regular>
+              value: "F"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "ignoreLogConfig_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "system"
+      modelFingerprint: "9B886EDE71098F567F5F62428E9AB5CC"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "system"
+        name: "initialize"
+        parameters:
+        - name: "initializationContext"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.env.ConfigurableEnvironment"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.logging.LoggingInitializationContext"
+            uuid: "initializeSystem_loggingInitializationContext1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "configLocation"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "F"
+            suggestedContent: !<regular>
+              value: "F"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "logFile"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.LogFile"
+            uuid: "initialize_logFile1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(LoggingInitializationContext,String,LogFile): void"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.NullPointerException"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A9C0B8A4B62A9A54759EDABADCA3EC1"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a69ebfd3-0b52-3b9c-8b41-e8a0691879fe"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path6"
+    pathIdForUser: "path10"
+    testPathName: "initializeWhenExceptionToReportIsNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5BA0141E13D09C9C92E26230B03D89F8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a9c3b4dc-2e9e-3d70-a4f4-b78a721d757d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path11"
+    testPathName: "initializeWhenExceptionToReportIsNotNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "C1E01036498C4E7BB9507C6035DC2687"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3f446348-847b-33cf-8095-25d3cfd311d7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path12"
+    testPathName: "initializeWhenExceptionToReportNotInstanceOfFileNotFoundExceptionAndExceptionToReportIsNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "564EA37ACAB02E1EB3F7F2EE0A85C3A0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.LogFile"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "81E728D1D9282AF5B8509F27D0207EB4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "initialize_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "018366B40AF2EF32C80AB23315354E66"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.logging.LoggingSystemProperties"
+        uuid: "getLoggingSystemProperties_loggingSystemProperties1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystemProperties"
+        name: "apply"
+        parameters: []
+        signature: "apply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogFile"
+      modelFingerprint: "FCBCD3BED84657252DCC766B0E6AC863"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "org.springframework.boot.logging.LogFile"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LogFile"
+        name: "get"
+        parameters:
+        - name: "propertyResolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "initialize_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ConfigurableEnvironment): LogFile"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LogFile"
+          uuid: "initialize_logFile1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "logFile"
+      modelFingerprint: "D228F2F2F611F2202EEDC89EC241AA05"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "initialize_logFile1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.logFile"
+        name: "applyToSystemProperties"
+        parameters: []
+        signature: "applyToSystemProperties(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "3476052D2AF8DD514D5AC21F5EB864A7"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "debug"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "isSet_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "6284F29E77C45D4116F932E96E90D997"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "trace"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "isSet_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "9E13AC9034EF732FE85FAD74628591C6"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "logging.config"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "initializeSystem_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "CA277A78CB6F764EB5FE7B616A5644CF"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getProperty1"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "initializeSystem_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "CA277A78CB6F764EB5FE7B616A5644CF"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "str1"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "ignoreLogConfig_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "system"
+      modelFingerprint: "215CD06DD0759199E40B89F6EBF10552"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "system"
+        name: "initialize"
+        parameters:
+        - name: "initializationContext"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.env.ConfigurableEnvironment"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.logging.LoggingInitializationContext"
+            uuid: "initializeSystem_loggingInitializationContext1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "configLocation"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "logFile"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.LogFile"
+            uuid: "initialize_logFile1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(LoggingInitializationContext,not-detected,LogFile):\
+          \ void"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.NullPointerException"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A62766324CE729C7A6DC0A4421FDD2F4"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "initializeSystem_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "initializeSystem_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "initializeSystem_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c1c445d0-2498-3598-8ca9-6de7664fa292"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path13"
+    testPathName: "initializeWhenExceptionToReportInstanceOfFileNotFoundExceptionAndExceptionToReportIsNotNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B9FF2E912629B96EC59D7520DC7F8BB2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            logFile:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.LogFile"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.LogFile"
+              uuid: "initialize_logFile1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "81E728D1D9282AF5B8509F27D0207EB4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "initialize_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "018366B40AF2EF32C80AB23315354E66"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.logging.LoggingSystemProperties"
+          parameters:
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "initialize_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.logging.LoggingSystemProperties"
+        uuid: "getLoggingSystemProperties_loggingSystemProperties1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LoggingSystemProperties"
+        name: "apply"
+        parameters: []
+        signature: "apply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogFile"
+      modelFingerprint: "FCBCD3BED84657252DCC766B0E6AC863"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "org.springframework.boot.logging.LogFile"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.logging.LogFile"
+        name: "get"
+        parameters:
+        - name: "propertyResolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "initialize_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ConfigurableEnvironment): LogFile"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.logging.LogFile"
+          uuid: "initialize_logFile1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "logFile"
+      modelFingerprint: "D228F2F2F611F2202EEDC89EC241AA05"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LogFile"
+        uuid: "initialize_logFile1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.logFile"
+        name: "applyToSystemProperties"
+        parameters: []
+        signature: "applyToSystemProperties(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "3476052D2AF8DD514D5AC21F5EB864A7"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "debug"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "isSet_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "6284F29E77C45D4116F932E96E90D997"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "trace"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "isSet_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "9E13AC9034EF732FE85FAD74628591C6"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "logging.config"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "initializeSystem_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "CA277A78CB6F764EB5FE7B616A5644CF"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getProperty1"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "initializeSystem_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "CA277A78CB6F764EB5FE7B616A5644CF"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "str1"
+            valueType: "java.lang.String"
+            uuid: "initializeSystem_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "ignoreLogConfig_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "system"
+      modelFingerprint: "215CD06DD0759199E40B89F6EBF10552"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 440001
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "system"
+        name: "initialize"
+        parameters:
+        - name: "initializationContext"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.logging.LoggingInitializationContext"
+              parameters:
+              - name: "environment"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.env.ConfigurableEnvironment"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.env.ConfigurableEnvironment"
+                  uuid: "initialize_configurableEnvironment1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.logging.LoggingInitializationContext"
+            uuid: "initializeSystem_loggingInitializationContext1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "configLocation"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "logFile"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.logging.LogFile"
+            uuid: "initialize_logFile1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(LoggingInitializationContext,not-detected,LogFile):\
+          \ void"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.NullPointerException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.NullPointerException"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "38DF71454DA3EF7DD98B9D28E37AB317"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.FileNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.FileNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.FileNotFoundException"
+              uuid: "initializeSystem_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.FileNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.FileNotFoundException"
+              uuid: "initializeSystem_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "initializeSystem_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f789ff19-6dee-3a40-aa4a-1daad4fcc38c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type LoggingSystemProperties"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "getLoggingSystemProperties(environment).apply();"
+      lineNumber: 291
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LoggingSystemProperties - Method: apply"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "initializeSpringBootLogging"
+    returnType: "void"
+    signature: "initializeSpringBootLogging(org.springframework.boot.logging.LoggingSystem,org.springframework.boot.logging.LogLevel)\
+      \ : void"
+    instructionFingerprint: "03C8B760675B667AD0231615EFAD46E8"
+    parametersTypes:
+    - "org.springframework.boot.logging.LoggingSystem"
+    - "org.springframework.boot.logging.LogLevel"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "initializeSpringBootLoggingTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "951EB4A732E8A79F64B7C0396C3CBF37"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "system"
+      modelFingerprint: "84674F2C2783EE7BADCA663DAD54B785"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "initializeSpringBootLogging_loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "springBootLogging"
+      modelFingerprint: "E6153CE9AA68D497CFDFBCD022388B72"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "TRACE"
+        valueType: "org.springframework.boot.logging.LogLevel"
+        uuid: "initializeSpringBootLogging_logLevel1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "025179cc-e036-3858-bd74-77fce2b78377"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setLogLevels"
+    returnType: "void"
+    signature: "setLogLevels(org.springframework.boot.logging.LoggingSystem,org.springframework.core.env.ConfigurableEnvironment)\
+      \ : void"
+    instructionFingerprint: "98F08941AFE2D51B164A2BCEB3C0DBAE"
+    parametersTypes:
+    - "org.springframework.boot.logging.LoggingSystem"
+    - "org.springframework.core.env.ConfigurableEnvironment"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setLogLevelsWhenThisLoggerGroupsIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2D3477E7B0557217A07C0506D8711748"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "system"
+      modelFingerprint: "84674F2C2783EE7BADCA663DAD54B785"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.logging.LoggingSystem"
+        uuid: "setLogLevels_loggingSystem1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "setLogLevels_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Binder"
+      modelFingerprint: "75BC9782CF43E2631CBB83EC92BEF263"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Binder"
+        uuid: "org.springframework.boot.context.properties.bind.Binder"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Binder"
+        name: "get"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "setLogLevels_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ConfigurableEnvironment): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Binder"
+          uuid: "setLogLevels_binder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "ACD4818A3CEBE696647A80F18EE76784"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Binder"
+        uuid: "setLogLevels_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "logging.level"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "logging.level"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<clinit>_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "target"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "mapOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.logging.LogLevel"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.logging.LogLevel"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "mapOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.logging.LogLevel"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.logging.LogLevel"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.bind.Bindable"
+            genericValueType: "java.util.Map<java.lang.String,org.springframework.boot.logging.LogLevel>"
+            uuid: "<clinit>_bindable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(ConfigurationPropertyName,Bindable): BindResult"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindResult"
+          uuid: "setLogLevels_bindResult1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "2003AE8E62130A11414599F351A47C54"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindResult"
+        uuid: "setLogLevels_bindResult1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.BindResult"
+        name: "orElseGet"
+        parameters:
+        - name: "other"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "orElseGet(Supplier): Object"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Map"
+          uuid: "setLogLevels_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2b082947-1b2b-3b02-9f92-bd7b931e194f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "configurer.accept(name, level);"
+      lineNumber: 405
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: configurer - Method: accept"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "registerShutdownHook"
+    returnType: "void"
+    signature: "registerShutdownHook(java.lang.Runnable) : void"
+    instructionFingerprint: "ABD4632622D9272A5A77B9D7A341E201"
+    parametersTypes:
+    - "java.lang.Runnable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerShutdownHookTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "78109077F903382367091911CCCB8703"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.logging.LoggingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.logging.LoggingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "shutdownHandler"
+      modelFingerprint: "2CB8377886F7CA6A3D679F3B7292B5B6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.lang.Runnable"
+        uuid: "registerShutdownHook_runnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SpringApplication"
+      modelFingerprint: "7F7A0DE09661A7350D7F54F587F88D70"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "org.springframework.boot.SpringApplication"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.SpringApplication"
+        name: "getShutdownHandlers"
+        parameters: []
+        signature: "getShutdownHandlers(): SpringApplicationShutdownHandlers"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.SpringApplicationShutdownHandlers"
+          uuid: "registerShutdownHook_springApplicationShutdownHandlers1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "A1B106B61071155CB9FC8C6F3D5CAF9E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.SpringApplicationShutdownHandlers"
+        uuid: "registerShutdownHook_springApplicationShutdownHandlers1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.SpringApplicationShutdownHandlers"
+        name: "add"
+        parameters:
+        - name: "action"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.Runnable"
+            uuid: "registerShutdownHook_runnable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "add(Runnable): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerShutdownHook_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d5677af8-91e7-39d2-b67e-2d5761466fb2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setOrder"
+    returnType: "void"
+    signature: "setOrder(int) : void"
+    instructionFingerprint: "F88C98C2D7593841680C2CA0FECB4028"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A7D75C8F70F798AFD3A35CDB1E6AD09C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "27a24730-befc-337f-a149-f3be3dcb76b7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "342D4E4F854A43E567A525BCBCDEA20C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AAB9AB25DD49B95BDA2E88231246B0D2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setSpringBootLogging"
+    returnType: "void"
+    signature: "setSpringBootLogging(org.springframework.boot.logging.LogLevel) :\
+      \ void"
+    instructionFingerprint: "F9E8053BF3A0332DAC95C61F66E79A57"
+    parametersTypes:
+    - "org.springframework.boot.logging.LogLevel"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setSpringBootLoggingTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6EBA0B1B90EF304D49E4545506CC0A89"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "fc25eb29-0dff-3b64-85b9-c64dc320448b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setParseArgs"
+    returnType: "void"
+    signature: "setParseArgs(boolean) : void"
+    instructionFingerprint: "2D014D99C665EDB4973112712AA0C0D0"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setParseArgsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AB31CCFD9DC50B059616736FE3968A25"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "89af8114-4edb-301e-97c4-73166a97b006"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

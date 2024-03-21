@@ -1,0 +1,781 @@
+---
+modelFingerprint: "52ECB2553809FF2FB0B839D14332F273"
+methods:
+- method:
+    name: "getBeanType"
+    returnType: "java.lang.Class"
+    signature: "getBeanType() : java.lang.Class<?>"
+    instructionFingerprint: "0621A159C26129041E912F099C89B605"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBeanTypeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.ConfigurationPropertiesBean,java.lang.Exception)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EC1EB9D6870EF3BEF022A285698253D1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "FD7A7EED61F701E164E67656F3A618E7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "<init>_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "<init>_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "<init>_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "<init>_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "342DE2D104EDEC20C2A743E80D9B6B63"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "D"
+          suggestedContent: !<regular>
+            value: "D"
+          valueType: "java.lang.String"
+          uuid: "<init>_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "CA0C23A10BC346DB67A54247B141FE84"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getAnnotation"
+        parameters: []
+        signature: "getAnnotation(): ConfigurationProperties"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+          uuid: "getMessage_configurationProperties1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "9E29406E60D51A2EE51767A79FB1BB57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getMessage_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "8A826F6DE56FD072BFDDF8520960F62F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getShortName"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getMessage_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getShortName(Class): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getMessage_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "40B33AAC22F94080D591AEA5DB852327"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "prefix"
+        parameters: []
+        signature: "prefix(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "getMessage_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "B109B7A13BA30553B8773ABAE8389C5C"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "ignoreInvalidFields"
+        parameters: []
+        signature: "ignoreInvalidFields(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getMessage_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "761C6017565660034DF2BC6F6583EE5D"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "ignoreUnknownFields"
+        parameters: []
+        signature: "ignoreUnknownFields(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getMessage_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "bean"
+      modelFingerprint: "B24AE935F769189613B0FE44880EB61D"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.bean"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getBeanType_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4BDA6B2F94E11E746C09D7BFDF9AF70"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "getBeanType_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1cc3cfdd-301b-396a-9afe-056478b1c411"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getAnnotation"
+    returnType: "org.springframework.boot.context.properties.ConfigurationProperties"
+    signature: "getAnnotation() : org.springframework.boot.context.properties.ConfigurationProperties"
+    instructionFingerprint: "1F15587850139EA1EB259A27700A3D40"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAnnotationTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.ConfigurationPropertiesBean,java.lang.Exception)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DE6002FEB75133B5EA46C92F309890EC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "FD7A7EED61F701E164E67656F3A618E7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "<init>_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "<init>_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "<init>_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "<init>_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "342DE2D104EDEC20C2A743E80D9B6B63"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "D"
+          suggestedContent: !<regular>
+            value: "D"
+          valueType: "java.lang.String"
+          uuid: "<init>_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "CA0C23A10BC346DB67A54247B141FE84"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getAnnotation"
+        parameters: []
+        signature: "getAnnotation(): ConfigurationProperties"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+          uuid: "getMessage_configurationProperties1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "9E29406E60D51A2EE51767A79FB1BB57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getMessage_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "8A826F6DE56FD072BFDDF8520960F62F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getShortName"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getMessage_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getShortName(Class): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getMessage_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "40B33AAC22F94080D591AEA5DB852327"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "prefix"
+        parameters: []
+        signature: "prefix(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "getMessage_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "B109B7A13BA30553B8773ABAE8389C5C"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "ignoreInvalidFields"
+        parameters: []
+        signature: "ignoreInvalidFields(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getMessage_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "761C6017565660034DF2BC6F6583EE5D"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getMessage_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "ignoreUnknownFields"
+        parameters: []
+        signature: "ignoreUnknownFields(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getMessage_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "bean"
+      modelFingerprint: "2D9873E2222573342828272A20D38DBD"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "<init>_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.bean"
+        name: "getAnnotation"
+        parameters: []
+        signature: "getAnnotation(): ConfigurationProperties"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+          uuid: "getAnnotation_configurationProperties1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4D93620069A3DF0BF1555E1975B02E8"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "getAnnotation_configurationProperties1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "43f6554e-3df6-3d8d-8e42-81c52fff7a95"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

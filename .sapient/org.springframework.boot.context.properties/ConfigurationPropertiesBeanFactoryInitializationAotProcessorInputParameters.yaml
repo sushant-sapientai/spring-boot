@@ -1,0 +1,1161 @@
+---
+modelFingerprint: "95A03F5A62217CEF3D0BFDA23AB68F9F"
+methods:
+- method:
+    name: "processAheadOfTime"
+    returnType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+    signature: "processAheadOfTime(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)\
+      \ : org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+    instructionFingerprint: "62833C1426EF4A1248CFE38638709152"
+    parametersTypes:
+    - "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "processAheadOfTimeWhenBindablesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8B5D3A63C8B9910FCA891177B558C302"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9a96e369-32c5-385d-acc4-aa938dcd93cb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path2"
+    testPathName: "processAheadOfTimeWhenBeanTypeIsNullAndBindablesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7D9B06BD275269F738AAD15D1C4412B6"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanFactory"
+      modelFingerprint: "15AC24DD42A182A59617D34852C112D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "9FAC9B56285BBB552AF609C13ED9ECC2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getBeanNamesForAnnotation"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getBeanNamesForAnnotation(Class): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "processAheadOfTime_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "D1BA1407C28B05CA87F0C0946BA8EC2E"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getType"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "allowFactoryBeanInit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        signature: "getType(String,boolean): Class throws org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "processAheadOfTime_class1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "776B3DF0AEC02183ED22A5965D1C1A93"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+        uuid: "processAheadOfTime_configurationPropertiesBeanFactoryInitializationAotProcessor.ConfigurationPropertiesReflectionHintsContribution1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9aaf9ba4-0b21-37e3-8723-b5242eca45cd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "processAheadOfTimeWhenBindablesNotIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C82C49F075A7031F39CCFB9CA21FF954"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanFactory"
+      modelFingerprint: "15AC24DD42A182A59617D34852C112D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "9FAC9B56285BBB552AF609C13ED9ECC2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getBeanNamesForAnnotation"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getBeanNamesForAnnotation(Class): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "processAheadOfTime_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "E591D369250DA3B2267677E51A1C49E5"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getType"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "allowFactoryBeanInit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        signature: "getType(String,boolean): Class throws org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "processAheadOfTime_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "B06F1AEE211D2DAE162F6946264D6931"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "processAheadOfTime_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "A49CF0B4B37FE3C4DBBDEAA89A18FDFA"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        signature: "getBeanDefinition(String): BeanDefinition throws org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.config.BeanDefinition"
+          uuid: "processAheadOfTime_beanDefinition1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "CDFD942B2C53DDD2AC6FD72BAAE4021C"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.BeanDefinition"
+        uuid: "processAheadOfTime_beanDefinition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.config.BeanDefinition"
+        name: "getAttribute"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.bind.BindMethod"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAttribute(String): Object"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "processAheadOfTime_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "A28946903834B1AA2D8B877D81765222"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getUserClass"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "processAheadOfTime_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getUserClass(Class): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "processAheadOfTime_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Bindable"
+      modelFingerprint: "076D42352E59EB54C45C77B71D315612"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "org.springframework.boot.context.properties.bind.Bindable"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "of"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "processAheadOfTime_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Class): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          uuid: "processAheadOfTime_bindable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "377A533875253207E4C2E25D3D81A407"
+      index: 10
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "processAheadOfTime_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "withBindMethod"
+        parameters:
+        - name: "bindMethod"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "JAVA_BEAN"
+            valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+            uuid: "processAheadOfTime_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "withBindMethod(BindMethod): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          uuid: "processAheadOfTime_bindable2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A28575C0E9FE541B6F120B5BAE90600E"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.properties.bind.Bindable<?>"
+              uuid: "processAheadOfTime_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.properties.bind.Bindable<?>"
+              uuid: "processAheadOfTime_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+        uuid: "processAheadOfTime_configurationPropertiesBeanFactoryInitializationAotProcessor.ConfigurationPropertiesReflectionHintsContribution1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0ff41713-1f95-3c5a-aceb-4b8f630c04d7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return (!bindables.isEmpty()) ? new ConfigurationPropertiesReflectionHintsContribution(bindables)\
+        \ : null;"
+      lineNumber: 58
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "processAheadOfTimeWhenBindMethodIsNullAndBindablesNotIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2DA34D51899AE33A279645BCFB84992C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "060a508e-a978-35c8-8492-dd821a29c3e8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return (!bindables.isEmpty()) ? new ConfigurationPropertiesReflectionHintsContribution(bindables)\
+        \ : null;"
+      lineNumber: 58
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "processAheadOfTimeWhenBeanFactoryNotContainsBeanDefinitionBeanNameAndBindMethodIsNullAndBindablesNotIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "720551F00B59543D7D31D9A3EB7C18D6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanFactory"
+      modelFingerprint: "15AC24DD42A182A59617D34852C112D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "9FAC9B56285BBB552AF609C13ED9ECC2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getBeanNamesForAnnotation"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getBeanNamesForAnnotation(Class): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_getBeanNamesForAnnotationItem1"
+                valueType: "java.lang.String"
+                uuid: "processAheadOfTime_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "processAheadOfTime_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "E591D369250DA3B2267677E51A1C49E5"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "getType"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "allowFactoryBeanInit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        signature: "getType(String,boolean): Class throws org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "processAheadOfTime_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanFactory"
+      modelFingerprint: "B208A5F3C42F4EBE75B3100BFC59BCD9"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.config.ConfigurableListableBeanFactory"
+        uuid: "processAheadOfTime_configurableListableBeanFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanFactory"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getBeanNamesForAnnotationItem1"
+            valueType: "java.lang.String"
+            uuid: "processAheadOfTime_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "processAheadOfTime_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "A28946903834B1AA2D8B877D81765222"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getUserClass"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "processAheadOfTime_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getUserClass(Class): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "processAheadOfTime_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Bindable"
+      modelFingerprint: "076D42352E59EB54C45C77B71D315612"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "org.springframework.boot.context.properties.bind.Bindable"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "of"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "processAheadOfTime_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Class): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          uuid: "processAheadOfTime_bindable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "C81FECE2EF7FB54BB78596110F2708B9"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "processAheadOfTime_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "withBindMethod"
+        parameters:
+        - name: "bindMethod"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "JAVA_BEAN"
+            valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+            uuid: "Enum-org.springframework.boot.context.properties.bind.BindMethod-JAVA_BEAN"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withBindMethod(BindMethod): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          uuid: "processAheadOfTime_bindable2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A28575C0E9FE541B6F120B5BAE90600E"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.properties.bind.Bindable<?>"
+              uuid: "processAheadOfTime_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                  uuid: "processAheadOfTime_bindable2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.properties.bind.Bindable<?>"
+              uuid: "processAheadOfTime_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+        uuid: "processAheadOfTime_configurationPropertiesBeanFactoryInitializationAotProcessor.ConfigurationPropertiesReflectionHintsContribution1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "12f437b1-923a-304c-b2e1-9d45becc3d86"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return (!bindables.isEmpty()) ? new ConfigurationPropertiesReflectionHintsContribution(bindables)\
+        \ : null;"
+      lineNumber: 58
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.properties.ConfigurationPropertiesBeanFactoryInitializationAotProcessor$ConfigurationPropertiesReflectionHintsContribution"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

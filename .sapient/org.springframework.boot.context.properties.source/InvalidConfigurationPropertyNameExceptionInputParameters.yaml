@@ -1,0 +1,347 @@
+---
+modelFingerprint: "8A2386A73A81B929709FABD43B7D8C8C"
+methods:
+- method:
+    name: "getInvalidCharacters"
+    returnType: "java.util.List"
+    signature: "getInvalidCharacters() : java.util.List<java.lang.Character>"
+    instructionFingerprint: "5D501A6F8D573D8C19B73F3A5D878987"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getInvalidCharactersTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence,java.util.List<java.lang.Character>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AB6D430ED7AE42DBDA5839BCAA7D7E37"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ace1fe4e-6972-3fe5-a42c-3162cc733035"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getName"
+    returnType: "java.lang.CharSequence"
+    signature: "getName() : java.lang.CharSequence"
+    instructionFingerprint: "937AAD62BAF42E7EB58F615332875F07"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence,java.util.List<java.lang.Character>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "21FFFBE6CB901033535C7EF611722A9B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "9cfca8f8-30f9-3fae-a48b-42e512964e9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "throwIfHasInvalidChars"
+    returnType: "void"
+    signature: "throwIfHasInvalidChars(java.lang.CharSequence,java.util.List<java.lang.Character>)\
+      \ : void"
+    instructionFingerprint: "4FE5337F88B3F16C969C5961013E93BF"
+    parametersTypes:
+    - "java.lang.CharSequence"
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "throwIfHasInvalidCharsWhenInvalidCharactersNotIsEmptyThrowsInvalidConfigurationPropertyNameException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "74DC6C7A36B8103C23F8058A7544EB76"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "831ECCC1A5AEAE521D9CB4D1D7A7B104"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "throwIfHasInvalidChars_charSequence1"
+        suggestedContent: !<regular>
+          value: "throwIfHasInvalidChars_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "throwIfHasInvalidChars_charSequence1"
+        fixed: false
+        nameForMock: "throwIfHasInvalidChars_charSequence1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "invalidCharacters"
+      modelFingerprint: "91E9F6367303719AE9FB14328691FF8B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.Character"
+            uuid: "throwIfHasInvalidChars_list1-item0"
+            fixed: true
+            collectionUuid: "throwIfHasInvalidChars_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.Character"
+            uuid: "throwIfHasInvalidChars_list1-item0"
+            fixed: true
+            collectionUuid: "throwIfHasInvalidChars_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Character"
+        uuid: "throwIfHasInvalidChars_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B3F9040051FA73ABD8F8374C38B63C6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "throwIfHasInvalidChars_charSequence1"
+              suggestedContent: !<regular>
+                value: "throwIfHasInvalidChars_charSequence1"
+              valueType: "java.lang.String"
+              uuid: "throwIfHasInvalidChars_charSequence1"
+              fixed: false
+              nameForMock: "throwIfHasInvalidChars_charSequence1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "invalidCharacters"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.Character"
+                  uuid: "throwIfHasInvalidChars_list1-item0"
+                  fixed: true
+                  collectionUuid: "throwIfHasInvalidChars_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.Character"
+                  uuid: "throwIfHasInvalidChars_list1-item0"
+                  fixed: true
+                  collectionUuid: "throwIfHasInvalidChars_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Character"
+              uuid: "throwIfHasInvalidChars_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "throwIfHasInvalidChars_charSequence1"
+              suggestedContent: !<regular>
+                value: "throwIfHasInvalidChars_charSequence1"
+              valueType: "java.lang.String"
+              uuid: "throwIfHasInvalidChars_charSequence1"
+              fixed: false
+              nameForMock: "throwIfHasInvalidChars_charSequence1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "invalidCharacters"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  suggestedContent: !<regular>
+                    value: "A"
+                  valueType: "java.lang.Character"
+                  uuid: "throwIfHasInvalidChars_list1Item0"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.Character"
+                  uuid: "throwIfHasInvalidChars_list1-item0"
+                  fixed: true
+                  collectionUuid: "throwIfHasInvalidChars_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Character"
+              uuid: "throwIfHasInvalidChars_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException"
+        uuid: "throwIfHasInvalidChars_invalidConfigurationPropertyNameException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ff60e760-c0f2-32b5-847a-d545e0e1d084"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "throwIfHasInvalidCharsWhenInvalidCharactersIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5533958B2A5DC54F96D389D62AFAC33B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B7BE364753F76101326CEE585F5735B5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "throwIfHasInvalidChars_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "throwIfHasInvalidChars_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "invalidCharacters"
+      modelFingerprint: "F3F0BD0F8599784766E07176775B67B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Character"
+        uuid: "throwIfHasInvalidChars_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "90e5c96f-2449-37e4-96a1-29dbbf36350f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

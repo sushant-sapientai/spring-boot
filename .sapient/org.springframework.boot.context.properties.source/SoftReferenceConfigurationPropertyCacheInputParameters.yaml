@@ -1,0 +1,2212 @@
+---
+modelFingerprint: "8A583A9A4D1EC6961CCEFE55E68FAB84"
+methods:
+- method:
+    name: "enable"
+    returnType: "void"
+    signature: "enable() : void"
+    instructionFingerprint: "208E28251399AF1AC49F1376CE12EF7C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "enableTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FE9FA2BA33088CFBD5412FFECF5892CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6f30b95c-0a90-385e-9819-f7d536f98ba9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "disable"
+    returnType: "void"
+    signature: "disable() : void"
+    instructionFingerprint: "D8053DA3194EC735C0C1FF56C8F6BECF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "disableTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FE9FA2BA33088CFBD5412FFECF5892CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "554a8a8b-69d2-3a44-a705-2fb9e6b48b55"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setTimeToLive"
+    returnType: "void"
+    signature: "setTimeToLive(java.time.Duration) : void"
+    instructionFingerprint: "9E23B2CFBCD1924916063BFDAED7E655"
+    parametersTypes:
+    - "java.time.Duration"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "setTimeToLiveWhenTimeToLiveIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7A218C6830C8500BD6F3EE6096446689"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cea05f2a-7edf-3e46-96d0-4060ee588ab6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "setTimeToLiveWhenTimeToLiveIsZero"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "05F3994D2CC5E2A08A106A47EE385112"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6528C6B852EE3840AC8C7CAAE47E44FE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeToLive"
+      modelFingerprint: "20E77A5C9C553570DF6F07111E390781"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "setTimeToLive_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "272d1d94-dec9-3d14-9126-49dbdd4c271f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "setTimeToLiveWhenTimeToLiveNotIsZero"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "91EEAB764688842C9D99C8126A45E4AE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeToLive"
+      modelFingerprint: "C72F9A8A2D3DF95F9027DF086320CB1C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "setTimeToLive_duration1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "44d7d8d6-bf4a-3f14-9c90-fcb97adadc11"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.time.Duration.isZero() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "clear"
+    returnType: "void"
+    signature: "clear() : void"
+    instructionFingerprint: "7358580491A8BE4CAC5F3A8ED2CBF79C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "clearTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FE9FA2BA33088CFBD5412FFECF5892CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "53c00396-4771-38ed-8731-096091c47b7f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get(java.util.function.Supplier<java.lang.Object>,java.util.function.UnaryOperator<java.lang.Object>)\
+      \ : java.lang.Object"
+    instructionFingerprint: "887EB02B20798B61B0525C3BA4AD7018"
+    parametersTypes:
+    - "java.util.function.Supplier"
+    - "java.util.function.UnaryOperator"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getWhenThisNotNeverExpire"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AD0C0D50768C819418C527BA3D3546DB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EDB17A3D758558CCFDFC51083D0FCBE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "factory"
+      modelFingerprint: "6CFA87E9C58E03BBC4D2CE37D53402B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Supplier"
+        uuid: "get_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "refreshAction"
+      modelFingerprint: "4FBAD4220E2311A2F76723A54DC262F0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.UnaryOperator"
+        uuid: "get_unaryOperator1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "700C005038F03FA0BFAB4EE4058BE33E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "get_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setValue(Object): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "get_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "C757E47002BEE2D67082C9E76CA4E2FB"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bc6337cc-3a13-399e-8bee-bef738be5fd5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getWhenThisNeverExpire"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C708C5A87FFF6D440F44369F3E07B5AA"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a221cecc-4a8f-38e2-9a4d-a8938d871c7c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getWhenHasExpiredNotAndThisNeverExpire"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E413181F4D3318E2DC5F43CDD9E2AE0E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "253FF404348BD66CBC28A8D2C7867DB3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              suggestedContent: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "factory"
+      modelFingerprint: "6CFA87E9C58E03BBC4D2CE37D53402B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Supplier"
+        uuid: "get_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "refreshAction"
+      modelFingerprint: "4FBAD4220E2311A2F76723A54DC262F0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.UnaryOperator"
+        uuid: "get_unaryOperator1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A7C605F90491FA0029F23E4F8B3DAA3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "java.lang.Object"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.ref.SoftReference"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_softReference1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "get"
+        suggestedContent: !<method_return_from_value>
+          target: "java.lang.Object"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.ref.SoftReference"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_softReference1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "get"
+        valueType: "java.lang.Object"
+        uuid: "getValue_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b279c0be-e03c-36ee-9763-2fa404619786"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "getWhenHasExpiredAndThisNotNeverExpire"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "47BA637B2944C511DDE74DC8932EB571"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EDB17A3D758558CCFDFC51083D0FCBE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "factory"
+      modelFingerprint: "6CFA87E9C58E03BBC4D2CE37D53402B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Supplier"
+        uuid: "get_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "refreshAction"
+      modelFingerprint: "4FBAD4220E2311A2F76723A54DC262F0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.UnaryOperator"
+        uuid: "get_unaryOperator1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "700C005038F03FA0BFAB4EE4058BE33E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "get_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setValue(Object): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "get_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "C757E47002BEE2D67082C9E76CA4E2FB"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a486cc72-d244-3c85-b976-49089cc5e5a2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.UnaryOperator.apply(java.lang.Object)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "now"
+    returnType: "java.time.Instant"
+    signature: "now() : java.time.Instant"
+    instructionFingerprint: "5EB1BBEB05279F774939FAA2B8D55D09"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "nowTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8BEECECBF3076EA7AC19237A38E7705A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "C757E47002BEE2D67082C9E76CA4E2FB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9C6321F1CCE8E48E6D5AB87576634E19"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Instant"
+          method: "ofEpochSecond"
+          methodParameters:
+          - name: "epochSecond"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1700000000
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Instant"
+          method: "ofEpochSecond"
+          methodParameters:
+          - name: "epochSecond"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1700000000
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Instant"
+        uuid: "now_instant2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "86537c06-be77-3500-98a1-86707e1ef0cd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getValue"
+    returnType: "java.lang.Object"
+    signature: "getValue() : java.lang.Object"
+    instructionFingerprint: "5CD2409A1433A2CA88982CAE409F536C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "537C1D746F167FB437BCC033CF4F6963"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A7C605F90491FA0029F23E4F8B3DAA3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "java.lang.Object"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.ref.SoftReference"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_softReference1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "get"
+        suggestedContent: !<method_return_from_value>
+          target: "java.lang.Object"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.lang.ref.SoftReference"
+              parameters:
+              - name: "referent"
+                value:
+                  sapientType: "NULL"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.ref.SoftReference"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_softReference1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "get"
+        valueType: "java.lang.Object"
+        uuid: "getValue_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0d20fa9-e250-397e-b581-b3faccc5922b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "setValue"
+    returnType: "void"
+    signature: "setValue(java.lang.Object) : void"
+    instructionFingerprint: "C1FA43047B86833F1D241C0DC01A201A"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A7B4A5DC2E1EBFA3621AD91DF4E90757"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4EC6DA327D1EF64472E1995393B276CC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+          parameters:
+          - name: "neverExpire"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.SoftReferenceConfigurationPropertyCache"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "setValue_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Instant"
+      modelFingerprint: "BE1699D9B85ACD4DB9DD4E09EA819365"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Instant"
+        uuid: "java.time.Instant"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.time.Instant"
+        name: "now"
+        parameters: []
+        signature: "now(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "now_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "caf82ae3-0e98-3057-9861-2dae5125f309"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

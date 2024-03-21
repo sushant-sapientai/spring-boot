@@ -1,0 +1,790 @@
+---
+modelFingerprint: "5A6A28DBF593C0DCB8A4D6D081A1EF57"
+methods:
+- method:
+    name: "enable"
+    returnType: "void"
+    signature: "enable() : void"
+    instructionFingerprint: "2682978AEB8880CD433FF0C36667ABDA"
+    parametersTypes: []
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "enableWhenThisSourcesIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DC599BA8EDD5F24F76246AD8A2D068E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6a2f2114-6e9a-3930-acd8-b0168c3963a9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "enableWhenThisSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED390FA31051ACA31EABB23B142D82B7"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1b09a147-32c6-3780-885d-0c30f2dead76"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "enableWhenCachingIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E027BE5FEB180EF060804CB58BFB3B01"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C03BDA208EB4EA2A63363D472746E2DD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CachingConfigurationPropertySource"
+      modelFingerprint: "04CEEF70D969BC37E38A02666C2F495D"
+      index: 2
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        uuid: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        name: "find"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            uuid: "forEach_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "find(ConfigurationPropertySource): ConfigurationPropertyCaching"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyCaching"
+          uuid: "forEach_configurationPropertyCaching1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cb96b1fd-4c54-332e-a77f-27ba1bdaf688"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "enableWhenCachingIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E97EC535DAD768DDF0CF39FF17C694E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "511e6a8a-7499-316f-8350-6f841b76f37c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "disable"
+    returnType: "void"
+    signature: "disable() : void"
+    instructionFingerprint: "6D08EDC444F2811353826A7C418E397E"
+    parametersTypes: []
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "disableWhenThisSourcesIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DC599BA8EDD5F24F76246AD8A2D068E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8d5179af-6e8d-3992-a4c4-d0c7de8018bd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "disableWhenThisSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED390FA31051ACA31EABB23B142D82B7"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "0afa6bff-e704-360b-a587-267326e78b72"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "disableWhenCachingIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E027BE5FEB180EF060804CB58BFB3B01"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C03BDA208EB4EA2A63363D472746E2DD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CachingConfigurationPropertySource"
+      modelFingerprint: "04CEEF70D969BC37E38A02666C2F495D"
+      index: 2
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        uuid: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        name: "find"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            uuid: "forEach_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "find(ConfigurationPropertySource): ConfigurationPropertyCaching"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyCaching"
+          uuid: "forEach_configurationPropertyCaching1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b8533de4-b672-3d9c-95d3-41074b1432ac"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "disableWhenCachingIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E97EC535DAD768DDF0CF39FF17C694E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "7de95dd1-ba35-3475-a5ce-23a64b635bca"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setTimeToLive"
+    returnType: "void"
+    signature: "setTimeToLive(java.time.Duration) : void"
+    instructionFingerprint: "D9D82422B67DA2CD813D1ADD31561722"
+    parametersTypes:
+    - "java.time.Duration"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "setTimeToLiveWhenThisSourcesIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B8E143ACF242AC8511538B571FD22EF9"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "de62daa9-f44e-30f5-b3c6-732d4cee5306"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "setTimeToLiveWhenThisSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1330B32C9C56A9CE2635361F47832FCC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "78916304-a049-3d27-bdad-49a11e041094"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "setTimeToLiveWhenCachingIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D0907C1FB247FED1845E1CDD070FF3E8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C03BDA208EB4EA2A63363D472746E2DD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeToLive"
+      modelFingerprint: "2A577670FE071C2EFE44F068BA880337"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "setTimeToLive_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "setTimeToLive_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CachingConfigurationPropertySource"
+      modelFingerprint: "04CEEF70D969BC37E38A02666C2F495D"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        uuid: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        name: "find"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            uuid: "forEach_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "find(ConfigurationPropertySource): ConfigurationPropertyCaching"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyCaching"
+          uuid: "forEach_configurationPropertyCaching1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8cb0e90a-05d6-3fb9-aa16-eb1e353994f7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "setTimeToLiveWhenCachingIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BB1D75F45A78DB05F427EF9BEA0893E8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d44155ad-579a-3955-9a60-37c9221d5a5f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "clear"
+    returnType: "void"
+    signature: "clear() : void"
+    instructionFingerprint: "6D5C27131BB5173E05612F67E22B8630"
+    parametersTypes: []
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "clearWhenThisSourcesIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DC599BA8EDD5F24F76246AD8A2D068E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c474ab9d-3133-3d13-b2b8-356e1d4b9407"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "clearWhenThisSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED390FA31051ACA31EABB23B142D82B7"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c4bdf66f-956a-3e2e-b7a1-4d7340b6045a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "clearWhenCachingIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E027BE5FEB180EF060804CB58BFB3B01"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C03BDA208EB4EA2A63363D472746E2DD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySourcesCaching"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CachingConfigurationPropertySource"
+      modelFingerprint: "04CEEF70D969BC37E38A02666C2F495D"
+      index: 2
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        uuid: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.source.CachingConfigurationPropertySource"
+        name: "find"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            uuid: "forEach_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "find(ConfigurationPropertySource): ConfigurationPropertyCaching"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyCaching"
+          uuid: "forEach_configurationPropertyCaching1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "94b1de9e-8161-348d-92ce-f93cee722361"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "clearWhenCachingIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.properties.source.ConfigurationPropertySource>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E97EC535DAD768DDF0CF39FF17C694E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a2fb03f2-3749-31fd-bbd8-5825e0c3a806"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

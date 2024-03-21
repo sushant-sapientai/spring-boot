@@ -1,0 +1,252 @@
+---
+modelFingerprint: "A8CEE86E8A53A91651C6713E4A71559D"
+methods:
+- method:
+    name: "analyze"
+    returnType: "org.springframework.boot.diagnostics.FailureAnalysis"
+    signature: "analyze(java.lang.Throwable,org.springframework.boot.context.properties.IncompatibleConfigurationException)\
+      \ : org.springframework.boot.diagnostics.FailureAnalysis"
+    instructionFingerprint: "10AB672C33A8C2E4A35121F2AD195C96"
+    parametersTypes:
+    - "java.lang.Throwable"
+    - "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "analyze2Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7825C0C94FB943269BBBB62C33A6B675"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.IncompatibleConfigurationFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.IncompatibleConfigurationFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "74AFC98C2E3A647A785F57191E4F7E6A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "FE2F8D3830949B45CD98C083E987C2AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+        uuid: "analyze_incompatibleConfigurationException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cause"
+      modelFingerprint: "F747028DDC81C40C099CFC321D6C34EB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+        uuid: "analyze_incompatibleConfigurationException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cause"
+        name: "getIncompatibleKeys"
+        parameters: []
+        signature: "getIncompatibleKeys(): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.String"
+          uuid: "analyze_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cause"
+      modelFingerprint: "FAA03927CDE992C1FA6BD62ECDC651A4"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+        uuid: "analyze_incompatibleConfigurationException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cause"
+        name: "getMessage"
+        parameters: []
+        signature: "getMessage(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMessage1"
+          valueType: "java.lang.String"
+          uuid: "analyze_string3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ADD42F4F23998058AAE21FF5C3A4DFF0"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "return_of_getMessage1"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Review the docs for  and change the configured values."
+              suggestedContent: !<regular>
+                value: "Review the docs for  and change the configured values."
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+              uuid: "analyze_incompatibleConfigurationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Review the docs for  and change the configured values."
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.IncompatibleConfigurationException"
+              uuid: "analyze_incompatibleConfigurationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "61fb4ac6-aef4-3600-ac10-5fdf40761c4c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

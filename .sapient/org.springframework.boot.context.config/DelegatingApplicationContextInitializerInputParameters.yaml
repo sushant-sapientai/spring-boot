@@ -1,0 +1,1172 @@
+---
+modelFingerprint: "3C42A3B69C83252EF2060645191EEF82"
+methods:
+- method:
+    name: "initialize"
+    returnType: "void"
+    signature: "initialize(org.springframework.context.ConfigurableApplicationContext)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+    instructionFingerprint: "4ACF1652F095645DFE80486C2C958417"
+    parametersTypes:
+    - "org.springframework.context.ConfigurableApplicationContext"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "initializeWhenInitializerClassesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0DFD16944AA7F822C6830629883B4C90"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4a7269fe-10ec-34f3-8948-6e76c2a4e481"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path2"
+    testPathName: "initializeWhenCaughtClassNotFoundExceptionThrowsApplicationContextException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "37ED495F229BEEC54B3C78A0F1A2DFCC"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 42
+      id: 1
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "7E67CF021398B1B7D0C5EAFE92089514"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "1E4F3B4699B1AF9D25DE9B4FBC24FE2B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "context"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "initialize_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "env"
+      modelFingerprint: "8C8F75A1C227125023580B2D71432A61"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "env"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "context.initializer.classes"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "getInitializerClasses_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "304796640D18CA0948BF36FE7432D660"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "B"
+            suggestedContent: !<regular>
+              value: "B"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getInitializerClasses_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "616F2C25632339FC6F955E531CCC2565"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "tokenizeToStringArray"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "B"
+            suggestedContent: !<regular>
+              value: "B"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "delimiters"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ","
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "tokenizeToStringArray(String,String): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "A"
+                suggestedContent: !<regular>
+                  value: "A"
+                valueType: "java.lang.String"
+                uuid: "getInitializerClasses_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "A"
+                suggestedContent: !<regular>
+                  value: "A"
+                valueType: "java.lang.String"
+                uuid: "getInitializerClasses_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "getInitializerClasses_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "FD11F55DCD74F54DE79DE36671B40F1C"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 420001
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getDefaultClassLoader"
+        parameters: []
+        signature: "getDefaultClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.util.ClassUtils"
+            method: "getDefaultClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.util.ClassUtils"
+            method: "getDefaultClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "getInitializerClass_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "366E548DF32F9B793926E4D5C5586C12"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 420001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "forName"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.util.ClassUtils"
+              method: "getDefaultClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.util.ClassUtils"
+              method: "getDefaultClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "getInitializerClass_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.ClassNotFoundException"
+        - "java.lang.LinkageError"
+        signature: "forName(String,ClassLoader): Class throws java.lang.ClassNotFoundException,java.lang.LinkageError"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.ClassNotFoundException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.ClassNotFoundException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.ClassNotFoundException"
+          uuid: "getInitializerClass_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A171F4B8022A373460BB79A62043DFB9"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.context.ApplicationContextException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Failed to load context initializer class [A]"
+              suggestedContent: !<regular>
+                value: "Failed to load context initializer class [A]"
+              valueType: "java.lang.String"
+              uuid: "getInitializerClass_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              content: !<new>
+                target: "java.lang.ClassNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.ClassNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ClassNotFoundException"
+              uuid: "getInitializerClass_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.context.ApplicationContextException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Failed to load context initializer class [A]"
+              valueType: "java.lang.String"
+              uuid: "getInitializerClass_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              suggestedContent: !<new>
+                target: "java.lang.ClassNotFoundException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ClassNotFoundException"
+              uuid: "getInitializerClass_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.context.ApplicationContextException"
+        uuid: "getInitializerClass_applicationContextException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "35f75ba5-16f0-3861-bf9e-72876a53136d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "initializeWhenStringUtilsTokenizeToStringArrayClassNames_IsEmptyAndInitializerClassesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D4FB5AC3D4BBE64A556003E0FBC45690"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "45d56f36-2013-379a-a807-2c91173b6f34"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path4"
+    testPathName: "initializeWhenInitializersIsNotEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "612F4B7D4516CA3DFE5A6799E38D2F94"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.DelegatingApplicationContextInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "7E67CF021398B1B7D0C5EAFE92089514"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "1E4F3B4699B1AF9D25DE9B4FBC24FE2B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ConfigurableApplicationContext"
+        uuid: "initialize_configurableApplicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "context"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "initialize_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "env"
+      modelFingerprint: "30ABBED2D6462516ADC7FF3F8F575316"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "initialize_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "env"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "context.initializer.classes"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getInitializerClasses_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "0ADC91B76C5E1D2A8701BB911882A91E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasLength"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasLength(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getInitializerClasses_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "FAC2C55B6B60F865A4365FD15121E0A6"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "tokenizeToStringArray"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "delimiters"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ","
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "tokenizeToStringArray(String,String): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_tokenizeToStringArrayItem1"
+                valueType: "java.lang.String"
+                uuid: "getInitializerClasses_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "return_of_tokenizeToStringArrayItem1"
+                valueType: "java.lang.String"
+                uuid: "getInitializerClasses_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "getInitializerClasses_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "FD11F55DCD74F54DE79DE36671B40F1C"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 420001
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "getDefaultClassLoader"
+        parameters: []
+        signature: "getDefaultClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.util.ClassUtils"
+            method: "getDefaultClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.util.ClassUtils"
+            method: "getDefaultClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "getInitializerClass_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "6EC09C01808405A5A617CEADA733D054"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 420001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "forName"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_tokenizeToStringArrayItem1"
+            valueType: "java.lang.String"
+            uuid: "getInitializerClasses_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.util.ClassUtils"
+              method: "getDefaultClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.util.ClassUtils"
+              method: "getDefaultClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "getInitializerClass_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.ClassNotFoundException"
+        - "java.lang.LinkageError"
+        signature: "forName(String,ClassLoader): Class throws java.lang.ClassNotFoundException,java.lang.LinkageError"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getInitializerClass_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D03F31FED421F0DA8A38A37FE1821DDD"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 420001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "isAssignable"
+        parameters:
+        - name: "superType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.context.ApplicationContextInitializer"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.context.ApplicationContextInitializer"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "subType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getInitializerClass_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAssignable(Class,Class): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "getInitializerClass_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "GenericTypeResolver"
+      modelFingerprint: "CCCF1C6BB66EFBEE3EAE39CDEA5E8346"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.GenericTypeResolver"
+        uuid: "org.springframework.core.GenericTypeResolver"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.GenericTypeResolver"
+        name: "resolveTypeArgument"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getInitializerClass_class1"
+            fixed: false
+            collectionUuid: "getInitializerClasses_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "genericType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.context.ApplicationContextInitializer"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.context.ApplicationContextInitializer"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolveTypeArgument(Class,Class): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "instantiateInitializer_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "884D2DC308D76FCF6BB0179522CB7AF8"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "isAssignable"
+        parameters:
+        - name: "superType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "instantiateInitializer_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "subType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.context.ConfigurableApplicationContext"
+            suggestedContent: !<regular>
+              value: "org.springframework.context.ConfigurableApplicationContext"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "applyInitializerClasses_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "messageSupplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            genericValueType: "java.lang.String"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAssignable(Class,Class,Supplier): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "instantiateInitializer_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BeanUtils"
+      modelFingerprint: "246451CBEFA1521D10E4E173FE68F4AE"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.BeanUtils"
+        uuid: "org.springframework.beans.BeanUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.BeanUtils"
+        name: "instantiateClass"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getInitializerClass_class1"
+            fixed: false
+            collectionUuid: "getInitializerClasses_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.BeanInstantiationException"
+        signature: "instantiateClass(Class): Object throws org.springframework.beans.BeanInstantiationException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.context.ApplicationContextInitializer"
+          uuid: "instantiateInitializer_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "initializer"
+      modelFingerprint: "D4D2BF534449138A8D51297AA5993CFF"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContextInitializer"
+        uuid: "instantiateInitializer_object1"
+        fixed: false
+        collectionUuid: "applyInitializerClasses_arrayList1"
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "initializer"
+        name: "initialize"
+        parameters:
+        - name: "applicationContext"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.context.ConfigurableApplicationContext"
+            uuid: "initialize_configurableApplicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(ConfigurableApplicationContext): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyInitializers_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ffe9eea1-be58-357d-980e-e5ce8b3bb69f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.List.sort(org.springframework.core.annotation.AnnotationAwareOrderComparator)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "setOrder"
+    returnType: "void"
+    signature: "setOrder(int) : void"
+    instructionFingerprint: "F88C98C2D7593841680C2CA0FECB4028"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A7D75C8F70F798AFD3A35CDB1E6AD09C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "27a24730-befc-337f-a149-f3be3dcb76b7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "342D4E4F854A43E567A525BCBCDEA20C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "32CB6C7CF2E809288D09B27B6648BFBD"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

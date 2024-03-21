@@ -1,0 +1,954 @@
+---
+modelFingerprint: "130A8861BA36B231DEB94D4A47F6BD67"
+methods:
+- method:
+    name: "analyze"
+    returnType: "org.springframework.boot.diagnostics.FailureAnalysis"
+    signature: "analyze(java.lang.Throwable,org.springframework.boot.context.config.ConfigDataNotFoundException)\
+      \ : org.springframework.boot.diagnostics.FailureAnalysis"
+    instructionFingerprint: "29325B1C2ABBCF123CFEAAA6256B257B"
+    parametersTypes:
+    - "java.lang.Throwable"
+    - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "analyze2WhenLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C85C61DC3470BC51F6558DAE7839DC7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4e799d7c-1c59-3f99-8f1e-1e0349f852a2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path2"
+    testPathName: "analyze2WhenOriginIsNullAndLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8C12B2E08A578F98E8A01775719D8532"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c6e2bcae-ec3e-3d1a-abc3-d2ffbedb6df1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "analyze2WhenLocationNotIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5C92EFB31929EE066ECF39118C29B1C2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "74AFC98C2E3A647A785F57191E4F7E6A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "6FDC6BFCD47D285BB5BF15FC6FAB75F2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "locationNotFoundException"
+      modelFingerprint: "F5CBEEC2B43BF4DFFA99AFF676AA31CF"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      methodExercised:
+        target: "locationNotFoundException"
+        name: "getLocation"
+        parameters: []
+        signature: "getLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "getLocation_configDataLocation1"
+          fixed: false
+          nameForMock: "getLocation_configDataLocation1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "D7D029CF2C299A67D16096886FB4E1F0"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "getLocation_configDataLocation1"
+            fixed: false
+            nameForMock: "getLocation_configDataLocation1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "analyze_origin1"
+          fixed: false
+          nameForMock: "analyze_origin1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cause"
+      modelFingerprint: "31D1FFB4816EF4E47665EC5FDEF0B7C1"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      methodExercised:
+        target: "cause"
+        name: "getReferenceDescription"
+        parameters: []
+        signature: "getReferenceDescription(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: ""
+          suggestedContent: !<regular>
+            value: ""
+          valueType: "java.lang.String"
+          uuid: "analyze_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "location"
+      modelFingerprint: "3CBB4E33D966C8DF421D0AABAE3D6646"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "getLocation_configDataLocation1"
+        fixed: false
+        nameForMock: "getLocation_configDataLocation1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "location"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "analyze_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "00D8955E4831F5E32D3556826F7AC44C"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Config data  does not exist"
+              suggestedContent: !<regular>
+                value: "Config data  does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Check that the value 'null' at null is correct, or prefix\
+                  \ it with 'optional:'"
+              suggestedContent: !<regular>
+                value: "Check that the value 'null' at null is correct, or prefix\
+                  \ it with 'optional:'"
+              valueType: "java.lang.String"
+              uuid: "analyze_string6"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Config data  does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Check that the value 'null' at null is correct, or prefix\
+                  \ it with 'optional:'"
+              valueType: "java.lang.String"
+              uuid: "analyze_string6"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "86a94c06-1bf6-3695-8b58-09bb7743a745"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "analyze2WhenLocationIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1491E790543F7CDA4CBFB48EC7A46A71"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0b7ed881-f578-32ee-8afa-1f993507f2e5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "analyze2WhenLocationIsNotNullAndLocationNotIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "100BC3E8AD391C27E9E1C7988347C424"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "02947808-ad86-3f92-93bb-ac065bc0d50d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path6"
+    testPathName: "analyze2WhenLocationIsNotNullAndLocationIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "25A41C5DADCA3E4D21EFF5CDFDE3F46E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "83f8156e-4912-31da-843a-0bce23ccba27"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path7"
+    testPathName: "analyze2WhenLocationIsNullAndOriginIsNullAndLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D7BA3C6BF8F38660E5279DF48BBBF1F2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "74AFC98C2E3A647A785F57191E4F7E6A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "3771377DDDD2095357B523ED561D7FA6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resourceNotFoundException"
+      modelFingerprint: "7BC0572FCC692BD2A1BB6AFF1F8F6399"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      methodExercised:
+        target: "resourceNotFoundException"
+        name: "getLocation"
+        parameters: []
+        signature: "getLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "getLocation_configDataLocation1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "460B65FEE9BA5B151CDA7471676C4ADE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "getLocation_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "analyze_origin1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cause"
+      modelFingerprint: "EB887874811B5779B6CFCC7021A6AA22"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+      methodExercised:
+        target: "cause"
+        name: "getReferenceDescription"
+        parameters: []
+        signature: "getReferenceDescription(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "analyze_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A5CDC6D4CB1726E87A7E066957CD89C5"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Config data A does not exist"
+              suggestedContent: !<regular>
+                value: "Config data A does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Check that the value is correct"
+              suggestedContent: !<regular>
+                value: "Check that the value is correct"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Config data A does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Check that the value is correct"
+              suggestedContent: !<regular>
+                value: "Check that the value is correct"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3f4d8ae1-d48f-3654-8314-e8fa99f3451d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path8"
+    pathIdForUser: "path8"
+    testPathName: "analyze2WhenCauseNotInstanceOfConfigDataResourceNotFoundExceptionAndLocationIsNullAndOriginIsNullAndLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FB7C171E50A1A4077EA522D46014BFAD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "74AFC98C2E3A647A785F57191E4F7E6A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "71B997F14BFFBBC0D69F8153C7DBC68D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "EA5B009C42E9B6D7ABA9FF5F2352063A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "getLocation_configDataLocation1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "analyze_origin1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cause"
+      modelFingerprint: "23C45CCC1AEDEAB5BA218A0FE99B5E54"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+        uuid: "analyze_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cause"
+        name: "getReferenceDescription"
+        parameters: []
+        signature: "getReferenceDescription(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "analyze_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "356C9841241D7574ED04DAB4FB67B270"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Config data A does not exist"
+              suggestedContent: !<regular>
+                value: "Config data A does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Check that the value is correct"
+              suggestedContent: !<regular>
+                value: "Check that the value is correct"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Config data A does not exist"
+              valueType: "java.lang.String"
+              uuid: "analyze_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Check that the value is correct"
+              suggestedContent: !<regular>
+                value: "Check that the value is correct"
+              valueType: "java.lang.String"
+              uuid: "analyze_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundException"
+              uuid: "analyze_configDataNotFoundException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8657ded6-0a93-3210-9d92-2b9c24568d92"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

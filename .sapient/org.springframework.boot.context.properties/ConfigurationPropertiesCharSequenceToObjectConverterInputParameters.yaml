@@ -1,0 +1,2291 @@
+---
+modelFingerprint: "F52190916428EAA3E65C78D23DC975A9"
+methods:
+- method:
+    name: "getConvertibleTypes"
+    returnType: "java.util.Set"
+    signature: "getConvertibleTypes() : java.util.Set<org.springframework.core.convert.converter.GenericConverter$ConvertiblePair>"
+    instructionFingerprint: "1D48198CCD51DAE92193D724C44C940D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getConvertibleTypesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C38826FB1BB976DAAF87BF5FDBFCE9F2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "a09cc112-2d6f-3df0-a3e4-2475492f0d41"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "matches"
+    returnType: "boolean"
+    signature: "matches(org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)\
+      \ : boolean"
+    instructionFingerprint: "8007DCBAC34C7EDD3B9140DDDFCE100A"
+    parametersTypes:
+    - "org.springframework.core.convert.TypeDescriptor"
+    - "org.springframework.core.convert.TypeDescriptor"
+  paths:
+  - pathId: "path9"
+    pathIdForUser: "path1"
+    testPathName: "matchesWhenSourceTypeGetTypeEqualsString"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D593A0CC6C0B88A55D5DEDE43DF4D641"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "515CAC9110A9C5A75FCD154D16483767"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "3464B0EB82807DF85888169462CA69A6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.String"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.String"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "targetType"
+      modelFingerprint: "438ED22EF218E78FC1F998B904DD5BC7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "sourceType"
+      modelFingerprint: "EF018787E8DEF8621BC1475BE726BDCA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.String"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.String"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "sourceType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.String"
+          valueType: "java.lang.Class"
+          genericValueType: "java.lang.String"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a8b8f14-0185-38cc-8ab3-b5c480dbcdeb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path2"
+    testPathName: "matchesWhenThisConversionServiceCanConvertSTRINGTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "88B012A89E2BE0F74A4594C14635F16F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "83741245-5d8f-30ff-aa3f-4d2277a6440c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path8"
+    pathIdForUser: "path3"
+    testPathName: "matchesWhenThisConversionServiceNotCanConvertSTRINGTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7D0671D585CCDAF0597701B3365287FE"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4cda790a-d6bf-34fb-8fcb-e0f2229544d4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path4"
+    testPathName: "matchesWhenIsStringConversionBetterNotSourceTypeTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "275CDB4C23D2C84CB4AB58D541509FBA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "69bde6f4-0eca-36c0-964b-6ea06bef3350"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path5"
+    testPathName: "matchesWhenTargetTypeNotIsCollectionAndIsStringConversionBetterNotSourceTypeTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0DEEB4E6CE860D309A7D114F87F5E088"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "60c294ec-61b7-3df0-b165-70ac282e02ae"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path6"
+    testPathName: "matchesWhenIsStringConversionBetterSourceTypeTargetTypeAndThisConversionServiceNotCanConvertSTRINGTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "280F2D2AE3E3E444579DD0E9F4766FB6"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "57d9db63-fbd8-3d51-978e-fc7c2610bf48"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path7"
+    testPathName: "matchesWhenTargetTypeEqualsBYTE_ARRAYAndIsStringConversionBetterNotSourceTypeTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8FB74C398C169358BC917984C3E4B012"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A5A145A7CECDC990EF2174A028B4DD1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.convert.ConversionService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "B96BBE0819A34166318309235359AF69"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "targetType"
+      modelFingerprint: "C5C17EADCDD6B441833FE8687020FFB3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "<clinit>_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "sourceType"
+      modelFingerprint: "05EDBD620A3E437AD4A680DC471445A2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "sourceType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "matches_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "7DA2C0FC674C06ED02329010D0BFDA29"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "canConvert"
+        parameters:
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "byte[]"
+                  valueType: "java.lang.Class"
+                  genericValueType: "byte[]"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "byte[]"
+                  valueType: "java.lang.Class"
+                  genericValueType: "byte[]"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "<clinit>_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "canConvert(TypeDescriptor,TypeDescriptor): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "matches_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "F4AF55FDE968071FC43B557DBF7CD8E2"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "<clinit>_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isArray"
+        parameters: []
+        signature: "isArray(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "35AF2B6744231104AB70BBE631407D5A"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          method: "valueOf"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "byte[]"
+              valueType: "java.lang.Class"
+              genericValueType: "byte[]"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "<clinit>_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isCollection"
+        parameters: []
+        signature: "isCollection(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "matches_int1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "eba10f31-3797-3e38-a1a2-d20b1605c651"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path8"
+    testPathName: "matchesWhenIsStringConversionBetterSourceTypeTargetTypeAndThisConversionServiceCanConvertSTRINGTargetType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "94F193A2831BDAE0F0C5CB058DB5081A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A5A145A7CECDC990EF2174A028B4DD1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.convert.ConversionService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "B96BBE0819A34166318309235359AF69"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "targetType"
+      modelFingerprint: "45A7EFEDAB2D67B4A7AF1AAF438DD4BF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "sourceType"
+      modelFingerprint: "05EDBD620A3E437AD4A680DC471445A2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "sourceType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "matches_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "988EB4BDE2AF9825A4A0E556D244F330"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "canConvert"
+        parameters:
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "canConvert(TypeDescriptor,TypeDescriptor): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "matches_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "58B5B26C978C544B9E64DCFF994A5722"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isArray"
+        parameters: []
+        signature: "isArray(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "6FC40B8140B3D1F70D514038B7585CA9"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isCollection"
+        parameters: []
+        signature: "isCollection(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "A7D1B6882F561E6DD0142A378F5AF292"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "canConvert"
+        parameters:
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "<clinit>_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "canConvert(TypeDescriptor,TypeDescriptor): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "matches_boolean3"
+          fixed: true
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "matches_boolean3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6207393d-bb36-3110-af5f-81048dea6f9b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path9"
+    testPathName: "matchesWhenTargetTypeNotEqualsBYTE_ARRAYAndIsStringConversionBetterSourceTypeTargetTypeAndThisConversionServiceNotCanCo"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4B5B1CE2CDDA8D714DCF9D15AD421747"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A5A145A7CECDC990EF2174A028B4DD1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.convert.ConversionService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "B96BBE0819A34166318309235359AF69"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "targetType"
+      modelFingerprint: "45A7EFEDAB2D67B4A7AF1AAF438DD4BF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "sourceType"
+      modelFingerprint: "05EDBD620A3E437AD4A680DC471445A2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.core.convert.TypeDescriptor"
+          parameters:
+          - name: "resolvableType"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "matches_typeDescriptor1-resolvableType"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "matches_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "annotations"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.annotation.Annotation[]"
+              uuid: "matches_typeDescriptor1-annotations"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "sourceType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "matches_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "988EB4BDE2AF9825A4A0E556D244F330"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "canConvert"
+        parameters:
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              parameters:
+              - name: "resolvableType"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "matches_typeDescriptor1-resolvableType"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "matches_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "annotations"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "java.lang.annotation.Annotation[]"
+                  uuid: "matches_typeDescriptor1-annotations"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "canConvert(TypeDescriptor,TypeDescriptor): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "matches_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "58B5B26C978C544B9E64DCFF994A5722"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isArray"
+        parameters: []
+        signature: "isArray(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "targetType"
+      modelFingerprint: "6FC40B8140B3D1F70D514038B7585CA9"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "matches_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "targetType"
+        name: "isCollection"
+        parameters: []
+        signature: "isCollection(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isStringConversionBetter_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "F51E870AC0C90DAD26466C5BEB48609A"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "canConvert"
+        parameters:
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "<clinit>_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "matches_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "canConvert(TypeDescriptor,TypeDescriptor): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "matches_boolean3"
+          fixed: true
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "matches_boolean3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e69d771b-c54b-37f2-a5b7-a3efe78a0bb5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "convert"
+    returnType: "java.lang.Object"
+    signature: "convert(java.lang.Object,org.springframework.core.convert.TypeDescriptor,org.springframework.core.convert.TypeDescriptor)\
+      \ : java.lang.Object"
+    instructionFingerprint: "17E24BBAF8D021F93E679D0550C3A67E"
+    parametersTypes:
+    - "java.lang.Object"
+    - "org.springframework.core.convert.TypeDescriptor"
+    - "org.springframework.core.convert.TypeDescriptor"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "convertTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.core.convert.ConversionService)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BA5D6E96BB852E58B5E80C0161C131E1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A5A145A7CECDC990EF2174A028B4DD1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+          parameters:
+          - name: "conversionService"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.convert.ConversionService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.convert.ConversionService"
+              uuid: "<init>_conversionService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesCharSequenceToObjectConverter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "77FD13777AF847C2DE7E78B3C7B21425"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.lang.Object"
+        uuid: "convert_object1"
+        fixed: false
+        nameForMock: "convert_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sourceType"
+      modelFingerprint: "56B9E5F315CA7CE6AD10CD177CF9C44F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "convert_typeDescriptor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "targetType"
+      modelFingerprint: "438ED22EF218E78FC1F998B904DD5BC7"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.TypeDescriptor"
+        uuid: "convert_typeDescriptor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "conversionService"
+      modelFingerprint: "BAA213FCD50B71B22F1C83E8869F2A8D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.convert.ConversionService"
+        uuid: "<init>_conversionService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.conversionService"
+        name: "convert"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "convert_object1"
+            suggestedContent: !<regular>
+              value: "convert_object1"
+            valueType: "java.lang.String"
+            uuid: "convert_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "sourceType"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.core.convert.TypeDescriptor"
+              method: "valueOf"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "<clinit>_typeDescriptor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "targetType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.convert.TypeDescriptor"
+            uuid: "convert_typeDescriptor2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(String,TypeDescriptor,TypeDescriptor): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "convert_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "convert_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bcac3615-eb3e-3c15-88e5-1c9363f33c9d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

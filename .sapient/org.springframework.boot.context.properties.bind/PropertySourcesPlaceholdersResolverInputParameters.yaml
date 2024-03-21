@@ -1,0 +1,685 @@
+---
+modelFingerprint: "3A28F1A624CAA23574B050927E4D2DB8"
+methods:
+- method:
+    name: "resolvePlaceholders"
+    returnType: "java.lang.Object"
+    signature: "resolvePlaceholders(java.lang.Object) : java.lang.Object"
+    instructionFingerprint: "DC4F10F1E9B26605AE2D97B4749D67D1"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "resolvePlaceholdersWhenValueInstanceOfString"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.core.env.PropertySource<?>>,org.springframework.util.PropertyPlaceholderHelper)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E4AAEEE84D820469112C969E2CA40AE2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "138784C0C42978047DE02162F9C16DD2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.util.PropertyPlaceholderHelper"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "C6790D3E00B07F053861FDB4A59F92EC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "value1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "5E976A2E4B11678352B6FF3D50C9ADDC"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "resolvePlaceholder"
+        parameters:
+        - name: "placeholder"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "placeholder1"
+            valueType: "java.lang.String"
+            uuid: "resolvePlaceholders_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolvePlaceholder(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_resolvePlaceholder1"
+          valueType: "java.lang.String"
+          uuid: "resolvePlaceholders_string3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "helper"
+      modelFingerprint: "4C68950DAB5BA4A4C88A716A68E835E7"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.PropertyPlaceholderHelper"
+        uuid: "<init>_propertyPlaceholderHelper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.helper"
+        name: "replacePlaceholders"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value1"
+            valueType: "java.lang.String"
+            uuid: "resolvePlaceholders_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "placeholderResolver"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replacePlaceholders(String,PropertyPlaceholderHelper$PlaceholderResolver):\
+          \ String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replacePlaceholders1"
+          valueType: "java.lang.String"
+          uuid: "resolvePlaceholders_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replacePlaceholders1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholders_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "92f654c1-59d0-3f5f-8724-669bbd7eff5a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "resolvePlaceholdersWhenValueNotInstanceOfString"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.core.env.PropertySource<?>>,org.springframework.util.PropertyPlaceholderHelper)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "090267008CF0DD25AF7515C866F43CDF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "68F76159A9B8BF39A47AC8523A277F04"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2e755de7-a01c-3580-9542-15932e99692f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "resolvePlaceholder"
+    returnType: "java.lang.String"
+    signature: "resolvePlaceholder(java.lang.String) : java.lang.String"
+    instructionFingerprint: "85C99104715CFB84817CE4298781AFC6"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "resolvePlaceholderWhenThisSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.core.env.PropertySource<?>>,org.springframework.util.PropertyPlaceholderHelper)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "28058811BEE2D477F4D6FC3D90F692A1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "105518ae-35f4-38f2-87c0-7f32dc970291"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "resolvePlaceholderWhenValueIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.core.env.PropertySource<?>>,org.springframework.util.PropertyPlaceholderHelper)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E05032259D8FDF98472E5682CB2EE7E5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "68F76159A9B8BF39A47AC8523A277F04"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "placeholder"
+      modelFingerprint: "FB4C15D12ED995D7649F608DC2353DFB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "placeholder1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholder_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "source"
+      modelFingerprint: "BDD1AA0209E0436CAC3D3D545E8388D9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.PropertySource"
+        uuid: "resolvePlaceholder_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "source"
+        name: "getProperty"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "placeholder1"
+            valueType: "java.lang.String"
+            uuid: "resolvePlaceholder_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "resolvePlaceholder_object2"
+          fixed: false
+          nameForMock: "resolvePlaceholder_object2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D4FD16FDFACE2B9FC6038A833FA71103"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "resolvePlaceholder_object2"
+        suggestedContent: !<regular>
+          value: "resolvePlaceholder_object2"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholder_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f55b244d-d45e-37b8-b852-86b4d940632d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "resolvePlaceholderWhenValueIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.core.env.PropertySource<?>>,org.springframework.util.PropertyPlaceholderHelper)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D3EC62C9B77A5FD3B1B2915897B65442"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "68F76159A9B8BF39A47AC8523A277F04"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+          parameters:
+          - name: "sources"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "helper"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.util.PropertyPlaceholderHelper"
+              uuid: "<init>_propertyPlaceholderHelper1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.PropertySourcesPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "placeholder"
+      modelFingerprint: "FB4C15D12ED995D7649F608DC2353DFB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "placeholder1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholder_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "source"
+      modelFingerprint: "8415C78F653A3F4F9468141D707CA541"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.PropertySource"
+        uuid: "resolvePlaceholder_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "source"
+        name: "getProperty"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "placeholder1"
+            valueType: "java.lang.String"
+            uuid: "resolvePlaceholder_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): Object"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Object"
+          uuid: "resolvePlaceholder_object2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8EDA3F2AE365AC99A4FDAA03D44C0B66"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholder_string2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2e40d513-19be-3dae-9d54-18bd4c132e8b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.iterator() : java.util.Iterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

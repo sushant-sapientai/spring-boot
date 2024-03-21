@@ -1,0 +1,2019 @@
+---
+modelFingerprint: "035120365659BF4034AF32C21A760C5D"
+methods:
+- method:
+    name: "registerBeanDefinitions"
+    returnType: "void"
+    signature: "registerBeanDefinitions(org.springframework.core.type.AnnotationMetadata,org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    instructionFingerprint: "97534C26D5E33C2007C662EBCF6061E0"
+    parametersTypes:
+    - "org.springframework.core.type.AnnotationMetadata"
+    - "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerBeanDefinitionsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2ACB2863F241B469212A2A7499F495F4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "metadata"
+      modelFingerprint: "2DDFD15D307F96549294E913340DDD5C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.type.AnnotationMetadata"
+        uuid: "registerBeanDefinitions_annotationMetadata1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "registry"
+      modelFingerprint: "D92A03AAE8177C5EC75A57910D14A0AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBindingPostProcessor"
+      modelFingerprint: "0E9EFF77FBC59906B4B9E4B2A7ACCEBC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        name: "register"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(BeanDefinitionRegistry): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerInfrastructureBeans_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BoundConfigurationProperties"
+      modelFingerprint: "8CE0B0D995AA1C689EE50A9B43A3BF53"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        uuid: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        name: "register"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(BeanDefinitionRegistry): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerInfrastructureBeans_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnableConfigurationPropertiesRegistrar"
+      modelFingerprint: "18D424A6236CDFE40FF04471F836C6B4"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+        uuid: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar"
+        name: "registerMethodValidationExcludeFilter"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerMethodValidationExcludeFilter(BeanDefinitionRegistry):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinitions_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "metadata"
+      modelFingerprint: "35564600578638A0E3C4F9C47BE88C20"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.type.AnnotationMetadata"
+        uuid: "registerBeanDefinitions_annotationMetadata1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "metadata"
+        name: "getAnnotations"
+        parameters: []
+        signature: "getAnnotations(): MergedAnnotations"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.annotation.MergedAnnotations"
+          uuid: "getTypes_mergedAnnotations1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "8FDFDF77B41C73D0F3A84F942AD47481"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "getTypes_mergedAnnotations1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "stream"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.EnableConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.EnableConfigurationProperties"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "stream(Class): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          uuid: "getTypes_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "beanRegistrar"
+      modelFingerprint: "70DD893703440628065E4228F8B2AB22"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "registerBeanDefinitions_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "registerBeanDefinitions_configurationPropertiesBeanRegistrar1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "beanRegistrar"
+        name: "register"
+        parameters:
+        - value:
+            sapientType: "NULL"
+            valueType: "java.lang.Class"
+            uuid: "registerBeanDefinitions_1"
+            fixed: false
+            collectionUuid: "getTypes_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(Class): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinitions_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "65ccd99f-3bf8-36f1-bca0-bbb723609f6b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "beanRegistrar"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "ConfigurationPropertiesBeanRegistrar beanRegistrar = new ConfigurationPropertiesBeanRegistrar(registry);"
+      lineNumber: 48
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "registerInfrastructureBeans"
+    returnType: "void"
+    signature: "registerInfrastructureBeans(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    instructionFingerprint: "58BB20054BAF277B395E08C1BC019A56"
+    parametersTypes:
+    - "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerInfrastructureBeansTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2788C063C83F6540A7AE7F239A9E6620"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "registry"
+      modelFingerprint: "D92A03AAE8177C5EC75A57910D14A0AB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "registerInfrastructureBeans_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBindingPostProcessor"
+      modelFingerprint: "0E9EFF77FBC59906B4B9E4B2A7ACCEBC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        name: "register"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "registerInfrastructureBeans_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(BeanDefinitionRegistry): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerInfrastructureBeans_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BoundConfigurationProperties"
+      modelFingerprint: "8CE0B0D995AA1C689EE50A9B43A3BF53"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        uuid: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BoundConfigurationProperties"
+        name: "register"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "registerInfrastructureBeans_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(BeanDefinitionRegistry): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerInfrastructureBeans_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "96dec1e4-e0cf-3af5-8062-1ec41e83a239"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "registerMethodValidationExcludeFilter"
+    returnType: "void"
+    signature: "registerMethodValidationExcludeFilter(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    instructionFingerprint: "5F1B083F2FED13AFFB6C6E41515C83F3"
+    parametersTypes:
+    - "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerMethodValidationExcludeFilterWhenRegistryNotContainsBeanDefinitionMETHOD_VALIDATION_EXCLUDE_FILTER_BEAN_NAME"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D1B9A3628505A5A5C54CA7C5F75C5EA3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "registry"
+      modelFingerprint: "AC26ED6AF7BCA1FA06F082E15D2C363A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registry"
+      modelFingerprint: "CC768F34646955D219E4048AFFCB9476"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registry"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "registerMethodValidationExcludeFilter_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BeanDefinitionBuilder"
+      modelFingerprint: "019F561A0C44B0DE8FD3E1737B605E42"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "rootBeanDefinition"
+        parameters:
+        - name: "beanClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factoryMethodName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "byAnnotation"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rootBeanDefinition(Class,String): BeanDefinitionBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            method: "rootBeanDefinition"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "byAnnotation"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            method: "rootBeanDefinition"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "byAnnotation"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "AD8AC97DA9C317A62C826399F72246FC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          method: "rootBeanDefinition"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "byAnnotation"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          method: "rootBeanDefinition"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "byAnnotation"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "addConstructorArgValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "addConstructorArgValue(Class): BeanDefinitionBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "byAnnotation"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "byAnnotation"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "value"
+              value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "addConstructorArgValue"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "byAnnotation"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "value"
+              value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "addConstructorArgValue"
+          valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "563B64E33DC4CDB94FCB654E8E8D6F0F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "byAnnotation"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "byAnnotation"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "value"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.context.properties.ConfigurationProperties"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "addConstructorArgValue"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "byAnnotation"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "value"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.context.properties.ConfigurationProperties"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "addConstructorArgValue"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "setRole"
+        parameters:
+        - name: "role"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setRole(int): BeanDefinitionBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    method: "rootBeanDefinition"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "byAnnotation"
+                        valueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    method: "rootBeanDefinition"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "byAnnotation"
+                        valueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "value"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addConstructorArgValue"
+              suggestedContent: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<static_method_return>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    method: "rootBeanDefinition"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "byAnnotation"
+                        valueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "value"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addConstructorArgValue"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "role"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 2
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "setRole"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<static_method_return>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    method: "rootBeanDefinition"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "byAnnotation"
+                        valueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "value"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addConstructorArgValue"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "role"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 2
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "setRole"
+          valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "121454BE0B732DAC13F9CD11ACEC8F02"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "byAnnotation"
+                      valueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                suggestedContent: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "byAnnotation"
+                      valueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "value"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addConstructorArgValue"
+            suggestedContent: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "byAnnotation"
+                      valueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "value"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addConstructorArgValue"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "role"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "setRole"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "byAnnotation"
+                      valueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "value"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addConstructorArgValue"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "role"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "setRole"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "getBeanDefinition"
+        parameters: []
+        signature: "getBeanDefinition(): AbstractBeanDefinition"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<static_method_return>
+                        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        method: "rootBeanDefinition"
+                        methodParameters:
+                        - value:
+                            sapientType: "CLASS"
+                            content: !<regular>
+                              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            valueType: "java.lang.Class"
+                            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                        - value:
+                            sapientType: "BASIC"
+                            content: !<regular>
+                              value: "byAnnotation"
+                            valueType: "java.lang.String"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                      suggestedContent: !<static_method_return>
+                        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        method: "rootBeanDefinition"
+                        methodParameters:
+                        - value:
+                            sapientType: "CLASS"
+                            content: !<regular>
+                              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            valueType: "java.lang.Class"
+                            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                        - value:
+                            sapientType: "BASIC"
+                            content: !<regular>
+                              value: "byAnnotation"
+                            valueType: "java.lang.String"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                      valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "value"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "addConstructorArgValue"
+                  suggestedContent: !<method_return_from_value>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<static_method_return>
+                        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        method: "rootBeanDefinition"
+                        methodParameters:
+                        - value:
+                            sapientType: "CLASS"
+                            content: !<regular>
+                              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            valueType: "java.lang.Class"
+                            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                        - value:
+                            sapientType: "BASIC"
+                            content: !<regular>
+                              value: "byAnnotation"
+                            valueType: "java.lang.String"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                      valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "value"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "addConstructorArgValue"
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "role"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 2
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "setRole"
+              suggestedContent: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<static_method_return>
+                        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        method: "rootBeanDefinition"
+                        methodParameters:
+                        - value:
+                            sapientType: "CLASS"
+                            content: !<regular>
+                              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            valueType: "java.lang.Class"
+                            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                        - value:
+                            sapientType: "BASIC"
+                            content: !<regular>
+                              value: "byAnnotation"
+                            valueType: "java.lang.String"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                      valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "value"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "addConstructorArgValue"
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "role"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 2
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "setRole"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getBeanDefinition"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<static_method_return>
+                        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        method: "rootBeanDefinition"
+                        methodParameters:
+                        - value:
+                            sapientType: "CLASS"
+                            content: !<regular>
+                              value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            valueType: "java.lang.Class"
+                            genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                        - value:
+                            sapientType: "BASIC"
+                            content: !<regular>
+                              value: "byAnnotation"
+                            valueType: "java.lang.String"
+                            fixed: true
+                            equalsMethodPresent: false
+                            explicitCastNeeded: false
+                      valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "value"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        valueType: "java.lang.Class"
+                        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "addConstructorArgValue"
+                  valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "role"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 2
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "setRole"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getBeanDefinition"
+          valueType: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+          uuid: "registerMethodValidationExcludeFilter_abstractBeanDefinition1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registry"
+      modelFingerprint: "97CE396C5AB727FF4406EF46D19B78B0"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "registerMethodValidationExcludeFilter_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registry"
+        name: "registerBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanDefinition"
+          value:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<method_return_from_value>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    content: !<method_return_from_value>
+                      target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      localVariableValue:
+                        sapientType: "OBJECT"
+                        content: !<static_method_return>
+                          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                          method: "rootBeanDefinition"
+                          methodParameters:
+                          - value:
+                              sapientType: "CLASS"
+                              content: !<regular>
+                                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              valueType: "java.lang.Class"
+                              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                          - value:
+                              sapientType: "BASIC"
+                              content: !<regular>
+                                value: "byAnnotation"
+                              valueType: "java.lang.String"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        suggestedContent: !<static_method_return>
+                          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                          method: "rootBeanDefinition"
+                          methodParameters:
+                          - value:
+                              sapientType: "CLASS"
+                              content: !<regular>
+                                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              valueType: "java.lang.Class"
+                              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                          - value:
+                              sapientType: "BASIC"
+                              content: !<regular>
+                                value: "byAnnotation"
+                              valueType: "java.lang.String"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters:
+                      - name: "value"
+                        value:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          valueType: "java.lang.Class"
+                          genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                      methodName: "addConstructorArgValue"
+                    suggestedContent: !<method_return_from_value>
+                      target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      localVariableValue:
+                        sapientType: "OBJECT"
+                        suggestedContent: !<static_method_return>
+                          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                          method: "rootBeanDefinition"
+                          methodParameters:
+                          - value:
+                              sapientType: "CLASS"
+                              content: !<regular>
+                                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              valueType: "java.lang.Class"
+                              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                          - value:
+                              sapientType: "BASIC"
+                              content: !<regular>
+                                value: "byAnnotation"
+                              valueType: "java.lang.String"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters:
+                      - name: "value"
+                        value:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          valueType: "java.lang.Class"
+                          genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                      methodName: "addConstructorArgValue"
+                    valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "role"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: 2
+                      valueType: "int"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "setRole"
+                suggestedContent: !<method_return_from_value>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<method_return_from_value>
+                      target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      localVariableValue:
+                        sapientType: "OBJECT"
+                        suggestedContent: !<static_method_return>
+                          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                          method: "rootBeanDefinition"
+                          methodParameters:
+                          - value:
+                              sapientType: "CLASS"
+                              content: !<regular>
+                                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              valueType: "java.lang.Class"
+                              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                          - value:
+                              sapientType: "BASIC"
+                              content: !<regular>
+                                value: "byAnnotation"
+                              valueType: "java.lang.String"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters:
+                      - name: "value"
+                        value:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          valueType: "java.lang.Class"
+                          genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                      methodName: "addConstructorArgValue"
+                    valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "role"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: 2
+                      valueType: "int"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "setRole"
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getBeanDefinition"
+            suggestedContent: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<method_return_from_value>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<method_return_from_value>
+                      target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                      localVariableValue:
+                        sapientType: "OBJECT"
+                        suggestedContent: !<static_method_return>
+                          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                          method: "rootBeanDefinition"
+                          methodParameters:
+                          - value:
+                              sapientType: "CLASS"
+                              content: !<regular>
+                                value: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              valueType: "java.lang.Class"
+                              genericValueType: "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                          - value:
+                              sapientType: "BASIC"
+                              content: !<regular>
+                                value: "byAnnotation"
+                              valueType: "java.lang.String"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                        uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters:
+                      - name: "value"
+                        value:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          valueType: "java.lang.Class"
+                          genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                      methodName: "addConstructorArgValue"
+                    valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                    uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder2"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "role"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: 2
+                      valueType: "int"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "setRole"
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "registerMethodValidationExcludeFilter_beanDefinitionBuilder3"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getBeanDefinition"
+            valueType: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            uuid: "registerMethodValidationExcludeFilter_abstractBeanDefinition1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.BeanDefinitionStoreException"
+        signature: "registerBeanDefinition(String,AbstractBeanDefinition): void throws\
+          \ org.springframework.beans.factory.BeanDefinitionStoreException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerMethodValidationExcludeFilter_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a8406ee8-52ed-335b-bd8c-e91c55a8b744"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "registerMethodValidationExcludeFilterWhenRegistryContainsBeanDefinitionMETHOD_VALIDATION_EXCLUDE_FILTER_BEAN_NAME"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "436335C7807CDC9DED56490F52DD62A8"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ffc8e43d-ad71-3620-a864-ab88175ddae1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

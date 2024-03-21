@@ -1,0 +1,1445 @@
+---
+modelFingerprint: "A9232434834FC01C71560BABF599AD03"
+methods:
+- method:
+    name: "startRecording"
+    returnType: "void"
+    signature: "startRecording() : void"
+    instructionFingerprint: "4C945323FD0A8019E74288F73B008E92"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "startRecordingTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E75939D919CCC6725A55F8E0E035585B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BDF01DE6A7DEA0007C34F602C0D8E112"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "startRecording_boolean1"
+            fixed: false
+            collectionUuid: "<init>_concurrentLinkedQueue1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot restart recording once steps have been buffered."
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "startRecording_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "clock"
+      modelFingerprint: "CA04E04CC8FD68DEB08BAF5AC225AA4D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "startRecording_instant1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1cece066-52ae-3fda-9b18-8c9a43d889bb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "addFilter"
+    returnType: "void"
+    signature: "addFilter(java.util.function.Predicate<org.springframework.core.metrics.StartupStep>)\
+      \ : void"
+    instructionFingerprint: "BADB61D7C6B88350484133B85C2460F8"
+    parametersTypes:
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addFilterTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0F1579FBE3AA11741EF622AC313C16DA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "filter"
+      modelFingerprint: "1FF12165799D4EE84489B51776DDF5CF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Predicate"
+        uuid: "addFilter_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "afd847a1-cb6d-38f3-acdc-6d34e0a12e24"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Predicate.and(java.util.function.Predicate<org.springframework.core.metrics.StartupStep>)\
+        \ : java.util.function.Predicate"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "start"
+    returnType: "org.springframework.core.metrics.StartupStep"
+    signature: "start(java.lang.String) : org.springframework.core.metrics.StartupStep"
+    instructionFingerprint: "E7080C149318037C37195BEE824812F3"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "startWhenThisCurrentCompareAndSetCurrentNext"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C02D68D40DD7B87976A3EDC7866B0BED"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "152403AE23B874E1C4B9566F486B9148"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "name1"
+        valueType: "java.lang.String"
+        uuid: "start_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "clock"
+      modelFingerprint: "8FBE5224EDE690FD0901E2EF09FE34DE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "start_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A9A542BD9021303576E12244BF464165"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "start_bufferedStartupStep1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4c4ffefb-2c2d-34b9-8503-4a8a3903023d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "current"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "if (this.current.compareAndSet(current, next)) {"
+      lineNumber: 116
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: current - Method: compareAndSet"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "startWhenThisCurrentNotCompareAndSetCurrentNext"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C12F2E642440538EB868D1D1DC43DA81"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "152403AE23B874E1C4B9566F486B9148"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "name1"
+        valueType: "java.lang.String"
+        uuid: "start_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "clock"
+      modelFingerprint: "8FBE5224EDE690FD0901E2EF09FE34DE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "start_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "53591950-228d-396d-85fa-4b838e47f089"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "current"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "if (this.current.compareAndSet(current, next)) {"
+      lineNumber: 116
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: current - Method: compareAndSet"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getBufferedTimeline"
+    returnType: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+    signature: "getBufferedTimeline() : org.springframework.boot.context.metrics.buffering.StartupTimeline"
+    instructionFingerprint: "EBA6B7B6CB952AB196B4EBF2986B2997"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBufferedTimelineTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "28AE4E75080F0FF19FE6341D099EEC52"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "86044A140A19705116DF8CC3DB9D78EE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+          parameters:
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "events"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters:
+                - name: "c"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      collectionClass: "java.util.concurrent.ConcurrentLinkedQueue"
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      collectionClass: "java.util.concurrent.ConcurrentLinkedQueue"
+                      parameters: []
+                      values: []
+                    valueType: "java.util.concurrent.ConcurrentLinkedQueue"
+                    genericValueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline$TimelineEvent"
+                    uuid: "<init>_concurrentLinkedQueue1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters:
+                - name: "c"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      collectionClass: "java.util.concurrent.ConcurrentLinkedQueue"
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      collectionClass: "java.util.concurrent.ConcurrentLinkedQueue"
+                      parameters: []
+                      values: []
+                    valueType: "java.util.concurrent.ConcurrentLinkedQueue"
+                    genericValueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline$TimelineEvent"
+                    uuid: "<init>_concurrentLinkedQueue1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                values: []
+              valueType: "java.util.ArrayList"
+              uuid: "getBufferedTimeline_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+          parameters:
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "events"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters:
+                - name: "c"
+                  value:
+                    sapientType: "COLLECTION"
+                    suggestedContent: !<collection>
+                      collectionClass: "java.util.concurrent.ConcurrentLinkedQueue"
+                      parameters: []
+                      values: []
+                    valueType: "java.util.concurrent.ConcurrentLinkedQueue"
+                    genericValueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline$TimelineEvent"
+                    uuid: "<init>_concurrentLinkedQueue1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                values: []
+              valueType: "java.util.ArrayList"
+              uuid: "getBufferedTimeline_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+        uuid: "getBufferedTimeline_startupTimeline1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ecf4868e-c128-31d9-8678-11f99f17d770"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "drainBufferedTimeline"
+    returnType: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+    signature: "drainBufferedTimeline() : org.springframework.boot.context.metrics.buffering.StartupTimeline"
+    instructionFingerprint: "00D66B60A59B2708458C291D1E52D3AF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "drainBufferedTimelineWhenIteratorNotHasNext"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,java.time.Clock) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3F7B4D815202A06666FE6C34741506EC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "599B15500525143564DD4553F71B52CF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+          parameters:
+          - name: "capacity"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "clock"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.time.Clock"
+              uuid: "<init>_clock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "clock"
+      modelFingerprint: "CE9371EC96EAAE225F0EE3F7165D71A3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.time.Clock"
+        uuid: "<init>_clock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "clock"
+        name: "instant"
+        parameters: []
+        signature: "instant(): Instant"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "java.time.Instant"
+            method: "ofEpochSecond"
+            methodParameters:
+            - name: "epochSecond"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 1700000000
+                valueType: "int"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.time.Instant"
+          uuid: "<init>_instant1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B1FDC59D8554A6F7CE39611F5A07A63F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+          parameters:
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "events"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline$TimelineEvent"
+              uuid: "drainBufferedTimeline_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+          parameters:
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "events"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline$TimelineEvent"
+              uuid: "drainBufferedTimeline_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.metrics.buffering.StartupTimeline"
+        uuid: "drainBufferedTimeline_startupTimeline1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fbe41aa6-d048-301d-a7ef-5da40d7b1da8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

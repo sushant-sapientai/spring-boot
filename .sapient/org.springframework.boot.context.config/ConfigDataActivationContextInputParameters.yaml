@@ -1,0 +1,668 @@
+---
+modelFingerprint: "8CCA0ECA84E3BF69902336AF75CB3DD6"
+methods:
+- method:
+    name: "withProfiles"
+    returnType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+    signature: "withProfiles(org.springframework.boot.context.config.Profiles) : org.springframework.boot.context.config.ConfigDataActivationContext"
+    instructionFingerprint: "15BA650F6D38082DF59181E3AE71BE28"
+    parametersTypes:
+    - "org.springframework.boot.context.config.Profiles"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withProfilesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.cloud.CloudPlatform,org.springframework.boot.context.config.Profiles)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1D1660DFE10952F2CE82AB22E182448"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EFD5B5FB3EE715B4A14A0BB96D52081B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "NONE"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "<init>_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "<init>_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "profiles"
+      modelFingerprint: "A62AA08999B671CD83466EB560A2C844"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.Profiles"
+        uuid: "withProfiles_profiles1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "81268CB8450109F5342824F3B829F0A0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "NONE"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "withProfiles_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "withProfiles_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "withProfiles_configDataActivationContext1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5cd7e44a-e1d9-3443-b4f2-0a8bc6a9be23"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getCloudPlatform"
+    returnType: "org.springframework.boot.cloud.CloudPlatform"
+    signature: "getCloudPlatform() : org.springframework.boot.cloud.CloudPlatform"
+    instructionFingerprint: "A4275D56235D7EC6E7EF3FBC19632A5F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getCloudPlatformTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.cloud.CloudPlatform,org.springframework.boot.context.config.Profiles)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C02209D65CEA9CF1804568CE27A9DA43"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b9162980-3bf8-35e5-97b4-7d30665403bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getProfiles"
+    returnType: "org.springframework.boot.context.config.Profiles"
+    signature: "getProfiles() : org.springframework.boot.context.config.Profiles"
+    instructionFingerprint: "88B3518F0423D2CB4792CCF5E9657D8D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProfilesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.cloud.CloudPlatform,org.springframework.boot.context.config.Profiles)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "680AEB5129D16BD19F8986C3DBBC6A15"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6cd93de7-4bca-3961-8741-9ba584edfb6c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "53B48C0CF62D32947C878916D0D3AD58"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.cloud.CloudPlatform,org.springframework.boot.context.config.Profiles)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D3BD67E23F2BDC83DB762BB8BB2E569"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EFD5B5FB3EE715B4A14A0BB96D52081B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "NONE"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "<init>_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          parameters:
+          - name: "cloudPlatform"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.cloud.CloudPlatform"
+              uuid: "<init>_cloudPlatform1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profiles"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.Profiles"
+              uuid: "<init>_profiles1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "creator"
+      modelFingerprint: "2874FD297ACE42ADFA4C91CCD8090AD7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.style.ToStringCreator"
+          parameters:
+          - name: "obj"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.style.ToStringCreator"
+          parameters:
+          - name: "obj"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.style.ToStringCreator"
+        uuid: "toString_toStringCreator1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "creator"
+        name: "append"
+        parameters:
+        - name: "fieldName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "cloudPlatform"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NONE"
+            valueType: "org.springframework.boot.cloud.CloudPlatform"
+            uuid: "<init>_cloudPlatform1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "append(String,CloudPlatform): ToStringCreator"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.core.style.ToStringCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.core.style.ToStringCreator"
+              uuid: "toString_toStringCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "fieldName"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "cloudPlatform"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "NONE"
+                valueType: "org.springframework.boot.cloud.CloudPlatform"
+                uuid: "<init>_cloudPlatform1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "append"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.core.style.ToStringCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.core.style.ToStringCreator"
+              uuid: "toString_toStringCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "fieldName"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "cloudPlatform"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "ENUM"
+                valueType: "org.springframework.boot.cloud.CloudPlatform"
+                uuid: "<init>_cloudPlatform1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "append"
+          valueType: "org.springframework.core.style.ToStringCreator"
+          uuid: "toString_toStringCreator2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "creator"
+      modelFingerprint: "BE65AA9E44AAEBAF6BBEB5995F851C6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.style.ToStringCreator"
+          parameters:
+          - name: "obj"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.style.ToStringCreator"
+          parameters:
+          - name: "obj"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.style.ToStringCreator"
+        uuid: "toString_toStringCreator1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "creator"
+        name: "append"
+        parameters:
+        - name: "fieldName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "profiles"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.Profiles"
+            uuid: "<init>_profiles1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "append(String,Profiles): ToStringCreator"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.core.style.ToStringCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.core.style.ToStringCreator"
+              uuid: "toString_toStringCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "fieldName"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "profiles"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.config.Profiles"
+                uuid: "<init>_profiles1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "append"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.core.style.ToStringCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "org.springframework.core.style.ToStringCreator"
+                parameters:
+                - name: "obj"
+                  value:
+                    sapientType: "THIS"
+                    valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+                    uuid: "targetClassObject"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.core.style.ToStringCreator"
+              uuid: "toString_toStringCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "fieldName"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "profiles"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.context.config.Profiles"
+                uuid: "<init>_profiles1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "append"
+          valueType: "org.springframework.core.style.ToStringCreator"
+          uuid: "toString_toStringCreator3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "creator"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "creator.append(\\\"cloudPlatform\\\", this.cloudPlatform);"
+      lineNumber: 95
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: creator - Method: append"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

@@ -1,0 +1,164 @@
+---
+modelFingerprint: "3B338EF21FE20DA8E65CF1B749A77A55"
+methods:
+- method:
+    name: "setBeanFactory"
+    returnType: "void"
+    signature: "setBeanFactory(org.springframework.beans.factory.BeanFactory) : void"
+    throwsExceptions:
+    - "org.springframework.beans.BeansException"
+    instructionFingerprint: "E9716F8B20124B69B2AC500DC23A98EF"
+    parametersTypes:
+    - "org.springframework.beans.factory.BeanFactory"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setBeanFactoryTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B0CD90F481511906CE7E28D45A5A09B2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6a498d31-c29e-3164-874e-02924a8e16ac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "match"
+    returnType: "boolean"
+    signature: "match(org.springframework.core.type.classreading.MetadataReader,org.springframework.core.type.classreading.MetadataReaderFactory)\
+      \ : boolean"
+    throwsExceptions:
+    - "java.io.IOException"
+    instructionFingerprint: "DCB1BAD04BFDFAB22489ADE25D16EA7C"
+    parametersTypes:
+    - "org.springframework.core.type.classreading.MetadataReader"
+    - "org.springframework.core.type.classreading.MetadataReaderFactory"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "matchWhenThisBeanFactoryNotInstanceOfListableBeanFactory"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E16E2A545AAAF0E9A6729F8DA809E472"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.TypeExcludeFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.TypeExcludeFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.TypeExcludeFilter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "metadataReader"
+      modelFingerprint: "78780953D64E8643394F71AE89BE3F87"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.type.classreading.MetadataReader"
+        uuid: "match_metadataReader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "metadataReaderFactory"
+      modelFingerprint: "AF871A179C2D372DAF35273BB8463C7F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.type.classreading.MetadataReaderFactory"
+        uuid: "match_metadataReaderFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "44d6d1ca-4ddc-3ca3-a2ca-e2928e2bf64b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "3368A454E8EB8FB65AAEC124F520A47F"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BBE6F0F48FCED357B9D2AAA703067AED"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ba270a78-5d04-368b-beb7-d708df88753e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

@@ -1,0 +1,318 @@
+---
+modelFingerprint: "CADE0D7A869C2B6D69C1F2F456AAD9D2"
+methods:
+- method:
+    name: "apply"
+    returnType: "java.lang.Boolean"
+    signature: "apply(org.springframework.boot.context.properties.source.ConfigurationPropertySource)\
+      \ : java.lang.Boolean"
+    instructionFingerprint: "BA6260DCD2DF2525C898D493295B9C25"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "applyWhenUnderlyingSourceNotInstanceOfPropertySource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B41603B9C05E8678D814364A7E4F7D66"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "configurationPropertySource"
+      modelFingerprint: "2ABB38B8FCCB4DE3E6A9DDE51519B6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "apply_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "configurationPropertySource"
+      modelFingerprint: "4179196D21570E6A893ED6E3982C8285"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "apply_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "configurationPropertySource"
+        name: "getUnderlyingSource"
+        parameters: []
+        signature: "getUnderlyingSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "apply_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "java.lang.Boolean"
+        uuid: "apply_boolean2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5f3aefae-6212-3c03-9286-f562997697c1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "applyWhenBENIGN_PROPERTY_SOURCE_NAMESNotContainsName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FA014173257A0AAB61AD8C3011F789BA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.UnboundElementsSourceFilter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "configurationPropertySource"
+      modelFingerprint: "2ABB38B8FCCB4DE3E6A9DDE51519B6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "apply_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "configurationPropertySource"
+      modelFingerprint: "23BFECC32CEB042C189E0C67460D0392"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "apply_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "configurationPropertySource"
+        name: "getUnderlyingSource"
+        parameters: []
+        signature: "getUnderlyingSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.core.env.PropertySource"
+            method: "named"
+            methodParameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "name1"
+                valueType: "java.lang.String"
+                uuid: "apply_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.core.env.PropertySource"
+            method: "named"
+            methodParameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "apply_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.core.env.PropertySource"
+          uuid: "apply_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "6C8EDB08DC0B2EAE0DC9D317A842D223"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.core.env.PropertySource"
+          method: "named"
+          methodParameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "apply_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.core.env.PropertySource"
+          method: "named"
+          methodParameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "apply_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.core.env.PropertySource"
+        uuid: "apply_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.env.PropertySource"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "name1"
+          valueType: "java.lang.String"
+          uuid: "apply_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "java.lang.Boolean"
+        uuid: "apply_boolean3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0000fa7d-6b33-3661-a73a-b594448e0a97"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

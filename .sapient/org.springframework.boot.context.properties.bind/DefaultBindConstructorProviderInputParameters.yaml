@@ -1,0 +1,1030 @@
+---
+modelFingerprint: "71653994F2F3C0A877749F13FF2BFCD4"
+methods:
+- method:
+    name: "getBindConstructor"
+    returnType: "java.lang.reflect.Constructor"
+    signature: "getBindConstructor(org.springframework.boot.context.properties.bind.Bindable<?>,boolean)\
+      \ : java.lang.reflect.Constructor<?>"
+    instructionFingerprint: "8CD3FFAC0C29C456B277FEC20E75D6C6"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.bind.Bindable"
+    - "boolean"
+  paths:
+  - pathId: "path6"
+    pathIdForUser: "path1"
+    testPathName: "getBindConstructorWhenConstructorsGetBindIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3A48F459E9A406E03D5DCD676DB1D78B"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c7710807-4d11-379e-af3c-aa25837f3e58"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "getBindConstructorWhenConstructorsNotIsDeducedBindConstructor"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "50B843AD5B7C5013ADC811C3E352C549"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "80619160-9400-3eb0-b164-14fb3c063796"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "getBindConstructorWhenConstructorsIsImmutableType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB41C3F42771205EA1348AD25717BC83"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0f8bde98-73dc-393c-a482-44bea1e07db2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "getBindConstructorWhenBindableGetValueIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF8BB0B3130B04CEB8C26930F090B521"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b3fa0bb4-624f-33c2-8ed1-5b987f348ddc"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path5"
+    testPathName: "getBindConstructorWhenBindableGetValueGetIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "70CBED8C985D8517517E578DD235C067"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bindable"
+      modelFingerprint: "C648D0B8D0CAD74DB2E2B70C206E729D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "isNestedConstructorBinding"
+      modelFingerprint: "8BDC5936E281BA9C7BE3E69D06B89D77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getBindConstructor_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "882EF5E8037B27D113EBBC1AAEB2280B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "getBindConstructor_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "18133835090846EFAF88E5B7FA3D51F9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "getBindConstructor_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.ResolvableType"
+        name: "resolve"
+        parameters: []
+        signature: "resolve(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getBindConstructor_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "DefaultBindConstructorProvider.Constructors"
+      modelFingerprint: "F4DF2FA70ECE6375AE7C45D68282CCAA"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        name: "getConstructors"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getBindConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "isNestedConstructorBinding"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "getBindConstructor_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConstructors(Class,boolean): DefaultBindConstructorProvider$Constructors"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+          uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "8D686F79D046F1DE47B42536858F5B9D"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "getBind"
+        parameters: []
+        signature: "getBind(): Constructor"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getBindConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "DA7210AFDAA3EFF3A10CA5406C8DA470"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "isDeducedBindConstructor"
+        parameters: []
+        signature: "isDeducedBindConstructor(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getBindConstructor_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "1D337A0997CCDA64033F4C7D51253F48"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "isImmutableType"
+        parameters: []
+        signature: "isImmutableType(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getBindConstructor_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "44D1CF43F853A50940F3B1AF02E3AD46"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getValue"
+        parameters: []
+        signature: "getValue(): Supplier"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.util.function.Supplier"
+          uuid: "getBindConstructor_supplier1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "44D1CF43F853A50940F3B1AF02E3AD46"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getValue"
+        parameters: []
+        signature: "getValue(): Supplier"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.util.function.Supplier"
+          uuid: "getBindConstructor_supplier1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8B5198904AE5449B646B30E8253ED466"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "getBindConstructor_constructor2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e8d915a5-39dc-32d4-ac18-b76d08af025d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path6"
+    testPathName: "getBindConstructorWhenBindableGetValueGetIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AB1CA547E29FC5A4A9AB824A52564D91"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bindable"
+      modelFingerprint: "C648D0B8D0CAD74DB2E2B70C206E729D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "isNestedConstructorBinding"
+      modelFingerprint: "8BDC5936E281BA9C7BE3E69D06B89D77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getBindConstructor_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "882EF5E8037B27D113EBBC1AAEB2280B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "getBindConstructor_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "18133835090846EFAF88E5B7FA3D51F9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "getBindConstructor_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.ResolvableType"
+        name: "resolve"
+        parameters: []
+        signature: "resolve(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getBindConstructor_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "DefaultBindConstructorProvider.Constructors"
+      modelFingerprint: "F4DF2FA70ECE6375AE7C45D68282CCAA"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        name: "getConstructors"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getBindConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "isNestedConstructorBinding"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "getBindConstructor_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConstructors(Class,boolean): DefaultBindConstructorProvider$Constructors"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+          uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "8D686F79D046F1DE47B42536858F5B9D"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "getBind"
+        parameters: []
+        signature: "getBind(): Constructor"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getBindConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "DA7210AFDAA3EFF3A10CA5406C8DA470"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "isDeducedBindConstructor"
+        parameters: []
+        signature: "isDeducedBindConstructor(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getBindConstructor_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "1D337A0997CCDA64033F4C7D51253F48"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "isImmutableType"
+        parameters: []
+        signature: "isImmutableType(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getBindConstructor_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "44D1CF43F853A50940F3B1AF02E3AD46"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getValue"
+        parameters: []
+        signature: "getValue(): Supplier"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.util.function.Supplier"
+          uuid: "getBindConstructor_supplier1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindable"
+      modelFingerprint: "44D1CF43F853A50940F3B1AF02E3AD46"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "getBindConstructor_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bindable"
+        name: "getValue"
+        parameters: []
+        signature: "getValue(): Supplier"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.util.function.Supplier"
+          uuid: "getBindConstructor_supplier1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "EC8E61E2285A039CF3A77A1EB2D13CF4"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "getBind"
+        parameters: []
+        signature: "getBind(): Constructor"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getBindConstructor_constructor2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "138C723D55087AE4B539C991177B8650"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getBindConstructor_constructor2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48284b12-4c06-33f5-a80d-006947556451"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getBindConstructor"
+    returnType: "java.lang.reflect.Constructor"
+    signature: "getBindConstructor(java.lang.Class<?>,boolean) : java.lang.reflect.Constructor<?>"
+    instructionFingerprint: "2D37D8FC81D85757B9D35627CB3ABECF"
+    parametersTypes:
+    - "java.lang.Class"
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBindConstructor1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F105AEDB06631C727BCACF17D2B7C8E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "getBindConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "isNestedConstructorBinding"
+      modelFingerprint: "8BDC5936E281BA9C7BE3E69D06B89D77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getBindConstructor_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "DefaultBindConstructorProvider.Constructors"
+      modelFingerprint: "F4DF2FA70ECE6375AE7C45D68282CCAA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        name: "getConstructors"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getBindConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "isNestedConstructorBinding"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "getBindConstructor_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConstructors(Class,boolean): DefaultBindConstructorProvider$Constructors"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+          uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructors"
+      modelFingerprint: "EC8E61E2285A039CF3A77A1EB2D13CF4"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors"
+        uuid: "getBindConstructor_defaultBindConstructorProvider.Constructors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructors"
+        name: "getBind"
+        parameters: []
+        signature: "getBind(): Constructor"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getBindConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "138C723D55087AE4B539C991177B8650"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getBindConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "88d6a42d-24de-31df-bea3-67e1e253d8da"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

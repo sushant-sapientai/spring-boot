@@ -1,0 +1,1658 @@
+---
+modelFingerprint: "BA9F4A080ACAC36D5FF8C190E735F112"
+methods:
+- method:
+    name: "getParent"
+    returnType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+    signature: "getParent() : org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+    instructionFingerprint: "6BE595EA220C05CAC48843816DC11AEE"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getParentTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F833EC83D6280ADD74777B927F590958"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5455f6a6-c86e-3f05-be56-c037c0b1cda5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getName"
+    returnType: "java.lang.String"
+    signature: "getName() : java.lang.String"
+    instructionFingerprint: "C90C2589CCC57FC1671FB67D2AEEC0AE"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "29BFCB0E58E5A86A10A74543F09DFA45"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9cfca8f8-30f9-3fae-a48b-42e512964e9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getId"
+    returnType: "long"
+    signature: "getId() : long"
+    instructionFingerprint: "F86D75486FB8F039C4F493A06DA240D0"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getIdTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "68DD8CF23C60CB6FA6CA07A1A5A142FC"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5f7d7b4a-ccfd-3d2d-827b-2227dba0ab6a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getStartTime"
+    returnType: "java.time.Instant"
+    signature: "getStartTime() : java.time.Instant"
+    instructionFingerprint: "3249B5D1EFF914C28B88A6F714C2B33B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getStartTimeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8E0276C34DDE9C7021E634ACC3FC3D35"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c186cff8-a85f-3caa-bfc6-8d91dfb85781"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getParentId"
+    returnType: "java.lang.Long"
+    signature: "getParentId() : java.lang.Long"
+    instructionFingerprint: "AD89BEBA73087C9BB88C8B2C57C88B3A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getParentIdWhenThisParentIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A64A0BB7FA74D214CA9A1EC51C7E99B0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "D9815D56182CC3D9D0DFA384609A13A9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "parent"
+      modelFingerprint: "2049C7934C2C3A1C67C94B124818570C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "<init>_bufferedStartupStep1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.parent"
+        name: "getId"
+        parameters: []
+        signature: "getId(): long"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 1
+          suggestedContent: !<regular>
+            value: 1
+          valueType: "long"
+          uuid: "getParentId_long1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7A1821257D5E84BFA9DDBEF0462CFCF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Long"
+        uuid: "getParentId_long2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5fdfba7e-6b5c-369a-b59f-2fcad9fad4db"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getParentIdWhenThisParentIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "623F923038FDC735DADA9A23E037D4A1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EBF514DB7F9B78626A51133A1A560F8C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B72719ED40F8AD6E7F21CB62226C1DAE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Long"
+        uuid: "getParentId_long1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "95008174-021a-3024-a11b-30baf1e3002b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getTags"
+    returnType: "org.springframework.core.metrics.StartupStep$Tags"
+    signature: "getTags() : org.springframework.core.metrics.StartupStep$Tags"
+    instructionFingerprint: "E3C632B383442A2F466D10ED81DBE642"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTagsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AFF539BFF2462E4C240F10C16D18CE4E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4A679DFCDAC5BFE0EFE693A52FFA9D5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "892CC9F16170E77A3BE36EB16C89A6D2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "org.springframework.core.metrics.StartupStep$Tags"
+        uuid: "getTags_startupStep.Tags1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "59fc8b6d-9cf4-385e-b4d4-3f0361c77781"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "tag"
+    returnType: "org.springframework.core.metrics.StartupStep"
+    signature: "tag(java.lang.String,java.util.function.Supplier<java.lang.String>)\
+      \ : org.springframework.core.metrics.StartupStep"
+    instructionFingerprint: "D805A728B61F9B1F9BB5A92AC416980D"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.function.Supplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "tagTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6B6524E1F3E403D637F89F7CDF1698D6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4A679DFCDAC5BFE0EFE693A52FFA9D5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "tag_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "A6EB29AE68317F084A59BDE87FC11012"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Supplier"
+        uuid: "tag_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D2EF92F164637ABBF10DBE6A60877606"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "tag"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "tag_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value1"
+            valueType: "java.lang.String"
+            uuid: "tag_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "tag(String,String): StartupStep"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.metrics.StartupStep"
+          uuid: "tag_startupStep1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4687317753AB8BCEEDF72698BFE9BDC4"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.metrics.StartupStep"
+        uuid: "tag_startupStep1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1492b9c2-b980-3a4a-9204-051aa921c1c9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "tag"
+    returnType: "org.springframework.core.metrics.StartupStep"
+    signature: "tag(java.lang.String,java.lang.String) : org.springframework.core.metrics.StartupStep"
+    instructionFingerprint: "184FC053A058FD751FA623FF12FA02C2"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "tag1WhenThisEndedNotGet"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B9DEA373E8F1D5CEFB18A29DD29AD01C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4A679DFCDAC5BFE0EFE693A52FFA9D5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "tag_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "C6790D3E00B07F053861FDB4A59F92EC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "value1"
+        valueType: "java.lang.String"
+        uuid: "tag_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "F2493C2F5D06CF68F2B2D4F24271B2E3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "StartupStep has already ended."
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "tag_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "44D26EC180F67D2B5675262CD2FBF192"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "THIS"
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "targetClassObject"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c1d60d2-3642-35ae-8a13-dd374591872a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "end"
+    returnType: "void"
+    signature: "end() : void"
+    instructionFingerprint: "0B19399A261E00832F923A21F82DF4C9"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "endTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "344C8D96359DAF485E80F015BEF5E726"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4A679DFCDAC5BFE0EFE693A52FFA9D5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad1c9377-0a10-3767-87a5-3115a50be4cd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Consumer.accept(org.springframework.boot.context.metrics.buffering.BufferedStartupStep)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "isEnded"
+    returnType: "boolean"
+    signature: "isEnded() : boolean"
+    instructionFingerprint: "B0F877EA08BA1A0200410D6BBDCBDABE"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isEndedTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.metrics.buffering.BufferedStartupStep,java.lang.String,long,java.time.Instant,java.util.function.Consumer<org.springframework.boot.context.metrics.buffering.BufferedStartupStep>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "800CDE446EAC98392D2A4D5E5B6A09F7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4A679DFCDAC5BFE0EFE693A52FFA9D5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Consumer"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_bufferedStartupStep1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "id"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "startTime"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.time.Instant"
+                method: "ofEpochSecond"
+                methodParameters:
+                - name: "epochSecond"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: 1700000000
+                    valueType: "int"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.time.Instant"
+              uuid: "<init>_instant1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recorder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Consumer"
+              genericValueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+              uuid: "<init>_consumer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.metrics.buffering.BufferedStartupStep"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "26F354D57EDB6DE30F14FF7FA23B655D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isEnded_boolean1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6120f7f7-3b69-3400-9ac0-126d5ae7bc19"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

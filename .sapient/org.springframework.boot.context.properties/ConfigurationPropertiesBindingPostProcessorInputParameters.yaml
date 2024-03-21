@@ -1,0 +1,2648 @@
+---
+modelFingerprint: "814EACD5678297D44EB64FA8EEAFEEC0"
+methods:
+- method:
+    name: "setApplicationContext"
+    returnType: "void"
+    signature: "setApplicationContext(org.springframework.context.ApplicationContext)\
+      \ : void"
+    throwsExceptions:
+    - "org.springframework.beans.BeansException"
+    instructionFingerprint: "62E0683B7DE24D3FBC3480EF47432B8C"
+    parametersTypes:
+    - "org.springframework.context.ApplicationContext"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setApplicationContextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "67DAF6F2399BCDF094AA13EDA2A0C82E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8965c77a-005e-3a50-b8bb-0a78bd407600"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "afterPropertiesSet"
+    returnType: "void"
+    signature: "afterPropertiesSet() : void"
+    throwsExceptions:
+    - "java.lang.Exception"
+    instructionFingerprint: "E4CE923BAEE58BC5CAC86867FC526149"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "afterPropertiesSetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FA24F8EB8917178970145A397AF3B73"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            applicationContext:
+              sapientType: "MOCK"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            applicationContext:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.context.ApplicationContext"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "applicationContext"
+      modelFingerprint: "F8E0DA7CACBA6B8208B29A633651568B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.applicationContext"
+        name: "getAutowireCapableBeanFactory"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.IllegalStateException"
+        signature: "getAutowireCapableBeanFactory(): AutowireCapableBeanFactory throws\
+          \ java.lang.IllegalStateException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.config.AutowireCapableBeanFactory"
+          uuid: "afterPropertiesSet_autowireCapableBeanFactory1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBinder"
+      modelFingerprint: "A6A5B501F75690D089002E48198E4F27"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        name: "get"
+        parameters:
+        - name: "beanFactory"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.context.ApplicationContext"
+            uuid: "applicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ApplicationContext): ConfigurationPropertiesBinder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+          uuid: "afterPropertiesSet_configurationPropertiesBinder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a1e3d830-abee-3fcd-84b8-da92369a5da4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "D097CF84226A0A5BDFC73B598FC0E93C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AAA3C33C3DC8AA7FDD56C36F928BA301"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D48B477B595B5132C67B92A7AA560C15"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: -2147483647
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "postProcessBeforeInitialization"
+    returnType: "java.lang.Object"
+    signature: "postProcessBeforeInitialization(java.lang.Object,java.lang.String)\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "org.springframework.beans.BeansException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Exception"
+    instructionFingerprint: "C698D6B21E4EA18DDA732A014DAB1C64"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "postProcessBeforeInitializationWhenHasBoundValueObjectBeanName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D06B6E73B2D59DEA2F9140D6457B53E3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bean"
+      modelFingerprint: "8DB15BF4EFB83DF6D8EF88DE2D991140"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanName"
+      modelFingerprint: "DD9A9F561A7D4AAE5516E9924A974560"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "beanName1"
+        valueType: "java.lang.String"
+        uuid: "postProcessBeforeInitialization_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "F3DEF9DCEB6D805E3B6058C2CF1487BA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "beanDefinitionRegistry"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(BeanDefinitionRegistry,String): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "VALUE_OBJECT"
+          suggestedContent: !<regular>
+            value: "VALUE_OBJECT"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "hasBoundValueObject_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5e4a16e7-3979-39b2-b914-192e6d28c84a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "postProcessBeforeInitializationWhenBeanIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "255C89021FDA88AA1996395081044128"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bean"
+      modelFingerprint: "8DB15BF4EFB83DF6D8EF88DE2D991140"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanName"
+      modelFingerprint: "DD9A9F561A7D4AAE5516E9924A974560"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "beanName1"
+        valueType: "java.lang.String"
+        uuid: "postProcessBeforeInitialization_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "01A7E38A58BEFA08DB7AB0F2EB59BC08"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "beanDefinitionRegistry"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(BeanDefinitionRegistry,String): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "hasBoundValueObject_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "8FFE5AFD8D84FA22E49BDCDA10781D8D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "get"
+        parameters:
+        - name: "applicationContext"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.context.ApplicationContext"
+            uuid: "applicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bean"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "postProcessBeforeInitialization_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ApplicationContext,Object,String): ConfigurationPropertiesBean"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+          uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e6126cec-8afc-3bb1-ba53-10f7f5367792"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "postProcessBeforeInitializationWhenBeanAsBindTargetGetBindMethodNotEqualsBindMethodVALUE_OBJECT"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "616E377B00298226F2799EDA3AED284A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bean"
+      modelFingerprint: "8DB15BF4EFB83DF6D8EF88DE2D991140"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanName"
+      modelFingerprint: "DD9A9F561A7D4AAE5516E9924A974560"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "beanName1"
+        valueType: "java.lang.String"
+        uuid: "postProcessBeforeInitialization_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "01A7E38A58BEFA08DB7AB0F2EB59BC08"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "beanDefinitionRegistry"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(BeanDefinitionRegistry,String): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "hasBoundValueObject_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "56CA85EEA2E5ABDC30EE17E9E1CB015A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "get"
+        parameters:
+        - name: "applicationContext"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.context.ApplicationContext"
+            uuid: "applicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bean"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "postProcessBeforeInitialization_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ApplicationContext,Object,String): ConfigurationPropertiesBean"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+          uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "147C42C9E64A92BEC0709EA6F574580B"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "asBindTarget"
+        parameters: []
+        signature: "asBindTarget(): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          genericValueType: "?"
+          uuid: "bind_bindable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D247CC56BFB29C2A2752AB71F766C328"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "bind_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "getBindMethod"
+        parameters: []
+        signature: "getBindMethod(): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "bind_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "69F3A3DC0EC46A586CAE620E1206FFEF"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "C"
+          suggestedContent: !<regular>
+            value: "C"
+          valueType: "java.lang.String"
+          uuid: "bind_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "05ED022CDB14231B4D059442419D59E5"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            suggestedContent: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            valueType: "java.lang.String"
+            uuid: "bind_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "bind_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "binder"
+      modelFingerprint: "4717050E112444CC874D756669C613A4"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 140001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        uuid: "configurationPropertiesBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.binder"
+        name: "bind"
+        parameters:
+        - name: "propertiesBean"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+            uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(ConfigurationPropertiesBean): BindResult"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindResult"
+          genericValueType: "?"
+          uuid: "bind_bindResult1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c9adc945-173e-3492-af14-dbfd76804149"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "postProcessBeforeInitializationWhenBeanAsBindTargetGetBindMethodEqualsBindMethodVALUE_OBJECT"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2ADCB1170E8A1F321455FAB61FD06A71"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bean"
+      modelFingerprint: "8DB15BF4EFB83DF6D8EF88DE2D991140"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanName"
+      modelFingerprint: "DD9A9F561A7D4AAE5516E9924A974560"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "beanName1"
+        valueType: "java.lang.String"
+        uuid: "postProcessBeforeInitialization_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "01A7E38A58BEFA08DB7AB0F2EB59BC08"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "beanDefinitionRegistry"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(BeanDefinitionRegistry,String): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "hasBoundValueObject_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "56CA85EEA2E5ABDC30EE17E9E1CB015A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "get"
+        parameters:
+        - name: "applicationContext"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.context.ApplicationContext"
+            uuid: "applicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bean"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "postProcessBeforeInitialization_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ApplicationContext,Object,String): ConfigurationPropertiesBean"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+          uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "147C42C9E64A92BEC0709EA6F574580B"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "asBindTarget"
+        parameters: []
+        signature: "asBindTarget(): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          genericValueType: "?"
+          uuid: "bind_bindable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "A2B13F5F66615D9B64E37D8875228894"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "bind_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "getBindMethod"
+        parameters: []
+        signature: "getBindMethod(): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "VALUE_OBJECT"
+          suggestedContent: !<regular>
+            value: "VALUE_OBJECT"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "bind_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "69F3A3DC0EC46A586CAE620E1206FFEF"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "C"
+          suggestedContent: !<regular>
+            value: "C"
+          valueType: "java.lang.String"
+          uuid: "bind_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "05ED022CDB14231B4D059442419D59E5"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            suggestedContent: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            valueType: "java.lang.String"
+            uuid: "bind_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "bind_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "binder"
+      modelFingerprint: "4717050E112444CC874D756669C613A4"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 140001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        uuid: "configurationPropertiesBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.binder"
+        name: "bind"
+        parameters:
+        - name: "propertiesBean"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+            uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(ConfigurationPropertiesBean): BindResult"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindResult"
+          genericValueType: "?"
+          uuid: "bind_bindResult1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a612dd02-cfe1-3d7f-a31d-2371d7a0eb0e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path5"
+    pathIdForUser: "path5"
+    testPathName: "postProcessBeforeInitializationWhenCaughtExceptionThrowsConfigurationPropertiesBindException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "385CA24BEA8FDBEC36238FE8B4BCBEB9"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 14
+      id: 1
+      catchExceptions:
+      - "java.lang.Exception"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            binder:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+              uuid: "configurationPropertiesBinder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bean"
+      modelFingerprint: "8DB15BF4EFB83DF6D8EF88DE2D991140"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "postProcessBeforeInitialization_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "beanName"
+      modelFingerprint: "DD9A9F561A7D4AAE5516E9924A974560"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "beanName1"
+        valueType: "java.lang.String"
+        uuid: "postProcessBeforeInitialization_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "01A7E38A58BEFA08DB7AB0F2EB59BC08"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "beanDefinitionRegistry"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(BeanDefinitionRegistry,String): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "hasBoundValueObject_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "56CA85EEA2E5ABDC30EE17E9E1CB015A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "get"
+        parameters:
+        - name: "applicationContext"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.context.ApplicationContext"
+            uuid: "applicationContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bean"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "postProcessBeforeInitialization_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "beanName1"
+            valueType: "java.lang.String"
+            uuid: "postProcessBeforeInitialization_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ApplicationContext,Object,String): ConfigurationPropertiesBean"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+          uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "147C42C9E64A92BEC0709EA6F574580B"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "asBindTarget"
+        parameters: []
+        signature: "asBindTarget(): Bindable"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.Bindable"
+          genericValueType: "?"
+          uuid: "bind_bindable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D247CC56BFB29C2A2752AB71F766C328"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "bind_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.Bindable"
+        name: "getBindMethod"
+        parameters: []
+        signature: "getBindMethod(): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "bind_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bean"
+      modelFingerprint: "69F3A3DC0EC46A586CAE620E1206FFEF"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "bean"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "C"
+          suggestedContent: !<regular>
+            value: "C"
+          valueType: "java.lang.String"
+          uuid: "bind_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "05ED022CDB14231B4D059442419D59E5"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            suggestedContent: !<regular>
+              value: "Cannot bind @ConfigurationProperties for bean 'C'. Ensure that\
+                \ @ConstructorBinding has not been applied to regular bean"
+            valueType: "java.lang.String"
+            uuid: "bind_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "bind_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "binder"
+      modelFingerprint: "2CC793E2D8AB33D30884A1599091AD44"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 140001
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        uuid: "configurationPropertiesBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.binder"
+        name: "bind"
+        parameters:
+        - name: "propertiesBean"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+            uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(ConfigurationPropertiesBean): BindResult"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.RuntimeException"
+          uuid: "bind_bindResult1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7E3CEFBAA4F8E54E1E1408ABA67CE03"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              content: !<new>
+                target: "java.lang.RuntimeException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.RuntimeException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.RuntimeException"
+              uuid: "bind_bindResult1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+          parameters:
+          - name: "bean"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+              uuid: "postProcessBeforeInitialization_configurationPropertiesBean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              suggestedContent: !<new>
+                target: "java.lang.RuntimeException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.RuntimeException"
+              uuid: "bind_bindResult1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindException"
+        uuid: "bind_configurationPropertiesBindException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4d7d246d-b274-319d-9bb1-bb0939771461"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "register"
+    returnType: "void"
+    signature: "register(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    instructionFingerprint: "3CC252F293D3EF3EB732C30E4669151F"
+    parametersTypes:
+    - "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerWhenRegistryNotContainsBeanDefinitionBEAN_NAME"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "972EEAD80BA9A8925C6DE67EC22F6E83"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "registry"
+      modelFingerprint: "AC26ED6AF7BCA1FA06F082E15D2C363A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "register_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "17E36A5A995358C63A1BFD74196CE694"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "register_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Registry must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BeanDefinitionRegistry,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "register_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registry"
+      modelFingerprint: "5AF5081D7D6ED2D920454150F900DF9F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "register_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registry"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "register_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BeanDefinitionBuilder"
+      modelFingerprint: "BE40D075A12C579F260866572EE9278A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "rootBeanDefinition"
+        parameters:
+        - name: "beanClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rootBeanDefinition(Class): BeanDefinitionBuilder"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            method: "rootBeanDefinition"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            method: "rootBeanDefinition"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          uuid: "register_beanDefinitionBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "0A7A82815FB403E097A48D157CC8EB0E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          method: "rootBeanDefinition"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+          method: "rootBeanDefinition"
+          methodParameters:
+          - value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+              valueType: "java.lang.Class"
+              genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        uuid: "register_beanDefinitionBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+        name: "getBeanDefinition"
+        parameters: []
+        signature: "getBeanDefinition(): AbstractBeanDefinition"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "register_beanDefinitionBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getBeanDefinition"
+          suggestedContent: !<method_return_from_value>
+            target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                method: "rootBeanDefinition"
+                methodParameters:
+                - value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    valueType: "java.lang.Class"
+                    genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              uuid: "register_beanDefinitionBuilder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getBeanDefinition"
+          valueType: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+          uuid: "register_abstractBeanDefinition1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "definition"
+      modelFingerprint: "342223DA45D259838CC51A30D6F084EA"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "register_beanDefinitionBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getBeanDefinition"
+        suggestedContent: !<method_return_from_value>
+          target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+              method: "rootBeanDefinition"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+            uuid: "register_beanDefinitionBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getBeanDefinition"
+        valueType: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+        uuid: "register_abstractBeanDefinition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "definition"
+        name: "setRole"
+        parameters:
+        - name: "role"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setRole(int): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "register_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registry"
+      modelFingerprint: "568ECDA5C4861A3673FAC53E8ECDF464"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "register_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registry"
+        name: "registerBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanDefinition"
+          value:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                suggestedContent: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "register_beanDefinitionBuilder1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getBeanDefinition"
+            suggestedContent: !<method_return_from_value>
+              target: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<static_method_return>
+                  target: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                  method: "rootBeanDefinition"
+                  methodParameters:
+                  - value:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      valueType: "java.lang.Class"
+                      genericValueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "org.springframework.beans.factory.support.BeanDefinitionBuilder"
+                uuid: "register_beanDefinitionBuilder1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getBeanDefinition"
+            valueType: "org.springframework.beans.factory.support.AbstractBeanDefinition"
+            uuid: "register_abstractBeanDefinition1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.BeanDefinitionStoreException"
+        signature: "registerBeanDefinition(String,AbstractBeanDefinition): void throws\
+          \ org.springframework.beans.factory.BeanDefinitionStoreException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "register_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBinder"
+      modelFingerprint: "C088CAB09607F308CE7B1CCE72F52739"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBinder"
+        name: "register"
+        parameters:
+        - name: "registry"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+            uuid: "register_beanDefinitionRegistry1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(BeanDefinitionRegistry): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "register_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "86d5dd96-2a75-3e17-ac21-495a839897f1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "registerWhenRegistryContainsBeanDefinitionBEAN_NAME"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "289F40CA7E40C7490B4F28B2154FC328"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "86863347-e80b-346f-baaa-36bda3284db9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

@@ -1,0 +1,761 @@
+---
+modelFingerprint: "637DF1045E93899DE95AB1A785BECBB4"
+methods:
+- method:
+    name: "supports"
+    returnType: "boolean"
+    signature: "supports(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "2FB43A478FE6208A656F7B6A42CDBAE7"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "supportsWhenThisDelegateSupportsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.context.ApplicationContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "412D1BEECC0D2113418993947727FFBB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "72F62C1C99BA55FB82987D1F21C2B648"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "supports_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "supports_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0fd6193-6bc2-3249-baf1-975b64959d5f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "delegate"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "supportsWhenThisDelegateNotSupportsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.context.ApplicationContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9BEDA414D8AA3F29B2ED78146F9B0CA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "72F62C1C99BA55FB82987D1F21C2B648"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "supports_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "supports_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "195f945e-2726-31ec-ab88-a6194c87df0a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "delegate"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "validate"
+    returnType: "void"
+    signature: "validate(java.lang.Object,org.springframework.validation.Errors) :\
+      \ void"
+    instructionFingerprint: "5393F379BDC51831F200566A8FE4ED71"
+    parametersTypes:
+    - "java.lang.Object"
+    - "org.springframework.validation.Errors"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "validateTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.context.ApplicationContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EE92D052DEFF836E142963B9A3993DC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "72F62C1C99BA55FB82987D1F21C2B648"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+          parameters:
+          - name: "applicationContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.context.ApplicationContext"
+              uuid: "<init>_applicationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesJsr303Validator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "911BBB5ECA7DCFD91F25AB4DB96F3A85"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "validate_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errors"
+      modelFingerprint: "CE275416B8EB5FEE1E9C1B00B8CC57C2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.validation.Errors"
+        uuid: "validate_errors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d6258f2b-2170-3e1b-a0f4-0e909ecdbd95"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "delegate"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "isJsr303Present"
+    returnType: "boolean"
+    signature: "isJsr303Present(org.springframework.context.ApplicationContext) :\
+      \ boolean"
+    instructionFingerprint: "A11CF4E3D68168D7F5F407320DFA27F9"
+    parametersTypes:
+    - "org.springframework.context.ApplicationContext"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isJsr303PresentWhenClassUtilsNotIsPresentValidatorClassClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3F646EABE8729CF8D7C36EC7CD1C2329"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "applicationContext"
+      modelFingerprint: "EC5E30FF4467A570E7741EADBAEE5E52"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "isJsr303Present_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "E18AC544C45AAA178B29790E5CB4E097"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "isJsr303Present_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getClassLoader"
+        parameters: []
+        signature: "getClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "isJsr303Present_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "E4E4DEB9F2BB79D39FCEE0566A207198"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "isPresent"
+        parameters:
+        - name: "className"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jakarta.validation.Validator"
+            valueType: "java.lang.String"
+            uuid: "isJsr303Present_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "isJsr303Present_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(String,ClassLoader): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isJsr303Present_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7397d75a-8dd7-3534-b9ff-a928c990d5ad"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isJsr303PresentWhenClassUtilsIsPresentValidatorClassClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E4FCAEC104ECBB893A0089BD4729F164"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "applicationContext"
+      modelFingerprint: "EC5E30FF4467A570E7741EADBAEE5E52"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "isJsr303Present_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "applicationContext"
+      modelFingerprint: "E18AC544C45AAA178B29790E5CB4E097"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.context.ApplicationContext"
+        uuid: "isJsr303Present_applicationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "applicationContext"
+        name: "getClassLoader"
+        parameters: []
+        signature: "getClassLoader(): ClassLoader"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.lang.ClassLoader"
+            method: "getPlatformClassLoader"
+            methodParameters: []
+          valueType: "java.lang.ClassLoader"
+          uuid: "isJsr303Present_classLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "25984851397899C18281BE5A38BD490F"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "isPresent"
+        parameters:
+        - name: "className"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jakarta.validation.Validator"
+            valueType: "java.lang.String"
+            uuid: "isJsr303Present_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "isJsr303Present_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(String,ClassLoader): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isJsr303Present_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "7440BED7F7AD3F930747736E6EA94EC1"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "isPresent"
+        parameters:
+        - name: "className"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jakarta.validation.ValidatorFactory"
+            valueType: "java.lang.String"
+            uuid: "isJsr303Present_string4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "isJsr303Present_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(String,ClassLoader): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isJsr303Present_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassUtils"
+      modelFingerprint: "D8DFC7A15F90B4583DE2AB5DFD9BAFB4"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.ClassUtils"
+        uuid: "org.springframework.util.ClassUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ClassUtils"
+        name: "isPresent"
+        parameters:
+        - name: "className"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jakarta.validation.bootstrap.GenericBootstrap"
+            valueType: "java.lang.String"
+            uuid: "isJsr303Present_string6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "isJsr303Present_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(String,ClassLoader): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isJsr303Present_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e8747bbc-a725-3f39-9997-8dbea99cbf99"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

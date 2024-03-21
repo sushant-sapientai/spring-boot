@@ -1,0 +1,341 @@
+---
+modelFingerprint: "1FB452CE38C1153132578B59DF2E05A2"
+methods:
+- method:
+    name: "processAheadOfTime"
+    returnType: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+    signature: "processAheadOfTime(org.springframework.beans.factory.support.RegisteredBean)\
+      \ : org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+    instructionFingerprint: "30017B2C952D33E053ECE8747603405C"
+    parametersTypes:
+    - "org.springframework.beans.factory.support.RegisteredBean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "processAheadOfTimeWhenIsImmutableConfigurationPropertiesBeanDefinitionRegisteredBeanGetMergedBeanDefinition"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6012D21E0C57E7E71ABE9AF2FFD5D305"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "registeredBean"
+      modelFingerprint: "C2C2D989ACFC50F1EC4112F21EB27BCC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.RegisteredBean"
+        uuid: "processAheadOfTime_registeredBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registeredBean"
+      modelFingerprint: "060378DEBAFB92D524275562F3BB4599"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.RegisteredBean"
+        uuid: "processAheadOfTime_registeredBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registeredBean"
+        name: "getMergedBeanDefinition"
+        parameters: []
+        signature: "getMergedBeanDefinition(): RootBeanDefinition"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+          uuid: "processAheadOfTime_rootBeanDefinition1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "65FBD76033F676A570BBAD37F719084E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "attributes"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "processAheadOfTime_rootBeanDefinition1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(RootBeanDefinition): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "VALUE_OBJECT"
+          suggestedContent: !<regular>
+            value: "VALUE_OBJECT"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "isImmutableConfigurationPropertiesBeanDefinition_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BeanRegistrationAotContribution"
+      modelFingerprint: "F47ACF9033E780097B6E8CD9E51CD29C"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+        uuid: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+        name: "withCustomCodeFragments"
+        parameters:
+        - name: "defaultCodeFragments"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.UnaryOperator"
+            genericValueType: "org.springframework.beans.factory.aot.BeanRegistrationCodeFragments"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withCustomCodeFragments(UnaryOperator): BeanRegistrationAotContribution"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+          uuid: "processAheadOfTime_beanRegistrationAotContribution1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F53A323294D94B60AF2A57C4E1B05FE"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+        uuid: "processAheadOfTime_beanRegistrationAotContribution1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5006a468-7c69-3945-ae79-0b7b0dd25711"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "processAheadOfTimeWhenIsImmutableConfigurationPropertiesBeanDefinitionNotRegisteredBeanGetMergedBeanDefinition"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4F1AD554E01D4C3F0CDD73E2838CD280"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrationAotProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "registeredBean"
+      modelFingerprint: "C2C2D989ACFC50F1EC4112F21EB27BCC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.RegisteredBean"
+        uuid: "processAheadOfTime_registeredBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "registeredBean"
+      modelFingerprint: "060378DEBAFB92D524275562F3BB4599"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.RegisteredBean"
+        uuid: "processAheadOfTime_registeredBean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "registeredBean"
+        name: "getMergedBeanDefinition"
+        parameters: []
+        signature: "getMergedBeanDefinition(): RootBeanDefinition"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+          uuid: "processAheadOfTime_rootBeanDefinition1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "7DB2E9A0D2AF9678BFB45190D7845053"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "get"
+        parameters:
+        - name: "attributes"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "processAheadOfTime_rootBeanDefinition1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(RootBeanDefinition): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "isImmutableConfigurationPropertiesBeanDefinition_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "61C412A0D9DB295F53E09D2CA5960763"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.beans.factory.aot.BeanRegistrationAotContribution"
+        uuid: "processAheadOfTime_beanRegistrationAotContribution1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d828adae-363b-3338-a7bc-af45e187d33d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

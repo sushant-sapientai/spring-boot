@@ -1,0 +1,1989 @@
+---
+modelFingerprint: "232981A85027B4C42573012F99F3C1BE"
+methods:
+- method:
+    name: "register"
+    returnType: "void"
+    signature: "register(java.lang.Class<?>) : void"
+    instructionFingerprint: "6C9FB382292CC833ECB7AB3EE8B840E8"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DC1D78B3488EED95D1A94BCB82D1E98F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "316F153EEF2AC8A069691BD2EF5CE492"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "register_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MergedAnnotations"
+      modelFingerprint: "59ACFFAE663D42A849B2B38442D1AD86"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "org.springframework.core.annotation.MergedAnnotations"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "from"
+        parameters:
+        - name: "element"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "register_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "searchStrategy"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "TYPE_HIERARCHY"
+            valueType: "org.springframework.core.annotation.MergedAnnotations$SearchStrategy"
+            uuid: "Enum-org.springframework.core.annotation.MergedAnnotations$SearchStrategy-TYPE_HIERARCHY"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(Class,MergedAnnotations$SearchStrategy): MergedAnnotations"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.annotation.MergedAnnotations"
+          uuid: "register_mergedAnnotations1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "514CB41555F6B7060F6BD8A942D0A0CB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "register_mergedAnnotations1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "get"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): MergedAnnotation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.annotation.MergedAnnotation"
+          genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+          uuid: "register_mergedAnnotation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "81F2691A58577F193160848E25FC8ED1"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "register"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "register_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "annotation"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.annotation.MergedAnnotation"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+            uuid: "register_mergedAnnotation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "register(Class,MergedAnnotation): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "register_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "853913a6-18ed-366c-8d01-10d393fd970e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "register"
+    returnType: "void"
+    signature: "register(java.lang.Class<?>,org.springframework.core.annotation.MergedAnnotation<org.springframework.boot.context.properties.ConfigurationProperties>)\
+      \ : void"
+    instructionFingerprint: "5C524DC4637F0C06A3C40AB69DFCC460"
+    parametersTypes:
+    - "java.lang.Class"
+    - "org.springframework.core.annotation.MergedAnnotation"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "register1WhenContainsBeanDefinitionName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6BE9B00C36BBF75A7DA8C7FBFBDF845D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "316F153EEF2AC8A069691BD2EF5CE492"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "CBCC0E254BB8461571D3E03E3DFE325D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "register_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "1019CF2B75AB0EE11ABBD4B283F13E74"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "E8E35614F7BDA566D32F0545EC25DF1B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "0D6F84C226FB1732E954A54F57632CE9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "getString"
+        parameters:
+        - name: "attributeName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "prefix"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.util.NoSuchElementException"
+        signature: "getString(String): String throws java.util.NoSuchElementException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getName_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getName_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "listableBeanFactory"
+      modelFingerprint: "CF6524D9E16248EE5E6D2DFAEEF34EB2"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.ListableBeanFactory"
+        uuid: "<init>_beanDefinitionRegistry1checkCast"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "listableBeanFactory"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A-java.lang.Object"
+            suggestedContent: !<regular>
+              value: "A-java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "getName_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "containsBeanDefinition_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1f68e201-ef10-35df-9a07-1476241b36f5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path4"
+    pathIdForUser: "path2"
+    testPathName: "register1WhenContainsBeanDefinitionThisBeanFactoryNameAndContainsBeanDefinitionName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "998316D5C64D536597F27122D350DD3C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "316F153EEF2AC8A069691BD2EF5CE492"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "CBCC0E254BB8461571D3E03E3DFE325D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "register_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "1019CF2B75AB0EE11ABBD4B283F13E74"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "E8E35614F7BDA566D32F0545EC25DF1B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "0D6F84C226FB1732E954A54F57632CE9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "getString"
+        parameters:
+        - name: "attributeName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "prefix"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.util.NoSuchElementException"
+        signature: "getString(String): String throws java.util.NoSuchElementException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getName_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getName_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "hierarchicalBeanFactory"
+      modelFingerprint: "4D8DE2231854DFC6500F5422875DE8E8"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: true
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.HierarchicalBeanFactory"
+        uuid: "<init>_beanDefinitionRegistry1checkCast"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "hierarchicalBeanFactory"
+        name: "getParentBeanFactory"
+        parameters: []
+        signature: "getParentBeanFactory(): BeanFactory"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.BeanFactory"
+          uuid: "containsBeanDefinition_beanFactory1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1e8acbc1-030a-3bca-aab8-13cf04495245"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path6"
+    pathIdForUser: "path3"
+    testPathName: "register1WhenBindMethodNotEqualsBindMethodVALUE_OBJECT"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "829CF140BCEE793411ACFE0FF97825B0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f9774cc8-f5d2-3091-8924-9582b393dca1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path4"
+    testPathName: "register1WhenContainsBeanDefinitionNotNameAndBindMethodNotEqualsBindMethodVALUE_OBJECT"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "202224C2C12FF0A249032045F7598F0F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2fe7fe51-ebb6-3bed-8e9f-e7dce71776a2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path8"
+    pathIdForUser: "path5"
+    testPathName: "register1WhenBeanFactoryNotInstanceOfHierarchicalBeanFactoryAndContainsBeanDefinitionNotNameAndBindMethodNotEqualsBindM"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A6847799A7FCAC5780F398E053FA1BB7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DE6B3D751DF9522B8ACE97826A07D551"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "CBCC0E254BB8461571D3E03E3DFE325D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "register_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "1019CF2B75AB0EE11ABBD4B283F13E74"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "0763A2D32A44B31BE42A992324888C48"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getName_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "C8E317AF3A0DF1743F7C204CD9B28B00"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "getName_string1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getName_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "55D5B7CA83D652CE6BCA36F1F155A74E"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "registerBeanDefinition_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D83F923687A63AA3C57684FC28F23D1B"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "registerBeanDefinition_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "messageSupplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            genericValueType: "java.lang.String"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,Supplier): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinition_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "2C63E68C3F5CEF3D1EBE5A8740271DB5"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "deduceBindMethod"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "register_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deduceBindMethod(Class): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "createBeanDefinition_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "B95A557953E446F4762BC0A9D9A65300"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "set"
+        parameters:
+        - name: "attributes"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "createBeanDefinition_rootBeanDefinition1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bindMethod"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "JAVA_BEAN"
+            suggestedContent: !<regular>
+              value: "JAVA_BEAN"
+            valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+            uuid: "createBeanDefinition_bindMethod1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "set(RootBeanDefinition,BindMethod): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "createBeanDefinition_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "registry"
+      modelFingerprint: "3054C0112B33443AE8CD496C3B52EBA6"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "<init>_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.registry"
+        name: "registerBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "getName_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanDefinition"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "createBeanDefinition_rootBeanDefinition1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.BeanDefinitionStoreException"
+        signature: "registerBeanDefinition(String,RootBeanDefinition): void throws\
+          \ org.springframework.beans.factory.BeanDefinitionStoreException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinition_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "457da517-a828-386b-9bee-c57d15eca370"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path6"
+    testPathName: "register1WhenBindMethodEqualsBindMethodVALUE_OBJECT"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A21D3AD4A92BE8022AF470A83E851E6E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DE6B3D751DF9522B8ACE97826A07D551"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+          parameters:
+          - name: "registry"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+              uuid: "<init>_beanDefinitionRegistry1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBeanRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "CBCC0E254BB8461571D3E03E3DFE325D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "register_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "1019CF2B75AB0EE11ABBD4B283F13E74"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "E8E35614F7BDA566D32F0545EC25DF1B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "0D6F84C226FB1732E954A54F57632CE9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "getString"
+        parameters:
+        - name: "attributeName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "prefix"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.util.NoSuchElementException"
+        signature: "getString(String): String throws java.util.NoSuchElementException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getName_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getName_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getName_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "listableBeanFactory"
+      modelFingerprint: "F4DD43CEC4351339D9B63D10A906E52F"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.ListableBeanFactory"
+        uuid: "<init>_beanDefinitionRegistry1checkCast"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "listableBeanFactory"
+        name: "containsBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A-java.lang.Object"
+            suggestedContent: !<regular>
+              value: "A-java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "getName_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "containsBeanDefinition(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "containsBeanDefinition_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "annotation"
+      modelFingerprint: "55D5B7CA83D652CE6BCA36F1F155A74E"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotation"
+        genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+        uuid: "register_mergedAnnotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "annotation"
+        name: "isPresent"
+        parameters: []
+        signature: "isPresent(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "registerBeanDefinition_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D83F923687A63AA3C57684FC28F23D1B"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "state"
+        parameters:
+        - name: "expression"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "registerBeanDefinition_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "messageSupplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            genericValueType: "java.lang.String"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "state(boolean,Supplier): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinition_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "B0FE3136ED05E19E3B77543B1220901E"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "deduceBindMethod"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "register_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deduceBindMethod(Class): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "VALUE_OBJECT"
+          suggestedContent: !<regular>
+            value: "VALUE_OBJECT"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "createBeanDefinition_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindMethodAttribute"
+      modelFingerprint: "19F69FF2C4EB94F3D1F056F11696E15D"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.BindMethodAttribute"
+        uuid: "org.springframework.boot.context.properties.BindMethodAttribute"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.BindMethodAttribute"
+        name: "set"
+        parameters:
+        - name: "attributes"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+              propertiesMap:
+                instanceSupplier:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "?"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+              propertiesMap:
+                instanceSupplier:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "?"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "createBeanDefinition_rootBeanDefinition1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bindMethod"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "VALUE_OBJECT"
+            suggestedContent: !<regular>
+              value: "VALUE_OBJECT"
+            valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+            uuid: "createBeanDefinition_bindMethod1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "set(RootBeanDefinition,BindMethod): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "createBeanDefinition_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "registry"
+      modelFingerprint: "8988E401DD6CDCE86067ACD5E03F2341"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.support.BeanDefinitionRegistry"
+        uuid: "<init>_beanDefinitionRegistry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.registry"
+        name: "registerBeanDefinition"
+        parameters:
+        - name: "beanName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A-java.lang.Object"
+            suggestedContent: !<regular>
+              value: "A-java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "getName_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "beanDefinition"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+              propertiesMap:
+                instanceSupplier:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "?"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<new>
+              target: "org.springframework.beans.factory.support.RootBeanDefinition"
+              parameters:
+              - name: "beanClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "register_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+              propertiesMap:
+                instanceSupplier:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "?"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.beans.factory.support.RootBeanDefinition"
+            uuid: "createBeanDefinition_rootBeanDefinition1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.springframework.beans.factory.BeanDefinitionStoreException"
+        signature: "registerBeanDefinition(String,RootBeanDefinition): void throws\
+          \ org.springframework.beans.factory.BeanDefinitionStoreException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerBeanDefinition_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0d78ece8-4b86-3d5e-b785-087ad7a58e66"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path7"
+    testPathName: "register1WhenContainsBeanDefinitionNotNameAndBindMethodNotEqualsBindMethodVALUE_OBJECT2"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "339DEC272C96DB1581331787BC01BF63"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "48ed7d2c-dbfd-3e0e-bbaf-2e09ae4a7a01"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path8"
+    testPathName: "register1WhenContainsBeanDefinitionNotThisBeanFactoryNameAndContainsBeanDefinitionNotNameAndBindMethodNotEqualsBindMeth"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.beans.factory.support.BeanDefinitionRegistry)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0EAC8F8361A5E5270A6B89742BB08CEC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dfa391b7-0d7a-3f5a-b9b4-09afafa8a7c1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

@@ -1,0 +1,366 @@
+---
+modelFingerprint: "F90C54FD69E9CF02B2F85EAD2597C4AD"
+methods:
+- method:
+    name: "getName"
+    returnType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    signature: "getName() : org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    instructionFingerprint: "06E2A263B53E34F1589FA3D256A7AF6F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.source.ConfigurationProperty,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F1CBBBD993DB4B4B77FF02345E53EF0"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9cfca8f8-30f9-3fae-a48b-42e512964e9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getTarget"
+    returnType: "org.springframework.boot.context.properties.bind.Bindable"
+    signature: "getTarget() : org.springframework.boot.context.properties.bind.Bindable<?>"
+    instructionFingerprint: "0BC28CDFA0C284E22EB496F1F2723F8D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTargetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.source.ConfigurationProperty,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "93271A1240AD3F208704A7C87B131559"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0333fe9c-7192-363f-a1c4-a585d98d9594"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getProperty"
+    returnType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+    signature: "getProperty() : org.springframework.boot.context.properties.source.ConfigurationProperty"
+    instructionFingerprint: "0DA48631820DCB0AFD9BE865B0672EC5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPropertyTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.source.ConfigurationProperty,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "45F12A70210F67B1AF2B85FD3527DEB7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ebf9d063-d15c-33a6-bbb2-427433abed69"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOrigin"
+    returnType: "org.springframework.boot.origin.Origin"
+    signature: "getOrigin() : org.springframework.boot.origin.Origin"
+    instructionFingerprint: "9878301CC66C4586C4496BF2CF83FA65"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOriginTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.source.ConfigurationProperty,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8EBDEA64110DA3E9113BA70424AFA607"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "57D135C9A1262B5D3F7869F20880C710"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindException"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              nameForMock: "<init>_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "target"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.boot.context.properties.bind.Bindable"
+                method: "of"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.core.ResolvableType"
+                    uuid: "buildMessage_resolvableType1"
+                    fixed: false
+                    nameForMock: "buildMessage_resolvableType1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.bind.Bindable"
+                method: "of"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.core.ResolvableType"
+                    uuid: "buildMessage_resolvableType1"
+                    fixed: false
+                    nameForMock: "buildMessage_resolvableType1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.bind.Bindable"
+              uuid: "<init>_bindable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "property"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_configurationProperty1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindException"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              nameForMock: "<init>_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "target"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.bind.Bindable"
+                method: "of"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.core.ResolvableType"
+                    uuid: "buildMessage_resolvableType1"
+                    fixed: false
+                    nameForMock: "buildMessage_resolvableType1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.bind.Bindable"
+              uuid: "<init>_bindable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "property"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_configurationProperty1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.BindException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "target"
+      modelFingerprint: "D7D4AFA0A3A66D6EFD62B02FCD42C507"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "buildMessage_resolvableType1"
+              fixed: false
+              nameForMock: "buildMessage_resolvableType1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "buildMessage_resolvableType1"
+              fixed: false
+              nameForMock: "buildMessage_resolvableType1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "<init>_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "target"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "buildMessage_resolvableType1"
+          fixed: false
+          nameForMock: "buildMessage_resolvableType1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "3745AAFF08D2B437C6CE4FEC29592D4C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<init>_configurationPropertyName1"
+            fixed: false
+            nameForMock: "<init>_configurationPropertyName1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigurationPropertyName): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5F7FDFDDEDFBC96EDDAA057511F38A3C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "getOrigin_origin1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7470ee36-9b2f-3d61-ac6f-ede146cc5169"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

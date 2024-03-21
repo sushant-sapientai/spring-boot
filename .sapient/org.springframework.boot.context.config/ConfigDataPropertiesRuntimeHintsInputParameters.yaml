@@ -1,0 +1,543 @@
+---
+modelFingerprint: "B167083AC7091A9193C0B3FD3D9ED020"
+methods:
+- method:
+    name: "registerHints"
+    returnType: "void"
+    signature: "registerHints(org.springframework.aot.hint.RuntimeHints,java.lang.ClassLoader)\
+      \ : void"
+    instructionFingerprint: "E220058433C211F375CBA5AF7F701D97"
+    parametersTypes:
+    - "org.springframework.aot.hint.RuntimeHints"
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerHintsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "66C346DEFB51BC314E9AEF7FAAF66D59"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataPropertiesRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataPropertiesRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataPropertiesRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hints"
+      modelFingerprint: "7FF56B1861637B3DDB635C56C3562869"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "registerHints_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindableRuntimeHintsRegistrar"
+      modelFingerprint: "7A3EA5DAF2FF52A2B57A91C963CB88E0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        name: "forTypes"
+        parameters:
+        - name: "types"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.config.ConfigDataProperties"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.config.ConfigDataProperties"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.config.ConfigDataProperties"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.config.ConfigDataProperties"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.Class[]"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataProperties"
+            uuid: "registerHints_class[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "forTypes(Class[]): BindableRuntimeHintsRegistrar"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          uuid: "registerHints_bindableRuntimeHintsRegistrar1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "8E3074620232B54C8290E154B791C9F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "registerHints_bindableRuntimeHintsRegistrar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        name: "registerHints"
+        parameters:
+        - name: "hints"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.aot.hint.RuntimeHints"
+            uuid: "registerHints_runtimeHints1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerHints(RuntimeHints): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerHints_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "hints"
+      modelFingerprint: "AB7FE28238F4E840CA7ADB36324CDC13"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "hints"
+        name: "reflection"
+        parameters: []
+        signature: "reflection(): ReflectionHints"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.aot.hint.ReflectionHints"
+          uuid: "registerHints_reflectionHints1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ReflectionUtils"
+      modelFingerprint: "54E44EBF731B4A46BE79413FFAAE6348"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.ReflectionUtils"
+        uuid: "org.springframework.util.ReflectionUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.ReflectionUtils"
+        name: "findMethod"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataLocation"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "of"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "paramTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.Class[]"
+            genericValueType: "java.lang.String"
+            uuid: "registerHints_class[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findMethod(Class,String,Class[]): Method"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.springframework.util.ReflectionUtils"
+            method: "findMethod"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.config.ConfigDataLocation"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "of"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "ARRAY"
+                content: !<array>
+                  values:
+                    0:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "java.lang.String"
+                      valueType: "java.lang.Class"
+                      genericValueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                suggestedContent: !<array>
+                  values:
+                    0:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "java.lang.String"
+                      valueType: "java.lang.Class"
+                      genericValueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "java.lang.Class[]"
+                genericValueType: "java.lang.String"
+                uuid: "registerHints_class[]2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.springframework.util.ReflectionUtils"
+            method: "findMethod"
+            methodParameters:
+            - value:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "org.springframework.boot.context.config.ConfigDataLocation"
+                valueType: "java.lang.Class"
+                genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "of"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - value:
+                sapientType: "ARRAY"
+                suggestedContent: !<array>
+                  values:
+                    0:
+                      sapientType: "CLASS"
+                      content: !<regular>
+                        value: "java.lang.String"
+                      valueType: "java.lang.Class"
+                      genericValueType: "java.lang.String"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                valueType: "java.lang.Class[]"
+                genericValueType: "java.lang.String"
+                uuid: "registerHints_class[]2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Method"
+          uuid: "registerHints_method1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "9A9D7935123B5DD29D2F99894AC58EC7"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.aot.hint.ReflectionHints"
+        uuid: "registerHints_reflectionHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.aot.hint.ReflectionHints"
+        name: "registerMethod"
+        parameters:
+        - name: "method"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.util.ReflectionUtils"
+              method: "findMethod"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.config.ConfigDataLocation"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "of"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values:
+                      0:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.String"
+                        valueType: "java.lang.Class"
+                        genericValueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<array>
+                    values:
+                      0:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.String"
+                        valueType: "java.lang.Class"
+                        genericValueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "java.lang.Class[]"
+                  genericValueType: "java.lang.String"
+                  uuid: "registerHints_class[]2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.util.ReflectionUtils"
+              method: "findMethod"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "org.springframework.boot.context.config.ConfigDataLocation"
+                  valueType: "java.lang.Class"
+                  genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "of"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "ARRAY"
+                  suggestedContent: !<array>
+                    values:
+                      0:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.String"
+                        valueType: "java.lang.Class"
+                        genericValueType: "java.lang.String"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "java.lang.Class[]"
+                  genericValueType: "java.lang.String"
+                  uuid: "registerHints_class[]2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "registerHints_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "mode"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "INVOKE"
+            valueType: "org.springframework.aot.hint.ExecutableMode"
+            uuid: "Enum-org.springframework.aot.hint.ExecutableMode-INVOKE"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerMethod(Method,ExecutableMode): ReflectionHints"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.aot.hint.ReflectionHints"
+          uuid: "registerHints_reflectionHints2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b1fc7be3-9a56-3b28-acf9-0d8d8fa91d7d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

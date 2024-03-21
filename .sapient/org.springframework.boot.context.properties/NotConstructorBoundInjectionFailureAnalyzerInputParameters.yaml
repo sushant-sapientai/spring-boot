@@ -1,0 +1,1344 @@
+---
+modelFingerprint: "9D1BD94E61A0EFE6E48D263DBAC58C23"
+methods:
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "5CCCD28068BEDF66326C9AB359DAF377"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FFF3B44D7603609A8631F4D96BE76025"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "analyze"
+    returnType: "org.springframework.boot.diagnostics.FailureAnalysis"
+    signature: "analyze(java.lang.Throwable,org.springframework.beans.factory.NoSuchBeanDefinitionException,java.lang.String)\
+      \ : org.springframework.boot.diagnostics.FailureAnalysis"
+    instructionFingerprint: "C1365D4971A714F0FA4A06EB49D3426F"
+    parametersTypes:
+    - "java.lang.Throwable"
+    - "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+    - "java.lang.String"
+  paths:
+  - pathId: "path7"
+    pathIdForUser: "path1"
+    testPathName: "analyze3WhenIsConstructorBindingConfigurationPropertiesNotInjectionPoint"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4D2EB996961FB606D317BFE942873343"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b242f7f1-b37c-3edc-8032-fed2fa1f10dd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "analyze3WhenIsConstructorBindingConfigurationPropertiesNotConstructorAndIsConstructorBindingConfigurationPropertiesNotI"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1ECBB46EA3410B95F0E64E530A889943"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c1a9af8f-e69d-3d0a-b43b-4c56ac83bafe"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path3"
+    testPathName: "analyze3WhenIsConstructorBindingConfigurationPropertiesNotConstructorAndIsConstructorBindingConfigurationPropertiesNotI2"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C19BFEE84C119374F9BFEE27D5191C7E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "DA839D4559B0DC7B2B0CF20E53AC8DBA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "4FED1E9396760A275FEB2F166E13CF8A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        uuid: "analyze_noSuchBeanDefinitionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "description"
+      modelFingerprint: "B4413188573DFD0AEFDF6224DCD68C2D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "description1"
+        suggestedContent: !<regular>
+          value: "description1"
+        valueType: "java.lang.String"
+        uuid: "analyze_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ED764FD4D57CC4D021211739049E5920"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba610d9d-b1af-383f-af9a-689a624cef1e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "analyze3WhenInjectionPointIsNullAndIsConstructorBindingConfigurationPropertiesNotInjectionPoint"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C756787AF88530EA2B672EAADA54D3DB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "439c64dd-0aa3-3ffe-a79a-afb952fadde0"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "analyze3WhenBindMethodEqualsBindMethodVALUE_OBJECTAndIsConstructorBindingConfigurationPropertiesNotInjectionPoint"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9EAA0FE91A68C4D3BB6B0A4628DCC2A9"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "bda2de77-b00d-30a2-bb8f-3ea8292feeaa"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path6"
+    testPathName: "analyze3WhenIsConstructorBindingConfigurationPropertiesInjectionPoint"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BF8723283D6DDB7AB004AB687F035BFD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "CC7644A629A1319A72058CF5E7D6878E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "resourceDescription1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "beanName1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "msg1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.InjectionPoint"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+        explicitCastForOverloadedMethods: "java.lang.Throwable"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "4FED1E9396760A275FEB2F166E13CF8A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        uuid: "analyze_noSuchBeanDefinitionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "description"
+      modelFingerprint: "C71E36E8022063E9EC5AE91C0756623E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "description1"
+        valueType: "java.lang.String"
+        uuid: "analyze_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "unsatisfiedDependencyException"
+      modelFingerprint: "1E837910A42AC5FB1421C3FB5E28CB6F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "resourceDescription1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "beanName1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "msg1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.InjectionPoint"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+        explicitCastForOverloadedMethods: "java.lang.Throwable"
+      methodExercised:
+        target: "unsatisfiedDependencyException"
+        name: "getInjectionPoint"
+        parameters: []
+        signature: "getInjectionPoint(): InjectionPoint"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.InjectionPoint"
+          uuid: "findInjectionPoint_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "22F944B925D0F56683DD06A7A2215309"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.InjectionPoint"
+        uuid: "findInjectionPoint_injectionPoint1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "isConstructorBindingConfigurationProperties_member1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "193DFBB8E0C30F4FF64B1E485C1E773A"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "deduceBindMethod"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "isConstructorBindingConfigurationProperties_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deduceBindMethod(Class): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "VALUE_OBJECT"
+          suggestedContent: !<regular>
+            value: "VALUE_OBJECT"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "isConstructorBindingConfigurationProperties_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MergedAnnotations"
+      modelFingerprint: "C255785B0DE7231A1AF45FAB0D64E8C0"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "org.springframework.core.annotation.MergedAnnotations"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "from"
+        parameters:
+        - name: "element"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "isConstructorBindingConfigurationProperties_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "searchStrategy"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "TYPE_HIERARCHY"
+            valueType: "org.springframework.core.annotation.MergedAnnotations$SearchStrategy"
+            uuid: "Enum-org.springframework.core.annotation.MergedAnnotations$SearchStrategy-TYPE_HIERARCHY"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(Class,MergedAnnotations$SearchStrategy): MergedAnnotations"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.annotation.MergedAnnotations"
+          uuid: "isConstructorBindingConfigurationProperties_mergedAnnotations1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "E92F47D9B5B024551EB907A6C640580B"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "isConstructorBindingConfigurationProperties_mergedAnnotations1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "isPresent"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isConstructorBindingConfigurationProperties_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "B073BAD9F55B8DB74B26CF2AFC98B276"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.InjectionPoint"
+        uuid: "findInjectionPoint_injectionPoint1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Member"
+          uuid: "analyze_member1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "167D9FF6C704C18A41E680E8E2B6382C"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Object is annotated with @ConstructorBinding but it is defined\
+                  \ as a regular bean which caused dependency injection to fail."
+              suggestedContent: !<regular>
+                value: "Object is annotated with @ConstructorBinding but it is defined\
+                  \ as a regular bean which caused dependency injection to fail."
+              valueType: "java.lang.String"
+              uuid: "analyze_string7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Update your configuration so that Object is defined via @ConfigurationPropertiesScan\
+                  \ or @EnableConfigurationProperties."
+              suggestedContent: !<regular>
+                value: "Update your configuration so that Object is defined via @ConfigurationPropertiesScan\
+                  \ or @EnableConfigurationProperties."
+              valueType: "java.lang.String"
+              uuid: "analyze_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+              uuid: "analyze_noSuchBeanDefinitionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.diagnostics.FailureAnalysis"
+          parameters:
+          - name: "description"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Object is annotated with @ConstructorBinding but it is defined\
+                  \ as a regular bean which caused dependency injection to fail."
+              valueType: "java.lang.String"
+              uuid: "analyze_string7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "action"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Update your configuration so that Object is defined via @ConfigurationPropertiesScan\
+                  \ or @EnableConfigurationProperties."
+              valueType: "java.lang.String"
+              uuid: "analyze_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+              uuid: "analyze_noSuchBeanDefinitionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "77164c51-d227-33be-a051-155949f82382"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path7"
+    testPathName: "analyze3WhenMergedAnnotationsFromDeclaringClassSearchStrategyTYPE_HIERARCHYNotIsPresentConfigurationPropertiesAndIsCons"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D8B48B1A28A4AFD8C0E0B7CA2A4B984"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rootFailure"
+      modelFingerprint: "CC7644A629A1319A72058CF5E7D6878E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "resourceDescription1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "beanName1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "msg1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.InjectionPoint"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+        explicitCastForOverloadedMethods: "java.lang.Throwable"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "4FED1E9396760A275FEB2F166E13CF8A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.NoSuchBeanDefinitionException"
+        uuid: "analyze_noSuchBeanDefinitionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "description"
+      modelFingerprint: "C71E36E8022063E9EC5AE91C0756623E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "description1"
+        valueType: "java.lang.String"
+        uuid: "analyze_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "unsatisfiedDependencyException"
+      modelFingerprint: "1E837910A42AC5FB1421C3FB5E28CB6F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "resourceDescription1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "beanName1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "msg1"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+          parameters:
+          - name: "resourceDescription"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-resourceDescription"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "beanName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-beanName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoint"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.beans.factory.InjectionPoint"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.beans.factory.InjectionPoint"
+              uuid: "findInjectionPoint_injectionPoint1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "analyze_throwable1-msg"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.beans.factory.UnsatisfiedDependencyException"
+        uuid: "analyze_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+        explicitCastForOverloadedMethods: "java.lang.Throwable"
+      methodExercised:
+        target: "unsatisfiedDependencyException"
+        name: "getInjectionPoint"
+        parameters: []
+        signature: "getInjectionPoint(): InjectionPoint"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.beans.factory.InjectionPoint"
+          uuid: "findInjectionPoint_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "22F944B925D0F56683DD06A7A2215309"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.beans.factory.InjectionPoint"
+        uuid: "findInjectionPoint_injectionPoint1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "isConstructorBindingConfigurationProperties_member1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigurationPropertiesBean"
+      modelFingerprint: "CA16B75B0D6403CDDAA3A4B588ABE464"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        uuid: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.ConfigurationPropertiesBean"
+        name: "deduceBindMethod"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "isConstructorBindingConfigurationProperties_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deduceBindMethod(Class): BindMethod"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_BEAN"
+          suggestedContent: !<regular>
+            value: "JAVA_BEAN"
+          valueType: "org.springframework.boot.context.properties.bind.BindMethod"
+          uuid: "isConstructorBindingConfigurationProperties_bindMethod1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MergedAnnotations"
+      modelFingerprint: "C255785B0DE7231A1AF45FAB0D64E8C0"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "org.springframework.core.annotation.MergedAnnotations"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "from"
+        parameters:
+        - name: "element"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "isConstructorBindingConfigurationProperties_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "searchStrategy"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "TYPE_HIERARCHY"
+            valueType: "org.springframework.core.annotation.MergedAnnotations$SearchStrategy"
+            uuid: "Enum-org.springframework.core.annotation.MergedAnnotations$SearchStrategy-TYPE_HIERARCHY"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(Class,MergedAnnotations$SearchStrategy): MergedAnnotations"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.annotation.MergedAnnotations"
+          uuid: "isConstructorBindingConfigurationProperties_mergedAnnotations1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "E92F47D9B5B024551EB907A6C640580B"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.annotation.MergedAnnotations"
+        uuid: "isConstructorBindingConfigurationProperties_mergedAnnotations1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.annotation.MergedAnnotations"
+        name: "isPresent"
+        parameters:
+        - name: "annotationType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.properties.ConfigurationProperties"
+            valueType: "java.lang.Class"
+            genericValueType: "org.springframework.boot.context.properties.ConfigurationProperties"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPresent(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isConstructorBindingConfigurationProperties_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ED764FD4D57CC4D021211739049E5920"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.diagnostics.FailureAnalysis"
+        uuid: "analyze_failureAnalysis1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fc9f6b87-fd74-33ec-8c40-6ffd4eb5f134"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

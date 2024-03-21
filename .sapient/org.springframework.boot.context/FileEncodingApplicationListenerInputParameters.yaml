@@ -1,0 +1,1052 @@
+---
+modelFingerprint: "40A75F2D89AF5387B549EB16F307100B"
+methods:
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "B3FE1F447F1436B3B1DD16C4601C95C8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A99916313962EBD405E1D1E7AB2EB467"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "onApplicationEvent"
+    returnType: "void"
+    signature: "onApplicationEvent(org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent)\
+      \ : void"
+    instructionFingerprint: "B617C84AB0A2B92D1B2598F6055AF987"
+    parametersTypes:
+    - "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "onApplicationEventWhenDesiredIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2977D3D944E874041AF54A41A0D06F04"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.FileEncodingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "1D35C3C0931222FAB0303A9775E0FF76"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "7733F028206E15905051EB3FEE8D500C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "onApplicationEvent_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "78E66E249EE1F438995001F927BC5EDF"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "onApplicationEvent_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "spring.mandatory-file-encoding"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "onApplicationEvent_string1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "13dc4dfd-0eae-3a88-9a21-2f09e0c561cf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "onApplicationEventWhenEncodingIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6A01A3711F3319C6867FD5D4E6C05094"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b7480ff2-cd2b-3dc6-b81d-c443bcd3d32e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "String encoding = System.getProperty(\\\"file.encoding\\\");"
+      lineNumber: 65
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "onApplicationEventWhenDesiredEqualsIgnoreCaseEncoding"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AC475B16C173C5715A390534747E001A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.FileEncodingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "1D35C3C0931222FAB0303A9775E0FF76"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "7733F028206E15905051EB3FEE8D500C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "onApplicationEvent_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "D358F896184FDD348CDE18073EF58BC3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "onApplicationEvent_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "spring.mandatory-file-encoding"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "onApplicationEvent_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dd92fe74-4b53-31b0-9ac9-f5b39cecb33a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "String encoding = System.getProperty(\\\"file.encoding\\\");"
+      lineNumber: 65
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "onApplicationEventWhenLoggerIsErrorEnabledThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C76BDBEE1FC12320256F3E2E3B9AA1DB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.FileEncodingApplicationListener"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.FileEncodingApplicationListener"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "event"
+      modelFingerprint: "1D35C3C0931222FAB0303A9775E0FF76"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "event"
+      modelFingerprint: "7733F028206E15905051EB3FEE8D500C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+          parameters:
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-bootstrapContext"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "application"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.SpringApplication"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-application"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "args"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.String[]"
+              uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1-args"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.env.ConfigurableEnvironment"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "onApplicationEvent_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent"
+        uuid: "onApplicationEvent_applicationEnvironmentPreparedEvent1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "event"
+        name: "getEnvironment"
+        parameters: []
+        signature: "getEnvironment(): ConfigurableEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.env.ConfigurableEnvironment"
+          uuid: "onApplicationEvent_configurableEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "environment"
+      modelFingerprint: "75907966BCCEE4914F020B71D7AE813C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "onApplicationEvent_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "environment"
+        name: "getProperty"
+        parameters:
+        - name: "key"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "spring.mandatory-file-encoding"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "D"
+          suggestedContent: !<regular>
+            value: "D"
+          valueType: "java.lang.String"
+          uuid: "onApplicationEvent_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "85CA17ADE1ED169B66F679F70AC26BD0"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "The Java Virtual Machine has not been configured to use the\
+                  \ desired default character encoding (D)."
+              suggestedContent: !<regular>
+                value: "The Java Virtual Machine has not been configured to use the\
+                  \ desired default character encoding (D)."
+              valueType: "java.lang.String"
+              uuid: "onApplicationEvent_string8"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "The Java Virtual Machine has not been configured to use the\
+                  \ desired default character encoding (D)."
+              valueType: "java.lang.String"
+              uuid: "onApplicationEvent_string8"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "onApplicationEvent_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e9fbbf8f-a708-3e27-a727-1b6dd20cce86"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "String encoding = System.getProperty(\\\"file.encoding\\\");"
+      lineNumber: 65
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "onApplicationEventWhenLoggerNotIsErrorEnabledThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "881C70B4790A008E0F4ADD00D1DF4B9B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "fd7efffd-9079-3676-ae30-9ade8b9bfa15"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "String encoding = System.getProperty(\\\"file.encoding\\\");"
+      lineNumber: 65
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

@@ -1,0 +1,3232 @@
+---
+modelFingerprint: "84158DF010B5FE1E0B0DB3BEF92D8C18"
+methods:
+- method:
+    name: "getName"
+    returnType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    signature: "getName() : org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    instructionFingerprint: "06E2A263B53E34F1589FA3D256A7AF6F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>,java.util.List<org.springframework.validation.ObjectError>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0BB86D1A115CFDACA5B46C45EA79DB5D"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9cfca8f8-30f9-3fae-a48b-42e512964e9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getBoundProperties"
+    returnType: "java.util.Set"
+    signature: "getBoundProperties() : java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>"
+    instructionFingerprint: "CFED81DA944D430289C16D4662DADCA8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBoundPropertiesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>,java.util.List<org.springframework.validation.ObjectError>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A2799DEE5834A47F659A5F362100032"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "a28d67a3-1d2b-374d-aac4-ec0070bc1c35"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "hasErrors"
+    returnType: "boolean"
+    signature: "hasErrors() : boolean"
+    instructionFingerprint: "03A9FC525C47A1B92E49DB25DE96F7C1"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "hasErrorsWhenThisErrorsNotIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>,java.util.List<org.springframework.validation.ObjectError>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A1FD18D890A3295A545DFAA0382A6F3A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9CEFFA42F29024BB7BE98D7079AC1DDC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "boundProperties"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errors"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "objectName1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "B"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "defaultMessage1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "objectName1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "B"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "defaultMessage1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.validation.ObjectError"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "boundProperties"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errors"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.validation.ObjectError"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8A76ACE82F72BFF929901B167CCC4D0F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<init>_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Name must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigurationPropertyName,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "E58A554410D32793A2EC8D937B255B09"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.HashSet"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "OBJECT"
+                      content: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<unknown_object>
+                        target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        onlyPojoFunctions: false
+                        builderPattern: false
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                uuid: "findFieldErrorOrigin_object1"
+                fixed: false
+                collectionUuid: "<init>_set1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.HashSet"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "OBJECT"
+                      content: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<unknown_object>
+                        target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        onlyPojoFunctions: false
+                        builderPattern: false
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                uuid: "findFieldErrorOrigin_object1"
+                fixed: false
+                collectionUuid: "<init>_set1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Set"
+            genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "<init>_set1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "BoundProperties must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Set,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "F06BB0BDE83C0EC4803393D8F79F3A2A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "objectName1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "B"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "defaultMessage1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertErrors_object1"
+                fixed: false
+                collectionUuid: "<init>_list1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "objectName1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "B"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "defaultMessage1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertErrors_object1"
+                fixed: false
+                collectionUuid: "<init>_list1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.List"
+            genericValueType: "org.springframework.validation.ObjectError"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Errors must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "boundProperty"
+      modelFingerprint: "2B8741F7B240B8FF230056B1F79294FE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "findFieldErrorOrigin_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "findFieldErrorOrigin_object1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "findFieldErrorOrigin_object1-origin"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "findFieldErrorOrigin_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "findFieldErrorOrigin_object1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "findFieldErrorOrigin_object1-origin"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "findFieldErrorOrigin_object1"
+        fixed: false
+        collectionUuid: "<init>_set1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "boundProperty"
+        name: "getName"
+        parameters: []
+        signature: "getName(): ConfigurationPropertyName"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+          uuid: "findFieldErrorOrigin_configurationPropertyName1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "name"
+      modelFingerprint: "8AB3032580A24A1A04F93B840254DAD4"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "<init>_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "name"
+        name: "isParentOf"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "findFieldErrorOrigin_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isParentOf(ConfigurationPropertyName): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isForError_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "boundPropertyName"
+      modelFingerprint: "E7A8986B48C43E79366FBACAE41FACB7"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "boundPropertyName"
+        name: "getLastElement"
+        parameters:
+        - name: "form"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNIFORM"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName$Form"
+            uuid: "Enum-org.springframework.boot.context.properties.source.ConfigurationPropertyName$Form-UNIFORM"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLastElement(ConfigurationPropertyName$Form): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "isForError_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "error"
+      modelFingerprint: "971C5B61E9BAF248A6A8ED9F1D8FACF9"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.validation.FieldError"
+          parameters:
+          - name: "objectName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "objectName1"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-objectName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "isForError_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "defaultMessage"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "defaultMessage1"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-defaultMessage"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.validation.FieldError"
+          parameters:
+          - name: "objectName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-objectName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "isForError_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "defaultMessage"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-defaultMessage"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.validation.FieldError"
+        uuid: "convertErrors_object1"
+        fixed: false
+        collectionUuid: "<init>_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "error"
+        name: "getField"
+        parameters: []
+        signature: "getField(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "isForError_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "0822CE619691F97C639DE0F35D35C091"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                  uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "value"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "findFieldErrorOrigin_object1-value"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "origin"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.boot.origin.Origin"
+                  uuid: "findFieldErrorOrigin_object1-origin"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                  uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "value"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "findFieldErrorOrigin_object1-value"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "origin"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "org.springframework.boot.origin.Origin"
+                  uuid: "findFieldErrorOrigin_object1-origin"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "findFieldErrorOrigin_object1"
+            fixed: false
+            collectionUuid: "<init>_set1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigurationProperty): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "findFieldErrorOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "OriginTrackedFieldError"
+      modelFingerprint: "ADEA65161FFA77724262E1650BBCA5A5"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        uuid: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        name: "of"
+        parameters:
+        - name: "fieldError"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.validation.FieldError"
+              parameters:
+              - name: "objectName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "objectName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-objectName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "field"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "B"
+                  suggestedContent: !<regular>
+                    value: "B"
+                  valueType: "java.lang.String"
+                  uuid: "isForError_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "defaultMessage"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "defaultMessage1"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-defaultMessage"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.validation.FieldError"
+              parameters:
+              - name: "objectName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-objectName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "field"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: "B"
+                  valueType: "java.lang.String"
+                  uuid: "isForError_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "defaultMessage"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-defaultMessage"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.validation.FieldError"
+            uuid: "convertErrors_object1"
+            fixed: false
+            collectionUuid: "<init>_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "findFieldErrorOrigin_origin1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(FieldError,Origin): FieldError"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.validation.FieldError"
+          uuid: "convertFieldError_fieldError1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cf442961-1f2d-3f7a-9584-5ca516d49e80"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getAllErrors"
+    returnType: "java.util.List"
+    signature: "getAllErrors() : java.util.List<org.springframework.validation.ObjectError>"
+    instructionFingerprint: "78B003DE2E94DB5BB61FB676C8D11179"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAllErrorsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>,java.util.List<org.springframework.validation.ObjectError>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6D69FACEA7ED870F1B904AAC9F427B7D"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "eda0a00f-61e4-3d5e-bb18-97c7470f97f6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "iterator"
+    returnType: "java.util.Iterator"
+    signature: "iterator() : java.util.Iterator<org.springframework.validation.ObjectError>"
+    instructionFingerprint: "6D9F58CA4BCC36EAAE49A95967B6FFCB"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "iteratorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationPropertyName,java.util.Set<org.springframework.boot.context.properties.source.ConfigurationProperty>,java.util.List<org.springframework.validation.ObjectError>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F8EC3CD7D9C01BAEF8436B12E77DAF0C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9CEFFA42F29024BB7BE98D7079AC1DDC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "boundProperties"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errors"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "objectName1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "B"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "defaultMessage1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "objectName1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "B"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "defaultMessage1"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.validation.ObjectError"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<init>_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "boundProperties"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "value"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<new>
+                          target: "java.lang.Object"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Object"
+                        uuid: "findFieldErrorOrigin_object1-value"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "origin"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "org.springframework.boot.origin.Origin"
+                        uuid: "findFieldErrorOrigin_object1-origin"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  uuid: "findFieldErrorOrigin_object1"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errors"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "org.springframework.validation.FieldError"
+                    parameters:
+                    - name: "objectName"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-objectName"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "field"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "B"
+                        valueType: "java.lang.String"
+                        uuid: "isForError_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "defaultMessage"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "convertErrors_object1-defaultMessage"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "org.springframework.validation.FieldError"
+                  uuid: "convertErrors_object1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.validation.ObjectError"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.validation.ValidationErrors"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8A76ACE82F72BFF929901B167CCC4D0F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<init>_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Name must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigurationPropertyName,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "E58A554410D32793A2EC8D937B255B09"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.HashSet"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "OBJECT"
+                      content: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<unknown_object>
+                        target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        onlyPojoFunctions: false
+                        builderPattern: false
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                uuid: "findFieldErrorOrigin_object1"
+                fixed: false
+                collectionUuid: "<init>_set1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.HashSet"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "OBJECT"
+                      content: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                  parameters:
+                  - name: "name"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<unknown_object>
+                        target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                        onlyPojoFunctions: false
+                        builderPattern: false
+                      valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                      uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "value"
+                    value:
+                      sapientType: "UNKNOWN"
+                      suggestedContent: !<new>
+                        target: "java.lang.Object"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: false
+                      valueType: "java.lang.Object"
+                      uuid: "findFieldErrorOrigin_object1-value"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "origin"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "org.springframework.boot.origin.Origin"
+                      uuid: "findFieldErrorOrigin_object1-origin"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                uuid: "findFieldErrorOrigin_object1"
+                fixed: false
+                collectionUuid: "<init>_set1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Set"
+            genericValueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "<init>_set1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "BoundProperties must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Set,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "F06BB0BDE83C0EC4803393D8F79F3A2A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "objectName1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "B"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "defaultMessage1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertErrors_object1"
+                fixed: false
+                collectionUuid: "<init>_list1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "objectName1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "B"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      content: !<regular>
+                        value: "defaultMessage1"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "org.springframework.validation.FieldError"
+                  parameters:
+                  - name: "objectName"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-objectName"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "field"
+                    value:
+                      sapientType: "BASIC"
+                      suggestedContent: !<regular>
+                        value: "B"
+                      valueType: "java.lang.String"
+                      uuid: "isForError_string2"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "defaultMessage"
+                    value:
+                      sapientType: "BASIC"
+                      valueType: "java.lang.String"
+                      uuid: "convertErrors_object1-defaultMessage"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertErrors_object1"
+                fixed: false
+                collectionUuid: "<init>_list1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.List"
+            genericValueType: "org.springframework.validation.ObjectError"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Errors must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "boundProperty"
+      modelFingerprint: "2B8741F7B240B8FF230056B1F79294FE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "findFieldErrorOrigin_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "findFieldErrorOrigin_object1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "findFieldErrorOrigin_object1-origin"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "findFieldErrorOrigin_configurationPropertyName1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "findFieldErrorOrigin_object1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "findFieldErrorOrigin_object1-origin"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "findFieldErrorOrigin_object1"
+        fixed: false
+        collectionUuid: "<init>_set1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "boundProperty"
+        name: "getName"
+        parameters: []
+        signature: "getName(): ConfigurationPropertyName"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+          uuid: "findFieldErrorOrigin_configurationPropertyName1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "name"
+      modelFingerprint: "8AB3032580A24A1A04F93B840254DAD4"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "<init>_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "name"
+        name: "isParentOf"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "findFieldErrorOrigin_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isParentOf(ConfigurationPropertyName): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isForError_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "boundPropertyName"
+      modelFingerprint: "E7A8986B48C43E79366FBACAE41FACB7"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "findFieldErrorOrigin_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "boundPropertyName"
+        name: "getLastElement"
+        parameters:
+        - name: "form"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNIFORM"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName$Form"
+            uuid: "Enum-org.springframework.boot.context.properties.source.ConfigurationPropertyName$Form-UNIFORM"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLastElement(ConfigurationPropertyName$Form): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "isForError_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "error"
+      modelFingerprint: "971C5B61E9BAF248A6A8ED9F1D8FACF9"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.validation.FieldError"
+          parameters:
+          - name: "objectName"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "objectName1"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-objectName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "isForError_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "defaultMessage"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "defaultMessage1"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-defaultMessage"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.validation.FieldError"
+          parameters:
+          - name: "objectName"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-objectName"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "isForError_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "defaultMessage"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "convertErrors_object1-defaultMessage"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.validation.FieldError"
+        uuid: "convertErrors_object1"
+        fixed: false
+        collectionUuid: "<init>_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "error"
+        name: "getField"
+        parameters: []
+        signature: "getField(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "B"
+          suggestedContent: !<regular>
+            value: "B"
+          valueType: "java.lang.String"
+          uuid: "isForError_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "0822CE619691F97C639DE0F35D35C091"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                  uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "value"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "findFieldErrorOrigin_object1-value"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "origin"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "org.springframework.boot.origin.Origin"
+                  uuid: "findFieldErrorOrigin_object1-origin"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                  uuid: "findFieldErrorOrigin_configurationPropertyName1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "value"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "findFieldErrorOrigin_object1-value"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "origin"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "org.springframework.boot.origin.Origin"
+                  uuid: "findFieldErrorOrigin_object1-origin"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "findFieldErrorOrigin_object1"
+            fixed: false
+            collectionUuid: "<init>_set1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigurationProperty): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "findFieldErrorOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "OriginTrackedFieldError"
+      modelFingerprint: "ADEA65161FFA77724262E1650BBCA5A5"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        uuid: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.validation.OriginTrackedFieldError"
+        name: "of"
+        parameters:
+        - name: "fieldError"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.validation.FieldError"
+              parameters:
+              - name: "objectName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "objectName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-objectName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "field"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "B"
+                  suggestedContent: !<regular>
+                    value: "B"
+                  valueType: "java.lang.String"
+                  uuid: "isForError_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "defaultMessage"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "defaultMessage1"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-defaultMessage"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "org.springframework.validation.FieldError"
+              parameters:
+              - name: "objectName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-objectName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "field"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: "B"
+                  valueType: "java.lang.String"
+                  uuid: "isForError_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "defaultMessage"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertErrors_object1-defaultMessage"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "org.springframework.validation.FieldError"
+            uuid: "convertErrors_object1"
+            fixed: false
+            collectionUuid: "<init>_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "findFieldErrorOrigin_origin1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(FieldError,Origin): FieldError"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.validation.FieldError"
+          uuid: "convertFieldError_fieldError1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E3830B6DF184C45824E1245EF415FDAD"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters:
+              - name: "initialCapacity"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 1
+                  suggestedContent: !<regular>
+                    value: 1
+                  valueType: "int"
+                  uuid: "convertErrors_int1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              values:
+              - sapientType: "MOCK"
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertFieldError_fieldError1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters:
+              - name: "initialCapacity"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 1
+                  suggestedContent: !<regular>
+                    value: 1
+                  valueType: "int"
+                  uuid: "convertErrors_int1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              values:
+              - sapientType: "MOCK"
+                valueType: "org.springframework.validation.FieldError"
+                uuid: "convertFieldError_fieldError1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.List"
+            genericValueType: "org.springframework.validation.ObjectError"
+            uuid: "convertErrors_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "org.springframework.validation.ObjectError"
+        uuid: "iterator_iterator1"
+        fixed: false
+        collectionUuid: "convertErrors_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "78c09fb6-edcf-3ce7-9932-6ef4ffc152b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

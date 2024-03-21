@@ -1,0 +1,686 @@
+---
+modelFingerprint: "3F964FC27334610FEA0BDCDD72075CB4"
+methods:
+- method:
+    name: "alwaysApplyingWhenNonNull"
+    returnType: "org.springframework.boot.context.properties.PropertyMapper"
+    signature: "alwaysApplyingWhenNonNull() : org.springframework.boot.context.properties.PropertyMapper"
+    instructionFingerprint: "F45B003278D5F6B1B1B179A70CF4853D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "alwaysApplyingWhenNonNullTest"
+    nameDefinedByUser: false
+    constructorSignature: "get() : org.springframework.boot.context.properties.PropertyMapper"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FC882AE92EFD8E73DE9C6AB01A0311C0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "853E9CC58F5BDF23CCC7F97A7A905A0C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "alwaysApplying"
+        parameters:
+        - name: "operator"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "alwaysApplying(PropertyMapper$SourceOperator): PropertyMapper"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.PropertyMapper"
+          uuid: "alwaysApplyingWhenNonNull_propertyMapper1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5BAC106672C57B7CC1782287B2FDD058"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "alwaysApplyingWhenNonNull_propertyMapper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "99f617df-0936-3513-991d-3fc77524d0cd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "alwaysApplying"
+    returnType: "org.springframework.boot.context.properties.PropertyMapper"
+    signature: "alwaysApplying(org.springframework.boot.context.properties.PropertyMapper$SourceOperator)\
+      \ : org.springframework.boot.context.properties.PropertyMapper"
+    instructionFingerprint: "4F7B70A7C0A3BB1E972387747ECC36FB"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "alwaysApplyingTest"
+    nameDefinedByUser: false
+    constructorSignature: "get() : org.springframework.boot.context.properties.PropertyMapper"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0929CCC2164A5E9D2578D1C30195653D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operator"
+      modelFingerprint: "01D3A74A67EC17EDC9CCEB9EB6209708"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+        uuid: "alwaysApplying_propertyMapper.SourceOperator1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "6D70576B93E07E030993993895557206"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+            uuid: "alwaysApplying_propertyMapper.SourceOperator1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Operator must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(PropertyMapper$SourceOperator,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "alwaysApplying_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CFB18418D06BCC8CCAECD7C590EDF6A7"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sourceOperator"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+              uuid: "alwaysApplying_propertyMapper.SourceOperator1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "THIS"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper"
+              uuid: "targetClassObject"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sourceOperator"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+              uuid: "alwaysApplying_propertyMapper.SourceOperator1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "alwaysApplying_propertyMapper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2e37e555-8fa5-3902-b7f6-74578dfd46db"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "from"
+    returnType: "org.springframework.boot.context.properties.PropertyMapper$Source"
+    signature: "from(java.util.function.Supplier<java.lang.Object>) : org.springframework.boot.context.properties.PropertyMapper$Source<java.lang.Object>"
+    instructionFingerprint: "21A6D7AE9460AD6211A88F4FB2854F5E"
+    parametersTypes:
+    - "java.util.function.Supplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "fromWhenThisSourceOperatorIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "get() : org.springframework.boot.context.properties.PropertyMapper"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "77195BFB6A7F2ED8248F26C08A14E243"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "D41529171CDA2142FDDA16CC804B1B32"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "java.util.function.Supplier"
+        uuid: "from_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "A681E421F831ADBD15844BCED0F04102"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.Supplier"
+            uuid: "from_supplier1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Supplier must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Supplier,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "from_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SingletonSupplier"
+      modelFingerprint: "5BB11797A5AC6D7F829A7D480D9B934B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.function.SingletonSupplier"
+        uuid: "org.springframework.util.function.SingletonSupplier"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.function.SingletonSupplier"
+        name: "of"
+        parameters:
+        - name: "supplier"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.Supplier"
+            uuid: "from_supplier1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Supplier): SingletonSupplier"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.util.function.SingletonSupplier"
+          genericValueType: "java.lang.Object"
+          uuid: "getSource_singletonSupplier1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0EEA39D6410A0617AC6EF87880BF8202"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper$Source"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.util.function.SingletonSupplier"
+              genericValueType: "java.lang.Object"
+              uuid: "getSource_singletonSupplier1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "predicate"
+            value:
+              sapientType: "MOCK"
+              valueType: "java.util.function.Predicate"
+              uuid: "<clinit>_predicate1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper$Source"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.util.function.SingletonSupplier"
+              genericValueType: "java.lang.Object"
+              uuid: "getSource_singletonSupplier1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "predicate"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.util.function.Predicate"
+              genericValueType: "?"
+              uuid: "<clinit>_predicate1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.PropertyMapper$Source"
+        genericValueType: "java.lang.Object"
+        uuid: "getSource_propertyMapper.Source1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "68f1c17c-5392-37f0-8bed-31fd051e0dde"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return new Source<>(SingletonSupplier.of(supplier), (Predicate<T>)\
+        \ ALWAYS);"
+      lineNumber: 131
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.properties.PropertyMapper$Source"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "from"
+    returnType: "org.springframework.boot.context.properties.PropertyMapper$Source"
+    signature: "from(java.lang.Object) : org.springframework.boot.context.properties.PropertyMapper$Source<java.lang.Object>"
+    instructionFingerprint: "1B6E890EE04B7F6DD2FF81A667FB0909"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "from1Test"
+    nameDefinedByUser: false
+    constructorSignature: "get() : org.springframework.boot.context.properties.PropertyMapper"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FAEBB7EF6DC91F0DB3DD2F4AC678D1EB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          method: "get"
+          methodParameters: []
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "from_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0BCF22140CB1597DF076CF6C2BB011D9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "from"
+        parameters:
+        - name: "supplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Supplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(Supplier): PropertyMapper$Source"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.PropertyMapper$Source"
+          uuid: "from_propertyMapper.Source1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3EDAF2575712E77E8386E873B7D6D002"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.PropertyMapper$Source"
+        uuid: "from_propertyMapper.Source1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4d14331c-3461-34d2-9c31-3612d7b953ef"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "get"
+    returnType: "org.springframework.boot.context.properties.PropertyMapper"
+    signature: "get() : org.springframework.boot.context.properties.PropertyMapper"
+    instructionFingerprint: "E963194827D0AFE584D43EC8546786AB"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8728690086E0099188BF2B8AA440E8AE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "982C00ADF174E295C11176B49C94EC49"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sourceOperator"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.PropertyMapper"
+          parameters:
+          - name: "parent"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sourceOperator"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.properties.PropertyMapper$SourceOperator"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.PropertyMapper"
+        uuid: "<clinit>_propertyMapper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c25887d-767d-38e9-b5ae-c2e4012c49be"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
