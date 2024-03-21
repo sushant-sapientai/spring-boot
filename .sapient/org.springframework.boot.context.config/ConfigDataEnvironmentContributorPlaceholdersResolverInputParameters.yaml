@@ -1,0 +1,476 @@
+---
+modelFingerprint: "117626B34DF13EF50C62141A20CAADFA"
+methods:
+- method:
+    name: "resolvePlaceholders"
+    returnType: "java.lang.Object"
+    signature: "resolvePlaceholders(java.lang.Object) : java.lang.Object"
+    instructionFingerprint: "3592E9ED98C6900040A82AACF60D19CC"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "resolvePlaceholdersWhenValueInstanceOfString"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.config.ConfigDataEnvironmentContributor>,org.springframework.boot.context.config.ConfigDataActivationContext,org.springframework.boot.context.config.ConfigDataEnvironmentContributor,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DD10A6CB58E49DF455C84C991DAF6EE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8EC7E3D499D21A5FFB94BD16BE8F24FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+          parameters:
+          - name: "contributors"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activationContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "<init>_configDataActivationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activeContributor"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_configDataEnvironmentContributor1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "failOnResolveFromInactiveContributor"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+          parameters:
+          - name: "contributors"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activationContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "<init>_configDataActivationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activeContributor"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_configDataEnvironmentContributor1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "failOnResolveFromInactiveContributor"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "C6790D3E00B07F053861FDB4A59F92EC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "value1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "helper"
+      modelFingerprint: "8AFC92240A1538DE9D76E951B833F828"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.util.PropertyPlaceholderHelper"
+          parameters:
+          - name: "placeholderPrefix"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "${"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "placeholderSuffix"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "}"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "valueSeparator"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ":"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "ignoreUnresolvablePlaceholders"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.util.PropertyPlaceholderHelper"
+          parameters:
+          - name: "placeholderPrefix"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "${"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "placeholderSuffix"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "}"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "valueSeparator"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ":"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "ignoreUnresolvablePlaceholders"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.util.PropertyPlaceholderHelper"
+        uuid: "<init>_propertyPlaceholderHelper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.helper"
+        name: "replacePlaceholders"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value1"
+            valueType: "java.lang.String"
+            uuid: "resolvePlaceholders_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "placeholderResolver"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.springframework.util.PropertyPlaceholderHelper$PlaceholderResolver"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replacePlaceholders(String,PropertyPlaceholderHelper$PlaceholderResolver):\
+          \ String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replacePlaceholders1"
+          valueType: "java.lang.String"
+          uuid: "resolvePlaceholders_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replacePlaceholders1"
+        valueType: "java.lang.String"
+        uuid: "resolvePlaceholders_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "92f654c1-59d0-3f5f-8724-669bbd7eff5a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "helper"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return this.helper.replacePlaceholders(string, this::resolvePlaceholder);"
+      lineNumber: 60
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: helper - Method: replacePlaceholders"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "resolvePlaceholdersWhenValueNotInstanceOfString"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Iterable<org.springframework.boot.context.config.ConfigDataEnvironmentContributor>,org.springframework.boot.context.config.ConfigDataActivationContext,org.springframework.boot.context.config.ConfigDataEnvironmentContributor,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "536AA67FBFC89E3FDA770778147FBAA2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8EC7E3D499D21A5FFB94BD16BE8F24FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+          parameters:
+          - name: "contributors"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activationContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "<init>_configDataActivationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activeContributor"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_configDataEnvironmentContributor1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "failOnResolveFromInactiveContributor"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+          parameters:
+          - name: "contributors"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activationContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+              uuid: "<init>_configDataActivationContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "activeContributor"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+              uuid: "<init>_configDataEnvironmentContributor1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "failOnResolveFromInactiveContributor"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributorPlaceholdersResolver"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "resolvePlaceholders_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2e755de7-a01c-3580-9542-15932e99692f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

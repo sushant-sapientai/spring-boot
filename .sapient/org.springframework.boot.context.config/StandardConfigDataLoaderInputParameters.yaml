@@ -1,0 +1,1491 @@
+---
+modelFingerprint: "BBD46D64F9E62985C3FF0219D8E8393D"
+methods:
+- method:
+    name: "load"
+    returnType: "org.springframework.boot.context.config.ConfigData"
+    signature: "load(org.springframework.boot.context.config.ConfigDataLoaderContext,org.springframework.boot.context.config.StandardConfigDataResource)\
+      \ : org.springframework.boot.context.config.ConfigData"
+    throwsExceptions:
+    - "java.io.IOException"
+    - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    instructionFingerprint: "2F84F90DD5F73515E481EA68C49B0791"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataLoaderContext"
+    - "org.springframework.boot.context.config.StandardConfigDataResource"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "loadWhenResourceIsEmptyDirectory"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DC93A8EA12A01658DCC4A508168C0FE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataLoader"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "A77FA42C1218B17B3106286D9F01EEA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "load_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "E2B61EEC14172D399276194455AD85EC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "B2C5B2DB776F5CDDCE9FA29A7FA70A51"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isEmptyDirectory"
+        parameters: []
+        signature: "isEmptyDirectory(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3BB4B646FCA83726778DCD843F64ABE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "org.springframework.boot.context.config.ConfigData"
+          fieldName: "EMPTY"
+        suggestedContent: !<static_field_return>
+          target: "org.springframework.boot.context.config.ConfigData"
+          fieldName: "EMPTY"
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "load_configData1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "309763d6-5197-33fd-8789-218a32b01068"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "loadWhenResourceGetProfileIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "310535ABFABE5E83F024D3FA579709F5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataLoader"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "A77FA42C1218B17B3106286D9F01EEA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "load_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "E2B61EEC14172D399276194455AD85EC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "EA63FBE4C01D5A85DF04C60BF54FE94B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isEmptyDirectory"
+        parameters: []
+        signature: "isEmptyDirectory(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "BD32235E6A99C965A865F35CFD3BA8AF"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): Resource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.Resource"
+          uuid: "load_resource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigDataResourceNotFoundException"
+      modelFingerprint: "CC8E4B7C3A1E6646780869CFE17F1878"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        name: "throwIfDoesNotExist"
+        parameters:
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.StandardConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+            uuid: "load_standardConfigDataResource1"
+            fixed: false
+            nameForMock: "load_standardConfigDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceToCheck"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "load_resource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "throwIfDoesNotExist(StandardConfigDataResource,Resource): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "24EBA2D46087FEB053EDE32F3E200152"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getReference"
+        parameters: []
+        signature: "getReference(): StandardConfigDataReference"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.StandardConfigDataReference"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+          uuid: "load_standardConfigDataReference1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "BD32235E6A99C965A865F35CFD3BA8AF"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): Resource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.Resource"
+          uuid: "load_resource2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "F36CD6F52DBB140C6E710B2B9DA9FFBC"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getConfigDataLocation"
+        parameters: []
+        signature: "getConfigDataLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "E3AAD1D1C41DADC81C0CD1395413C647"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "load_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "OriginTrackedResource"
+      modelFingerprint: "D229CFF15A166E8E64E8E00FE5D14D0D"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.OriginTrackedResource"
+        uuid: "org.springframework.boot.origin.OriginTrackedResource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.OriginTrackedResource"
+        name: "of"
+        parameters:
+        - name: "writableResource"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "load_resource2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "load_origin1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Resource,Origin): OriginTrackedResource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.OriginTrackedResource"
+          uuid: "load_originTrackedResource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "F36CD6F52DBB140C6E710B2B9DA9FFBC"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getConfigDataLocation"
+        parameters: []
+        signature: "getConfigDataLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation2"
+          fixed: false
+          nameForMock: "load_configDataLocation2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "1A1A7A9B8C1599ED0D83495D9105B6DC"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getPropertySourceLoader"
+        parameters: []
+        signature: "getPropertySourceLoader(): PropertySourceLoader"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.env.PropertySourceLoader"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.env.PropertySourceLoader"
+          uuid: "load_propertySourceLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D63009F48A0BBBFDFD3F0CA67D1DB90"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.env.PropertySourceLoader"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.env.PropertySourceLoader"
+        uuid: "load_propertySourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.env.PropertySourceLoader"
+        name: "load"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Config resource 'null' via location 'null'"
+            suggestedContent: !<regular>
+              value: "Config resource 'null' via location 'null'"
+            valueType: "java.lang.String"
+            uuid: "load_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.OriginTrackedResource"
+            uuid: "load_originTrackedResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "load(String,OriginTrackedResource): List throws java.io.IOException"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.core.env.PropertySource<?>"
+          uuid: "load_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "8EB1B281B09D1893F5CBB1C3CD1AF764"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getProfile"
+        parameters: []
+        signature: "getProfile(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProfile1"
+          valueType: "java.lang.String"
+          uuid: "load_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "55204B6BE5DEEC1EBA5941EB33B3FF3B"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                method: "always"
+                methodParameters:
+                - value:
+                    sapientType: "ARRAY"
+                    content: !<array>
+                      values:
+                        0:
+                          sapientType: "ENUM"
+                          content: !<regular>
+                            value: "PROFILE_SPECIFIC"
+                          valueType: "org.springframework.boot.context.config.ConfigData$Option"
+                          uuid: "Enum-org.springframework.boot.context.config.ConfigData$Option-PROFILE_SPECIFIC"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                    suggestedContent: !<array>
+                      values:
+                        0:
+                          sapientType: "ENUM"
+                          content: !<regular>
+                            value: "PROFILE_SPECIFIC"
+                          valueType: "org.springframework.boot.context.config.ConfigData$Option"
+                          uuid: "Enum-org.springframework.boot.context.config.ConfigData$Option-PROFILE_SPECIFIC"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                    valueType: "org.springframework.boot.context.config.ConfigData$Option[]"
+                    uuid: "<clinit>_configData.Option[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                method: "always"
+                methodParameters:
+                - value:
+                    sapientType: "ARRAY"
+                    suggestedContent: !<array>
+                      values:
+                        0:
+                          sapientType: "ENUM"
+                          content: !<regular>
+                            value: "PROFILE_SPECIFIC"
+                          valueType: "org.springframework.boot.context.config.ConfigData$Option"
+                          uuid: "Enum-org.springframework.boot.context.config.ConfigData$Option-PROFILE_SPECIFIC"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                    valueType: "org.springframework.boot.context.config.ConfigData$Option[]"
+                    uuid: "<clinit>_configData.Option[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<clinit>_configData.PropertySourceOptions1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                method: "always"
+                methodParameters:
+                - value:
+                    sapientType: "ARRAY"
+                    suggestedContent: !<array>
+                      values:
+                        0:
+                          sapientType: "ENUM"
+                          content: !<regular>
+                            value: "PROFILE_SPECIFIC"
+                          valueType: "org.springframework.boot.context.config.ConfigData$Option"
+                          uuid: "Enum-org.springframework.boot.context.config.ConfigData$Option-PROFILE_SPECIFIC"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                    valueType: "org.springframework.boot.context.config.ConfigData$Option[]"
+                    uuid: "<clinit>_configData.Option[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<clinit>_configData.PropertySourceOptions1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "load_configData1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e33a41e9-2b70-3d61-8a58-9954526f5c6b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "loadWhenResourceGetProfileIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C696FE72F87D05D7A021EB921F262408"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataLoader"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "A77FA42C1218B17B3106286D9F01EEA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "load_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "E2B61EEC14172D399276194455AD85EC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "EA63FBE4C01D5A85DF04C60BF54FE94B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isEmptyDirectory"
+        parameters: []
+        signature: "isEmptyDirectory(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "BD32235E6A99C965A865F35CFD3BA8AF"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): Resource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.Resource"
+          uuid: "load_resource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigDataResourceNotFoundException"
+      modelFingerprint: "CC8E4B7C3A1E6646780869CFE17F1878"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        name: "throwIfDoesNotExist"
+        parameters:
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.StandardConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+            uuid: "load_standardConfigDataResource1"
+            fixed: false
+            nameForMock: "load_standardConfigDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceToCheck"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "load_resource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "throwIfDoesNotExist(StandardConfigDataResource,Resource): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "24EBA2D46087FEB053EDE32F3E200152"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getReference"
+        parameters: []
+        signature: "getReference(): StandardConfigDataReference"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.StandardConfigDataReference"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+          uuid: "load_standardConfigDataReference1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "BD32235E6A99C965A865F35CFD3BA8AF"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): Resource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.Resource"
+          uuid: "load_resource2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "F36CD6F52DBB140C6E710B2B9DA9FFBC"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getConfigDataLocation"
+        parameters: []
+        signature: "getConfigDataLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "E3AAD1D1C41DADC81C0CD1395413C647"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "load_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "OriginTrackedResource"
+      modelFingerprint: "D229CFF15A166E8E64E8E00FE5D14D0D"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.OriginTrackedResource"
+        uuid: "org.springframework.boot.origin.OriginTrackedResource"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.OriginTrackedResource"
+        name: "of"
+        parameters:
+        - name: "writableResource"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "load_resource2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "load_origin1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Resource,Origin): OriginTrackedResource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.OriginTrackedResource"
+          uuid: "load_originTrackedResource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "F36CD6F52DBB140C6E710B2B9DA9FFBC"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getConfigDataLocation"
+        parameters: []
+        signature: "getConfigDataLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation2"
+          fixed: false
+          nameForMock: "load_configDataLocation2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reference"
+      modelFingerprint: "1A1A7A9B8C1599ED0D83495D9105B6DC"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "load_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reference"
+        name: "getPropertySourceLoader"
+        parameters: []
+        signature: "getPropertySourceLoader(): PropertySourceLoader"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.env.PropertySourceLoader"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.env.PropertySourceLoader"
+          uuid: "load_propertySourceLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D63009F48A0BBBFDFD3F0CA67D1DB90"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.env.PropertySourceLoader"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.env.PropertySourceLoader"
+        uuid: "load_propertySourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.env.PropertySourceLoader"
+        name: "load"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Config resource 'null' via location 'null'"
+            suggestedContent: !<regular>
+              value: "Config resource 'null' via location 'null'"
+            valueType: "java.lang.String"
+            uuid: "load_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.OriginTrackedResource"
+            uuid: "load_originTrackedResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "load(String,OriginTrackedResource): List throws java.io.IOException"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.core.env.PropertySource<?>"
+          uuid: "load_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "6379BB5B323C7A946FEF23AC1DA34B2A"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "load_standardConfigDataResource1"
+        fixed: false
+        nameForMock: "load_standardConfigDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getProfile"
+        parameters: []
+        signature: "getProfile(): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "load_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BC2032365FF5B4351D12EF56E18366DE"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                fieldName: "ALWAYS_NONE"
+              suggestedContent: !<static_field_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                fieldName: "ALWAYS_NONE"
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<clinit>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.core.env.PropertySource<?>"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                fieldName: "ALWAYS_NONE"
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<clinit>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "load_configData1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e1a160d5-022e-389a-903a-30984214f4a1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

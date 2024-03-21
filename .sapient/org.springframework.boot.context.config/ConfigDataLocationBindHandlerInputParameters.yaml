@@ -1,0 +1,1852 @@
+---
+modelFingerprint: "1E462C94EF626B442F4AB85C2048D35A"
+methods:
+- method:
+    name: "onSuccess"
+    returnType: "java.lang.Object"
+    signature: "onSuccess(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.bind.BindContext,java.lang.Object)\
+      \ : java.lang.Object"
+    instructionFingerprint: "6B32955343CDB043FB96773735E761C7"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    - "org.springframework.boot.context.properties.bind.Bindable"
+    - "org.springframework.boot.context.properties.bind.BindContext"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "onSuccessWhenResultGetOriginIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "330815338F520417B216041527A7D945"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "108516E4FA8936023116CAEE6F146F6A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "26F505C665E80DDF6EE5F8CAE1E8918F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "371913D6EDD630693418EA1CAF688EFF"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "72C32352F50CF9A171717DEFB741A46F"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6eedb967-f586-3173-b97a-0d19567e5214"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "onSuccessWhenResultGetOriginIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DDEBBF8116692F4E1CD6BECBE2857AB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93F18A8B76D181369D0E77ED7E2AC11D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.bind.BindContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "A95BAFB6CCDCD45F2D2FC432871A2FD4"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "6077534A0116CA5B2E68DE022C965A80"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "F0BD17AE978367BF09D3758FEC137F3E"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.bind.BindContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "context"
+        name: "getConfigurationProperty"
+        parameters: []
+        signature: "getConfigurationProperty(): ConfigurationProperty"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "withOrigin_configurationProperty1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "B407D23CAAA1E79A77301D15925D59F8"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "withOrigin_configurationProperty1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigurationProperty): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "877C86FD14900D30A004AF5E89F61043"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "withOrigin"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "withOrigin_origin2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withOrigin(Origin): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "withOrigin_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8619C9FE8CF22A104A3F28E811A586AA"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "withOrigin_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c1747cdb-cfa5-3814-9b27-1c2705e19c83"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path3"
+    testPathName: "onSuccessWhenElementNotInstanceOfConfigDataLocation"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "670132C2EBFB7C001300B152287EFC01"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "108516E4FA8936023116CAEE6F146F6A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "0572382947E5816E33283DE723B973AA"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "?"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8120003CEB7ED10524FDA37EC6B15351"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values:
+          - sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          parameters: []
+          values:
+          - sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.ArrayList"
+        uuid: "onSuccess_object3"
+        fixed: false
+        collectionUuid: "onSuccess_list2"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "479edc22-1303-388d-815e-7e24e9773547"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path4"
+    testPathName: "onSuccessWhenResultInstanceOfConfigDataLocationArray"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E9445D7D13F4E33798C3B91FB8717B3D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "108516E4FA8936023116CAEE6F146F6A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "F295BA8B458C7AFE6EC17FE01740B15A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation[]"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6A43632BC7DB746711C67C1B15EDC8CC"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "onSuccess_object[]1"
+        fixed: false
+        collectionUuid: "onSuccess_list2"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "28dab3de-a044-3f7b-ae11-f48f4b19735f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path5"
+    testPathName: "onSuccessWhenResultNotInstanceOfConfigDataLocationArray"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "89217B1F334A930B29180BD080F44E84"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "108516E4FA8936023116CAEE6F146F6A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "0D873A06AAA643812D6BFFC0033B9DAE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "976e011e-2dfb-32a6-aad0-08e064c5bcb1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path6"
+    testPathName: "onSuccessWhenElementInstanceOfConfigDataLocationAndResultGetOriginIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C62BACB96A69BB23BE638714E569F85B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "108516E4FA8936023116CAEE6F146F6A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "DDE297F66C8EA4F215FD13206BEC0B2B"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "?"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "E9E5DDEBBEC1668AF21574006C66C9E8"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object2"
+        fixed: false
+        collectionUuid: "onSuccess_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F83C9DC64D49FC172AD97E1ACE897929"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.ArrayList"
+        uuid: "onSuccess_object3"
+        fixed: false
+        collectionUuid: "onSuccess_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f33e4889-ecfa-3a4c-b9fc-4faa32df4ab3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path7"
+    testPathName: "onSuccessWhenElementInstanceOfConfigDataLocationAndResultGetOriginIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95451A01C8D0AE85930FBBA965310DAA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationBindHandler"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "onSuccess_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "4D2377D191A24999B453F45C9A3F9E7A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        genericValueType: "?"
+        uuid: "onSuccess_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93F18A8B76D181369D0E77ED7E2AC11D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.bind.BindContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "result"
+      modelFingerprint: "DDE297F66C8EA4F215FD13206BEC0B2B"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "onSuccess_object2"
+            fixed: false
+            collectionUuid: "onSuccess_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "?"
+        uuid: "onSuccess_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "BE0CC2DD7B549E0B86C431663793C188"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            suggestedContent: !<static_field_return>
+              target: "org.springframework.boot.context.properties.bind.BindHandler"
+              fieldName: "DEFAULT"
+            valueType: "org.springframework.boot.context.properties.bind.BindHandler"
+            uuid: "<init>_bindHandler1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Parent must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(BindHandler,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "6077534A0116CA5B2E68DE022C965A80"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object2"
+        fixed: false
+        collectionUuid: "onSuccess_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "F0BD17AE978367BF09D3758FEC137F3E"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.bind.BindContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.bind.BindContext"
+        uuid: "onSuccess_bindContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "context"
+        name: "getConfigurationProperty"
+        parameters: []
+        signature: "getConfigurationProperty(): ConfigurationProperty"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "withOrigin_configurationProperty1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "B407D23CAAA1E79A77301D15925D59F8"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            uuid: "withOrigin_configurationProperty1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigurationProperty): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "withOrigin_origin2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "08DEE224C2FAFD90C5FB5BB82883D8BF"
+      index: 10
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "onSuccess_object2"
+        fixed: false
+        collectionUuid: "onSuccess_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "withOrigin"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.origin.Origin"
+            uuid: "withOrigin_origin2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withOrigin(Origin): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "withOrigin_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6CCB3ADF0959E5A3EAB7E9E2330293DF"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "withOrigin_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "withOrigin_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.ArrayList"
+        uuid: "onSuccess_object3"
+        fixed: false
+        collectionUuid: "onSuccess_list2"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "62f5beb5-b5bd-34dd-a481-891b92eaa275"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

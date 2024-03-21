@@ -1,0 +1,439 @@
+---
+modelFingerprint: "D2334B9B0379A24C633F9C7676CB3654"
+methods:
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "B3FE1F447F1436B3B1DD16C4601C95C8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.Collection<java.lang.Class<?>>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2A21F1EEEDEF455DA0BF0D67FD508883"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "merge"
+    returnType: "org.springframework.boot.context.annotation.UserConfigurations"
+    signature: "merge(java.util.Set<java.lang.Class<?>>) : org.springframework.boot.context.annotation.UserConfigurations"
+    instructionFingerprint: "9DA51674B7E1859AB1A4F666D8954568"
+    parametersTypes:
+    - "java.util.Set"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "merge2Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.Collection<java.lang.Class<?>>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B8BF8F3CF7CB6772936BF8D7C09786EC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9B1C417645B375DB8637B16D0556B931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.annotation.UserConfigurations"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "mergedClasses"
+      modelFingerprint: "97CDCEA6400D7C67FEF1AC2A074FF111"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Set"
+        genericValueType: "java.lang.Class<?>"
+        uuid: "merge_set1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "891D1117C439DF9E921794F2514B103C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.Class<?>"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Classes must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Collection,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "E62B0EF430EFE8ECB8AFEAC2091239C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Set"
+            genericValueType: "java.lang.Class<?>"
+            uuid: "merge_set1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Classes must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Set,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AF0BFCE4D2E7DEFDA5BC24B4C4029B0E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "merge_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Set"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "merge_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.annotation.UserConfigurations"
+        uuid: "merge_userConfigurations1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e876de3d-41c8-338f-8f90-1b71d6116f6e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "of"
+    returnType: "org.springframework.boot.context.annotation.UserConfigurations"
+    signature: "of(java.lang.Class<?>[]) : org.springframework.boot.context.annotation.UserConfigurations"
+    instructionFingerprint: "89B983FD9E77D5DEC91D4184D9C67E37"
+    parametersTypes:
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "ofTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3FBBDA385CF4D5A0723E34E2E3A3B727"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classes"
+      modelFingerprint: "4EDFAF93FA9B504E4F63AA11BC756B53"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "of_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8809E924B22D9BA14B3C642905A6B627"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Class<?>"
+            uuid: "of_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Classes must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "371E083439C6DBBDDC92D33378DA899B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "of_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.UserConfigurations"
+          parameters:
+          - name: "classes"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Class<?>"
+              uuid: "of_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.annotation.UserConfigurations"
+        uuid: "of_userConfigurations1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3155f475-158f-3510-8516-db6562387204"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

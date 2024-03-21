@@ -1,0 +1,3458 @@
+---
+modelFingerprint: "64646EFC2A3919C28693FCA2898AAABB"
+methods:
+- method:
+    name: "iterator"
+    returnType: "java.util.Iterator"
+    signature: "iterator() : java.util.Iterator<java.lang.String>"
+    instructionFingerprint: "3CA4549606465541CB1A3EBA35E8D2F7"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "iteratorTest"
+    nameDefinedByUser: false
+    constructorSignature: "load(java.lang.Class<?>,java.lang.ClassLoader) : org.springframework.boot.context.annotation.ImportCandidates"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "379803C34100BC6AC2173E4B81F26297"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "7AAA9549695657904E7BF3A3F01DE95F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          method: "load"
+          methodParameters:
+          - name: "annotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "load_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.ClassLoader"
+              uuid: "load_classLoader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          method: "load"
+          methodParameters:
+          - name: "annotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "load_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.ClassLoader"
+              uuid: "load_classLoader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.annotation.ImportCandidates"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D27C542609730FB7385202E37AF9B08E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "load_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'candidates' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "221F4E3B79289C936323A1C0C49045F3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "java.lang.String"
+        uuid: "iterator_iterator1"
+        fixed: false
+        collectionUuid: "<init>_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "78c09fb6-edcf-3ce7-9932-6ef4ffc152b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getCandidates"
+    returnType: "java.util.List"
+    signature: "getCandidates() : java.util.List<java.lang.String>"
+    instructionFingerprint: "5C230A06D6291E4C45897248C5DD0402"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getCandidatesTest"
+    nameDefinedByUser: false
+    constructorSignature: "load(java.lang.Class<?>,java.lang.ClassLoader) : org.springframework.boot.context.annotation.ImportCandidates"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E9E34EC8F90E1E75A554CF14E7A876F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3e9411d8-9ff3-376d-a56c-9ed88f03fe98"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "load"
+    returnType: "org.springframework.boot.context.annotation.ImportCandidates"
+    signature: "load(java.lang.Class<?>,java.lang.ClassLoader) : org.springframework.boot.context.annotation.ImportCandidates"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "B9C050FE64DC7C30FC414704095EA032"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "loadWhenUrlsNotHasMoreElements"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D23C5C3BA6A768F0B254DEE368E873F5"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c6f0813e-ef69-336e-92c2-c4a6d8fbf1d9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path10"
+    pathIdForUser: "path2"
+    testPathName: "loadWhenCaughtIOExceptionThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6E0031224EADC1F14DEC2F628B47C911"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 26
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "E877C1A1B3C59F93552258E807A3285D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "classLoader"
+      modelFingerprint: "3C1255BB7331985BD19886B1ABBAA588"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260001
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<method_return_from_value>
+          target: "java.lang.ClassLoader"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.annotation.ImportCandidates"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getClassLoader"
+        valueType: "java.lang.ClassLoader"
+        uuid: "decideClassloader_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "classLoader"
+        name: "getResources"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "META-INF/spring/.imports"
+            suggestedContent: !<regular>
+              value: "META-INF/spring/.imports"
+            valueType: "java.lang.String"
+            uuid: "load_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getResources(String): Enumeration throws java.io.IOException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.io.IOException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.io.IOException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.io.IOException"
+          uuid: "findUrlsInClasspath_enumeration1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "37B94C548C5EAAE2441E113146C4A0ED"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Failed to load configurations from location [META-INF/spring/.imports]"
+              suggestedContent: !<regular>
+                value: "Failed to load configurations from location [META-INF/spring/.imports]"
+              valueType: "java.lang.String"
+              uuid: "findUrlsInClasspath_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "findUrlsInClasspath_enumeration1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Failed to load configurations from location [META-INF/spring/.imports]"
+              valueType: "java.lang.String"
+              uuid: "findUrlsInClasspath_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "EXCEPTION"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "findUrlsInClasspath_enumeration1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "findUrlsInClasspath_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a3c7da29-0bbd-3f39-9f91-a3778d99b52f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path6"
+    pathIdForUser: "path3"
+    testPathName: "loadWhenClassLoaderIsNotNullAndUrlsNotHasMoreElements"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "17CB1BA8EDA4BF54B1CE03DCE4571B05"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "27E496872E683B3897FEB169C742F504"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D27C542609730FB7385202E37AF9B08E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "load_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'candidates' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3F551278F590A4A5F3506CB6C610C9D3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.annotation.ImportCandidates"
+        uuid: "load_importCandidates1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c16e6d43-e4d4-3f25-9b3e-719ad3301153"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "loadWhenLineAssignedReaderReadLineIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "0ECE2DFCE359F9B9AB2766AB9D478FC2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4eea6eb7-a9ca-356d-8195-220792440f6e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path9"
+    pathIdForUser: "path5"
+    testPathName: "loadWhenLineAssignedReaderReadLineIsNullAndCaughtIOExceptionThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "38A7777FB6A5AB85D3D787363A471E1B"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 50
+      id: 4
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: true
+    inputParameters: []
+    uuid: "01252668-e871-37ee-a7b0-bfd472f1fe6e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path6"
+    testPathName: "loadWhenLineIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "538ABFDF2A6CE8633B630451A7C9656C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "E877C1A1B3C59F93552258E807A3285D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D38C077D631B41DA5941A3CD3683507"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "name1"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.io.UrlResource"
+        uuid: "readCandidateConfigurations_urlResource1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.UrlResource"
+        name: "getInputStream"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getInputStream(): InputStream throws java.io.IOException"
+        returnValue:
+          sapientType: "INPUT_STREAM"
+          content: !<inputStream>
+            values: []
+          valueType: "java.io.InputStream"
+          uuid: "readCandidateConfigurations_inputStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "D27C542609730FB7385202E37AF9B08E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "load_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'candidates' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3F551278F590A4A5F3506CB6C610C9D3"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.annotation.ImportCandidates"
+        uuid: "load_importCandidates1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "66276f23-9dba-3ae4-aaf3-495b01d2b949"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path7"
+    testPathName: "loadWhenLineNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "CB91B88A82B38180E216BBBC9EF61EC2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "883f98ce-731a-348c-97c3-6668e690f772"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "loadWhenCommentStartNotEqualsMinus1AndLineNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5393DB5D8DD6C6F07F9AB5B524AD9B41"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "E877C1A1B3C59F93552258E807A3285D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D38C077D631B41DA5941A3CD3683507"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "name1"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.io.UrlResource"
+        uuid: "readCandidateConfigurations_urlResource1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.UrlResource"
+        name: "getInputStream"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getInputStream(): InputStream throws java.io.IOException"
+        returnValue:
+          sapientType: "INPUT_STREAM"
+          content: !<inputStream>
+            values: []
+          valueType: "java.io.InputStream"
+          uuid: "readCandidateConfigurations_inputStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "9DC1B100604899A8F4D61D997DF642DF"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "BASIC"
+                content: !<regular>
+                  value: "objectItem1"
+                valueType: "java.lang.String"
+                uuid: "readCandidateConfigurations_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "BASIC"
+                content: !<regular>
+                  value: "objectItem1"
+                valueType: "java.lang.String"
+                uuid: "readCandidateConfigurations_string2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "load_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'candidates' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(List,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "600CF9F57D070D151823B4EC41C6120E"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "objectItem1"
+                  valueType: "java.lang.String"
+                  uuid: "readCandidateConfigurations_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  content: !<regular>
+                    value: "objectItem1"
+                  valueType: "java.lang.String"
+                  uuid: "readCandidateConfigurations_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.annotation.ImportCandidates"
+          parameters:
+          - name: "candidates"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "readCandidateConfigurations_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.String"
+              uuid: "load_arrayList1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.annotation.ImportCandidates"
+        uuid: "load_importCandidates1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f3da8e3e-2e95-395b-9655-a8600e04db22"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path9"
+    testPathName: "loadWhenDefaultBranchThrowsThrowable"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5E041520FD4A03A644F4B235473EC6DC"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 50
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "E877C1A1B3C59F93552258E807A3285D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D38C077D631B41DA5941A3CD3683507"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "name1"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.io.UrlResource"
+        uuid: "readCandidateConfigurations_urlResource1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.UrlResource"
+        name: "getInputStream"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getInputStream(): InputStream throws java.io.IOException"
+        returnValue:
+          sapientType: "INPUT_STREAM"
+          content: !<inputStream>
+            values: []
+          valueType: "java.io.InputStream"
+          uuid: "readCandidateConfigurations_inputStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "CB7DB82B40DFCDD624B60EA2FC7589BF"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500002
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "readLine"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "readLine(): String throws java.io.IOException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_readLine1"
+          valueType: "java.lang.String"
+          uuid: "readCandidateConfigurations_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "CB7DB82B40DFCDD624B60EA2FC7589BF"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500002
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "readLine"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "readLine(): String throws java.io.IOException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_readLine1"
+          valueType: "java.lang.String"
+          uuid: "readCandidateConfigurations_string3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "06B509400BBEE0E9BB121D2D103CC1A2"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500003
+      - 500005
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "readCandidateConfigurations_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C66E340C0F5EAAC7D97CB9C0818A07E"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "readCandidateConfigurations_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2b216bd1-213c-3ae7-8203-1ee6c92eb640"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path8"
+    pathIdForUser: "path10"
+    testPathName: "loadWhenLineIsEmptyAndCaughtIOExceptionThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "58BE201523B18DDB976E472B695FC5C4"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 50
+      id: 4
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "394C53CBB27D6AC5FA1E4D2D7E4B4574"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "load_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "E877C1A1B3C59F93552258E807A3285D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.ClassLoader"
+        uuid: "load_classLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "8AE2676D93C24B9C72EDC1038DA1E5AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "load_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "'annotation' must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Class,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D38C077D631B41DA5941A3CD3683507"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "name1"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.core.io.UrlResource"
+          parameters:
+          - name: "url"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.lang.Object"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "java.util.Enumeration"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<method_return_from_value>
+                        target: "java.lang.ClassLoader"
+                        localVariableValue:
+                          sapientType: "CLASS"
+                          content: !<regular>
+                            value: "org.springframework.boot.context.annotation.ImportCandidates"
+                          valueType: "java.lang.Class"
+                          fixed: true
+                          equalsMethodPresent: false
+                          explicitCastNeeded: false
+                        methodParameters: []
+                        methodName: "getClassLoader"
+                      valueType: "java.lang.ClassLoader"
+                      uuid: "decideClassloader_classLoader1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        valueType: "java.lang.String"
+                        uuid: "load_string2"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "getResources"
+                  valueType: "java.util.Enumeration"
+                  genericValueType: "java.net.URL"
+                  uuid: "findUrlsInClasspath_enumeration1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                methodName: "nextElement"
+              valueType: "java.net.URL"
+              uuid: "load_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: true
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.core.io.UrlResource"
+        uuid: "readCandidateConfigurations_urlResource1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.UrlResource"
+        name: "getInputStream"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getInputStream(): InputStream throws java.io.IOException"
+        returnValue:
+          sapientType: "INPUT_STREAM"
+          content: !<inputStream>
+            values: []
+          valueType: "java.io.InputStream"
+          uuid: "readCandidateConfigurations_inputStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "CB7DB82B40DFCDD624B60EA2FC7589BF"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500002
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "readLine"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "readLine(): String throws java.io.IOException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_readLine1"
+          valueType: "java.lang.String"
+          uuid: "readCandidateConfigurations_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "CB7DB82B40DFCDD624B60EA2FC7589BF"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500002
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "readLine"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "readLine(): String throws java.io.IOException"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_readLine1"
+          valueType: "java.lang.String"
+          uuid: "readCandidateConfigurations_string3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "reader"
+      modelFingerprint: "06B509400BBEE0E9BB121D2D103CC1A2"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 500004
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    content: !<inputStream>
+                      values: []
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.BufferedReader"
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.io.InputStreamReader"
+                parameters:
+                - name: "in"
+                  value:
+                    sapientType: "INPUT_STREAM"
+                    valueType: "java.io.InputStream"
+                    uuid: "readCandidateConfigurations_inputStream1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cs"
+                  value:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<static_field_return>
+                      target: "java.nio.charset.StandardCharsets"
+                      fieldName: "UTF_8"
+                    valueType: "java.nio.charset.Charset"
+                    uuid: "readCandidateConfigurations_charset1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.io.InputStreamReader"
+              uuid: "readCandidateConfigurations_inputStreamReader1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.BufferedReader"
+        uuid: "readCandidateConfigurations_bufferedReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "reader"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "readCandidateConfigurations_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2CE651DA6A0DCE209C2169CAFD0083B2"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "readCandidateConfigurations_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "readCandidateConfigurations_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "readCandidateConfigurations_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "readCandidateConfigurations_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "readCandidateConfigurations_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48a9e60b-ff61-3e6e-8a7b-c99dc294b5dd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InputStreamReader(new UrlResource(url).getInputStream(), StandardCharsets.UTF_8)))\
+        \ {"
+      lineNumber: 111
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type UrlResource - Method: getInputStream"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

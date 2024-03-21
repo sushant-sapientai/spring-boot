@@ -1,0 +1,15 @@
+
+2
+java:S1700´"Rename field "options"(³ùÇÁúÿÿÿÿ
+A
+java:S1452W"&Remove usage of generic wildcard type.(£ú€Ôøÿÿÿÿ
+K
+java:S1611ä"5Remove the parentheses around the "options" parameter(ÁÀ‡_
+R
+java:S1117ä"<Rename "options" which hides the field declared at line 180.(ÁÀ‡_
+L
+java:S1611î"5Remove the parentheses around the "options" parameter(Ü¼Î¶
+S
+java:S1117î"<Rename "options" which hides the field declared at line 180.(Ü¼Î¶
+X
+java:S1117ò"<Rename "options" which hides the field declared at line 180.(ì—ğ¦ÿÿÿÿÿ

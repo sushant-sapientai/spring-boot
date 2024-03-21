@@ -1,0 +1,11 @@
+
+?
+java:S5411¥"(Use a primitive boolean expression here.(²’¬¬
+z
+java:S6201ä"^Replace this instanceof check and cast with 'instanceof ContextClosedEvent contextclosedevent'(ï¼äÅþÿÿÿÿ
+A
+java:S1181Ò"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+F	java:S106Ù"+Replace this use of System.err by a logger.(Ûï“„ÿÿÿÿÿ
+A	java:S106Ú"+Replace this use of System.err by a logger.(Ö‘¬Ý
+I
+java:S1611ý"2Remove the parentheses around the "name" parameter(ÎÃ»—

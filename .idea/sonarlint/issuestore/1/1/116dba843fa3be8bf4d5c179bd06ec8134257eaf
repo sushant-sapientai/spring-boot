@@ -1,0 +1,12 @@
+
+V	java:S107["AConstructor has 9 parameters, which is greater than 7 authorized.(ûô¨
+=
+java:S1452–"&Remove usage of generic wildcard type.(Áº»²
+U
+java:S1117ð">Rename "properties" which hides the field declared at line 69.(ï„½ˆ
+X
+java:S1117ž"<Rename "children" which hides the field declared at line 73.(¬ŒÞ¥ÿÿÿÿÿ
+J
+java:S1611µ"3Remove the parentheses around the "child" parameter(ôòÏŠ
+U
+java:S1117”"9Rename "next" which hides the field declared at line 517.(„ÓÃºùÿÿÿÿ

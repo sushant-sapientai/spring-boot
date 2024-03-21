@@ -1,0 +1,2290 @@
+---
+modelFingerprint: "12D2D9C224F4F856C5E706556B1E9E32"
+methods:
+- method:
+    name: "getProperty"
+    returnType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+    signature: "getProperty() : org.springframework.boot.context.properties.source.ConfigurationProperty"
+    instructionFingerprint: "0DA48631820DCB0AFD9BE865B0672EC5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPropertyTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationProperty,boolean,org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.config.ConfigDataResource)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0DEFB4285198E3EA77B357E8EAE76390"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ebf9d063-d15c-33a6-bbb2-427433abed69"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getLocation"
+    returnType: "org.springframework.boot.context.config.ConfigDataResource"
+    signature: "getLocation() : org.springframework.boot.context.config.ConfigDataResource"
+    instructionFingerprint: "661E4FFFD4FE6B488A391F91D0FB5AD5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLocationTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationProperty,boolean,org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.config.ConfigDataResource)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4ED046FDD0D1F8AB423501BA6DD873E2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ee6cb6cd-2929-3c2a-8c18-cd662e8fb11b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getReplacement"
+    returnType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    signature: "getReplacement() : org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    instructionFingerprint: "E034D84840DF3FB9ED5BF5853A6B30A7"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getReplacementTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.source.ConfigurationProperty,boolean,org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.config.ConfigDataResource)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "21E76E8202919EE8F026816FF81BC49D"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "7a679b3c-b10a-358f-8b1f-e29524fa7cd8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "throwIfPropertyFound"
+    returnType: "void"
+    signature: "throwIfPropertyFound(org.springframework.boot.context.config.ConfigDataEnvironmentContributor)\
+      \ : void"
+    instructionFingerprint: "71F0D2FFBF1572509B7A300880A06797"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "throwIfPropertyFoundWhenPropertySourceIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C3E5CAEFE2D2D97BDCC4D2E4C8F24B5F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "contributor"
+      modelFingerprint: "CDFD531FFFB055FB6BC22CE3156E57C8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "BFF04001A01E865CD954AAE3B028D622"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getConfigurationPropertySource"
+        parameters: []
+        signature: "getConfigurationPropertySource(): ConfigurationPropertySource"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          uuid: "throwIfPropertyFound_configurationPropertySource1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0306cbed-2ff6-3cf3-8dad-04e455d28c22"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "throwIfPropertyFoundWhenPropertyGetOriginIsNotNullThrowsInvalidConfigDataPropertyException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "HIGH"
+    modelFingerprint: "CA2527901C24673E05D29FCF6DA9221B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "contributor"
+      modelFingerprint: "CDFD531FFFB055FB6BC22CE3156E57C8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "46F46578034BFBB97ED7D972490299F1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getConfigurationPropertySource"
+        parameters: []
+        signature: "getConfigurationPropertySource(): ConfigurationPropertySource"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          uuid: "throwIfPropertyFound_configurationPropertySource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "propertySource"
+      modelFingerprint: "AB90CFA96BDFF3BDAEE642D620DE9E32"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "throwIfPropertyFound_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "propertySource"
+        name: "getConfigurationProperty"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<clinit>_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigurationProperty(ConfigurationPropertyName): ConfigurationProperty"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName1"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin1"
+                fixed: false
+                nameForMock: "getMessage_origin1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName1"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin1"
+                fixed: false
+                nameForMock: "getMessage_origin1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "D695D1FC2AC8E87C3B0AFFA6D10831B4"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "lambda$throwIfPropertyFound$0_configDataResource1"
+          fixed: false
+          nameForMock: "lambda$throwIfPropertyFound$0_configDataResource1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "522A52E2FAFF91A108A00A39C11C0E6A"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getName"
+        parameters: []
+        signature: "getName(): ConfigurationPropertyName"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+          uuid: "getMessage_configurationPropertyName1"
+          fixed: false
+          nameForMock: "getMessage_configurationPropertyName1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "031E271ED67659330B4142757C56067A"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getMessage_origin1"
+          fixed: false
+          nameForMock: "getMessage_origin1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "031E271ED67659330B4142757C56067A"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: false
+              nameForMock: "getMessage_origin1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getMessage_origin1"
+          fixed: false
+          nameForMock: "getMessage_origin1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "propertySource"
+      modelFingerprint: "125545B499443A8A2435B083451275AB"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "throwIfPropertyFound_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "propertySource"
+        name: "getConfigurationProperty"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles[0]"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles[0]"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<clinit>_configurationPropertyName4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigurationProperty(ConfigurationPropertyName): ConfigurationProperty"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName2"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin3"
+                fixed: false
+                nameForMock: "getMessage_origin3"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName2"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin3"
+                fixed: false
+                nameForMock: "getMessage_origin3"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "D695D1FC2AC8E87C3B0AFFA6D10831B4"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "lambda$throwIfPropertyFound$0_configDataResource2"
+          fixed: false
+          nameForMock: "lambda$throwIfPropertyFound$0_configDataResource2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "522A52E2FAFF91A108A00A39C11C0E6A"
+      index: 10
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getName"
+        parameters: []
+        signature: "getName(): ConfigurationPropertyName"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+          uuid: "getMessage_configurationPropertyName2"
+          fixed: false
+          nameForMock: "getMessage_configurationPropertyName2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "031E271ED67659330B4142757C56067A"
+      index: 11
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getMessage_origin3"
+          fixed: false
+          nameForMock: "getMessage_origin3"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "031E271ED67659330B4142757C56067A"
+      index: 12
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName2"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin3"
+              fixed: false
+              nameForMock: "getMessage_origin3"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getMessage_origin3"
+          fixed: false
+          nameForMock: "getMessage_origin3"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1E644E89D2D25B4BD351905606D5BF5E"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+          parameters:
+          - name: "property"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName2"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName2"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin3"
+                    fixed: false
+                    nameForMock: "getMessage_origin3"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName2"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName2"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin3"
+                    fixed: false
+                    nameForMock: "getMessage_origin3"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profileSpecific"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "replacement"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<clinit>_configurationPropertyName5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "lambda$throwIfPropertyFound$0_configDataResource2"
+              fixed: false
+              nameForMock: "lambda$throwIfPropertyFound$0_configDataResource2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+          parameters:
+          - name: "property"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName2"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName2"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty2-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin3"
+                    fixed: false
+                    nameForMock: "getMessage_origin3"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profileSpecific"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "replacement"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<clinit>_configurationPropertyName5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "lambda$throwIfPropertyFound$0_configDataResource2"
+              fixed: false
+              nameForMock: "lambda$throwIfPropertyFound$0_configDataResource2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+        uuid: "lambda$throwIfPropertyFound$0_invalidConfigDataPropertyException2"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f42cb751-bc9d-3eb1-9e02-9ff06dac214b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "throwIfPropertyFoundWhenPropertyGetOriginIsNullThrowsInvalidConfigDataPropertyException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "HIGH"
+    modelFingerprint: "F7F67B6EC3FB7957950695D41140912F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0e0af61f-0570-323c-aee6-8b70bfb242b3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "throwIfPropertyFoundWhenReplacementIsNotNullAndPropertyGetOriginIsNotNullThrowsInvalidConfigDataPropertyException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "HIGH"
+    modelFingerprint: "2440919C5D0C785C872A8EDAC13EE1DB"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d69517c9-62d8-35b8-9440-f7f171394a36"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path5"
+    testPathName: "throwIfPropertyFoundWhenReplacementIsNotNullAndPropertyGetOriginIsNullThrowsInvalidConfigDataPropertyException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "BD68D199D11254648E6E86B96E20B2DE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "contributor"
+      modelFingerprint: "CDFD531FFFB055FB6BC22CE3156E57C8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "46F46578034BFBB97ED7D972490299F1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getConfigurationPropertySource"
+        parameters: []
+        signature: "getConfigurationPropertySource(): ConfigurationPropertySource"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          uuid: "throwIfPropertyFound_configurationPropertySource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "propertySource"
+      modelFingerprint: "A0762E2641C6F868FBCEB81066504AAF"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "throwIfPropertyFound_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "propertySource"
+        name: "getConfigurationProperty"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<clinit>_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigurationProperty(ConfigurationPropertyName): ConfigurationProperty"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName1"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "NULL"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin1"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                uuid: "getMessage_configurationPropertyName1"
+                fixed: false
+                nameForMock: "getMessage_configurationPropertyName1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "value"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "origin"
+              value:
+                sapientType: "NULL"
+                valueType: "org.springframework.boot.origin.Origin"
+                uuid: "getMessage_origin1"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "contributor"
+      modelFingerprint: "98DB97479C586035954B6380C357E2B6"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentContributor"
+        uuid: "throwIfPropertyFound_configDataEnvironmentContributor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "contributor"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "lambda$throwIfPropertyFound$0_configDataResource1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "E30C57F4EBA9D936499ECCBBD9675F60"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getName"
+        parameters: []
+        signature: "getName(): ConfigurationPropertyName"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+          uuid: "getMessage_configurationPropertyName1"
+          fixed: false
+          nameForMock: "getMessage_configurationPropertyName1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "property"
+      modelFingerprint: "8A9CC8EE77B360980E412FC454B8DFCB"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "getMessage_configurationPropertyName1"
+              fixed: false
+              nameForMock: "getMessage_configurationPropertyName1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "value"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "origin"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.origin.Origin"
+              uuid: "getMessage_origin1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+        uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "property"
+        name: "getOrigin"
+        parameters: []
+        signature: "getOrigin(): Origin"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getMessage_origin1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "propertySource"
+      modelFingerprint: "8E84E4D76C2DF05715C6E5EEF24AF13C"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertySource"
+        uuid: "throwIfPropertyFound_configurationPropertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "propertySource"
+        name: "getConfigurationProperty"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles[0]"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              method: "of"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "spring.profiles[0]"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "<clinit>_configurationPropertyName4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigurationProperty(ConfigurationPropertyName): ConfigurationProperty"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+          uuid: "lambda$throwIfPropertyFound$0_configurationProperty2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "309C06E32C51FA1651B5FFA422426CFC"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+          parameters:
+          - name: "property"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName1"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "NULL"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName1"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "NULL"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profileSpecific"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "replacement"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<clinit>_configurationPropertyName2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "lambda$throwIfPropertyFound$0_configDataResource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+          parameters:
+          - name: "property"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                    uuid: "getMessage_configurationPropertyName1"
+                    fixed: false
+                    nameForMock: "getMessage_configurationPropertyName1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "value"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "lambda$throwIfPropertyFound$0_configurationProperty1-value"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "origin"
+                  value:
+                    sapientType: "NULL"
+                    valueType: "org.springframework.boot.origin.Origin"
+                    uuid: "getMessage_origin1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationProperty"
+              uuid: "lambda$throwIfPropertyFound$0_configurationProperty1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profileSpecific"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "replacement"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+                method: "of"
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "spring.config.activate.on-profile"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+              uuid: "<clinit>_configurationPropertyName2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "lambda$throwIfPropertyFound$0_configDataResource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.InvalidConfigDataPropertyException"
+        uuid: "lambda$throwIfPropertyFound$0_invalidConfigDataPropertyException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba0a8d50-7cff-36dc-bb96-6d848204d906"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

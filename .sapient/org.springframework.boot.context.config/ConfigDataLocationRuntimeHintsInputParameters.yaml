@@ -1,0 +1,1178 @@
+---
+modelFingerprint: "6CBD9432D99CCB2451F67268D63517BC"
+methods:
+- method:
+    name: "registerHints"
+    returnType: "void"
+    signature: "registerHints(org.springframework.aot.hint.RuntimeHints,java.lang.ClassLoader)\
+      \ : void"
+    instructionFingerprint: "D68A6295C5130B1AEC091B7ABCAFD653"
+    parametersTypes:
+    - "org.springframework.aot.hint.RuntimeHints"
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerHintsWhenLoggerIsDebugEnabled"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "83B40FB138706467D81EE292F22146E9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hints"
+      modelFingerprint: "7FF56B1861637B3DDB635C56C3562869"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.RuntimeHints"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "registerHints_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "6417D28D5601D91254FB58FA7FB4940C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getLocations"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "registerHints_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLocations(ClassLoader): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.String"
+          uuid: "registerHints_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "CD8FC531E2ED79CCB437CDBAABB003B6"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getExtensions"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "registerHints_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getExtensions(ClassLoader): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.String"
+          uuid: "registerHints_list2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "FilePatternResourceHintsRegistrar"
+      modelFingerprint: "5EE2CF494E7251DBE561AA288CEC48D5"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar"
+        uuid: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar"
+        name: "forClassPathLocations"
+        parameters:
+        - name: "classpathLocations"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "registerHints_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "forClassPathLocations(List): FilePatternResourceHintsRegistrar$Builder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          uuid: "registerHints_filePatternResourceHintsRegistrar.Builder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DA836CF564663BB0CEE64225AFB7BD52"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        uuid: "registerHints_filePatternResourceHintsRegistrar.Builder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        name: "withFilePrefixes"
+        parameters:
+        - name: "filePrefixes"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values:
+              - sapientType: "BASIC"
+                content: !<regular>
+                  value: "application"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              parameters: []
+              values:
+              - sapientType: "BASIC"
+                content: !<regular>
+                  value: "application"
+                valueType: "java.lang.String"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "getFileNames_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withFilePrefixes(List): FilePatternResourceHintsRegistrar$Builder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          uuid: "registerHints_filePatternResourceHintsRegistrar.Builder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "C2AE51FE92C2BAE99A0680F846B99A95"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        uuid: "registerHints_filePatternResourceHintsRegistrar.Builder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        name: "withFileExtensions"
+        parameters:
+        - name: "fileExtensions"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "registerHints_list2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withFileExtensions(List): FilePatternResourceHintsRegistrar$Builder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          uuid: "registerHints_filePatternResourceHintsRegistrar.Builder3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "hints"
+      modelFingerprint: "8105CE33E31A95C8CEE1C8D6D1464762"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.RuntimeHints"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "hints"
+        name: "resources"
+        parameters: []
+        signature: "resources(): ResourceHints"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.aot.hint.ResourceHints"
+          uuid: "registerHints_resourceHints1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "90DD52D78FF3F17A6DF0329B4DB4626E"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        uuid: "registerHints_filePatternResourceHintsRegistrar.Builder3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.aot.hint.support.FilePatternResourceHintsRegistrar$Builder"
+        name: "registerHints"
+        parameters:
+        - name: "hints"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.aot.hint.ResourceHints"
+            uuid: "registerHints_resourceHints1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "registerHints_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerHints(ResourceHints,ClassLoader): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerHints_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0df63eb7-2b74-306a-9b9c-0370947f5ae0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.isDebugEnabled()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "registerHintsWhenLoggerNotIsDebugEnabled"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "31835BA509C31C69572577972EE3E4FF"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d35e83ae-f733-34e8-8941-3a5de76ea283"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.isDebugEnabled()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getFileNames"
+    returnType: "java.util.List"
+    signature: "getFileNames(java.lang.ClassLoader) : java.util.List<java.lang.String>"
+    instructionFingerprint: "231948FF62FEAC3BCDE52D9BC62638D9"
+    parametersTypes:
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFileNamesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4A9EE55297B8C1D94190A701709FBD9A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "getFileNames_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EF79DF24E89A49A284BB53A51B113C92"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "application"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "application"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "java.lang.String"
+        uuid: "getFileNames_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a4f1ca8a-1fdc-3656-8e4e-e441e6678b0d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getLocations"
+    returnType: "java.util.List"
+    signature: "getLocations(java.lang.ClassLoader) : java.util.List<java.lang.String>"
+    instructionFingerprint: "51846580C95AB05DD4246C0214DBE260"
+    parametersTypes:
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLocationsWhenConfigDataEnvironmentDEFAULT_SEARCH_LOCATIONSIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BBBB15C469E50FDDF59ACCBF186DCFA6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "getLocations_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6C6FB60F8CF31C2B44EAC4823DF0D9A7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.String"
+        uuid: "getLocations_arrayList1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d4bb8a91-76ef-34f8-8f22-79aa7127ad7b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getExtensions"
+    returnType: "java.util.List"
+    signature: "getExtensions(java.lang.ClassLoader) : java.util.List<java.lang.String>"
+    instructionFingerprint: "D0446BEC4F3E8AE6A6228495706A8DE7"
+    parametersTypes:
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getExtensionsWhenPropertySourceLoadersIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "99FE6BF584329354337E1B26981E13EA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d93227ce-e5eb-353c-9e52-e1b351249253"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getExtensionsWhenPropertySourceLoaderGetFileExtensionsIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D5ADFCF0DD570725FD02C72F13704C48"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "f0845820-f306-35c7-961d-c2b38db07794"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "getExtensionsWhenExtensionsNotContainsCandidate"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C26EB01693F38BDF19CE7D895824AE5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "getExtensions_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SpringFactoriesLoader"
+      modelFingerprint: "FCD25DF9EAFEBD0CA02CB75A2FC5F7A5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+        uuid: "org.springframework.core.io.support.SpringFactoriesLoader"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.support.SpringFactoriesLoader"
+        name: "forDefaultResourceLocation"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "getExtensions_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "forDefaultResourceLocation(ClassLoader): SpringFactoriesLoader"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.io.support.SpringFactoriesLoader"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+          uuid: "getSpringFactoriesLoader_springFactoriesLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "49146990442D996560CFFE457E73DA5B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.support.SpringFactoriesLoader"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+        uuid: "getSpringFactoriesLoader_springFactoriesLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.support.SpringFactoriesLoader"
+        name: "load"
+        parameters:
+        - name: "factoryType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.env.PropertySourceLoader"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "load(Class): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.env.PropertySourceLoader"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "getExtensions_object1"
+              fixed: false
+              collectionUuid: "getExtensions_list1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.env.PropertySourceLoader"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "getExtensions_object1"
+              fixed: false
+              collectionUuid: "getExtensions_list1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.boot.env.PropertySourceLoader"
+          uuid: "getExtensions_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "propertySourceLoader"
+      modelFingerprint: "BB1DA85DEE6AE701E0BEC53741B7FCCA"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.env.PropertySourceLoader"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.env.PropertySourceLoader"
+        uuid: "getExtensions_object1"
+        fixed: false
+        collectionUuid: "getExtensions_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "propertySourceLoader"
+        name: "getFileExtensions"
+        parameters: []
+        signature: "getFileExtensions(): String[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "A"
+                suggestedContent: !<regular>
+                  value: "A"
+                valueType: "java.lang.String"
+                uuid: "getExtensions_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "A"
+                suggestedContent: !<regular>
+                  value: "A"
+                valueType: "java.lang.String"
+                uuid: "getExtensions_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.String[]"
+          uuid: "getExtensions_string[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D503EF83939D0C2D3FF05C5ED2E337C0"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: ".A"
+            suggestedContent: !<regular>
+              value: ".A"
+            valueType: "java.lang.String"
+            uuid: "getExtensions_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: ".A"
+            suggestedContent: !<regular>
+              value: ".A"
+            valueType: "java.lang.String"
+            uuid: "getExtensions_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "java.lang.String"
+        uuid: "getExtensions_arrayList1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9b78a88c-7858-3826-b0c3-1eed0b72872a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getSpringFactoriesLoader"
+    returnType: "org.springframework.core.io.support.SpringFactoriesLoader"
+    signature: "getSpringFactoriesLoader(java.lang.ClassLoader) : org.springframework.core.io.support.SpringFactoriesLoader"
+    instructionFingerprint: "354396FFF575510B18F943E8B7D8F6A4"
+    parametersTypes:
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSpringFactoriesLoaderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A497F4B6D2189105A06E0A252DBA9208"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationRuntimeHints"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "getSpringFactoriesLoader_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SpringFactoriesLoader"
+      modelFingerprint: "DD5D0BCA4B5BAA4E8B021841740F349F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+        uuid: "org.springframework.core.io.support.SpringFactoriesLoader"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.io.support.SpringFactoriesLoader"
+        name: "forDefaultResourceLocation"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.lang.ClassLoader"
+              method: "getPlatformClassLoader"
+              methodParameters: []
+            valueType: "java.lang.ClassLoader"
+            uuid: "getSpringFactoriesLoader_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "forDefaultResourceLocation(ClassLoader): SpringFactoriesLoader"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+          uuid: "getSpringFactoriesLoader_springFactoriesLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "32757F436B390F51DFC7293FA4F9DAE8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.support.SpringFactoriesLoader"
+        uuid: "getSpringFactoriesLoader_springFactoriesLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4cf4290c-992d-39ce-80f1-e103f4284822"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

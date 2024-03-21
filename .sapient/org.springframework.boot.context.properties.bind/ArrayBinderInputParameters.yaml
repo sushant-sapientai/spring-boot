@@ -1,0 +1,1361 @@
+---
+modelFingerprint: "825B37A94F78B01BD97C4AF9A7AEFBC9"
+methods:
+- method:
+    name: "bindAggregate"
+    returnType: "java.lang.Object"
+    signature: "bindAggregate(org.springframework.boot.context.properties.source.ConfigurationPropertyName,org.springframework.boot.context.properties.bind.Bindable<?>,org.springframework.boot.context.properties.bind.AggregateElementBinder)\
+      \ : java.lang.Object"
+    instructionFingerprint: "E979C66D7C7999F0AB8C7285F9AA04C7"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+    - "org.springframework.boot.context.properties.bind.Bindable"
+    - "org.springframework.boot.context.properties.bind.AggregateElementBinder"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "bindAggregateWhenResultNotWasSupplied"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Binder$Context)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "535042F46BA7F4DF7A7941ACFA2CBE8A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "71F997F17CD09A93E5D6112805633269"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.ArrayBinder"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "bindAggregate_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "8E2A735B6CE5F77FB086B487521802D5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "elementBinder"
+      modelFingerprint: "F4AD2C403E3F7A42B6491C58B50D3565"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.AggregateElementBinder"
+        uuid: "bindAggregate_aggregateElementBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "target"
+      modelFingerprint: "3B4EF577FD86EC5329CB4199AA03BA3D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "target"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.ResolvableType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "target"
+      modelFingerprint: "3B4EF577FD86EC5329CB4199AA03BA3D"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "target"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.ResolvableType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "663EE074BCC31627D7EE5E4875A6C194"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.ResolvableType"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "bindAggregate_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.ResolvableType"
+        name: "getComponentType"
+        parameters: []
+        signature: "getComponentType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "B2D1822297ECA40015FBE5E1E9A45993"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "bindIndexed"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "bindAggregate_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "target"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "of"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.ResolvableType"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "bindAggregate_resolvableType1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "of"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.ResolvableType"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "bindAggregate_resolvableType1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.bind.Bindable"
+            uuid: "bindAggregate_bindable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "elementBinder"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.bind.AggregateElementBinder"
+            uuid: "bindAggregate_aggregateElementBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "aggregateType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.ResolvableType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.ResolvableType"
+            uuid: "bindAggregate_resolvableType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.ResolvableType"
+            uuid: "bindAggregate_resolvableType3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "result"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              parameters:
+              - name: "supplier"
+                value:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "java.util.Collection<java.lang.Object>"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              parameters:
+              - name: "supplier"
+                value:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "java.util.Collection<java.lang.Object>"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+            uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bindIndexed(ConfigurationPropertyName,Bindable,AggregateElementBinder,ResolvableType,ResolvableType,IndexedElementsBinder$IndexedCollectionSupplier):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "bindAggregate_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 20
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "8CD1039EB25C5BE176874BDC2443726B"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+        uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "wasSupplied"
+        parameters: []
+        signature: "wasSupplied(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "bindAggregate_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "bindAggregate_object1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b803041a-05e6-3623-8060-a875ca1f5a9e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "result"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "if (result.wasSupplied()) {"
+      lineNumber: 47
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: result - Method: wasSupplied"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "bindAggregateWhenILessThanListSize"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Binder$Context)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C7A0396E084E4CB1EA3430B0F3C60631"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "71F997F17CD09A93E5D6112805633269"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.ArrayBinder"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "B25130F73393E17FF8F314458B4BB3C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+        uuid: "bindAggregate_configurationPropertyName1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "target"
+      modelFingerprint: "8E2A735B6CE5F77FB086B487521802D5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "elementBinder"
+      modelFingerprint: "F4AD2C403E3F7A42B6491C58B50D3565"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.AggregateElementBinder"
+        uuid: "bindAggregate_aggregateElementBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "target"
+      modelFingerprint: "3B4EF577FD86EC5329CB4199AA03BA3D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "target"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.ResolvableType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "target"
+      modelFingerprint: "3B4EF577FD86EC5329CB4199AA03BA3D"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.springframework.boot.context.properties.bind.Bindable"
+          method: "of"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.ResolvableType"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.ResolvableType"
+              uuid: "bindAggregate_resolvableType1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.springframework.boot.context.properties.bind.Bindable"
+        uuid: "bindAggregate_bindable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "target"
+        name: "getType"
+        parameters: []
+        signature: "getType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.ResolvableType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "78880B1F7AB29C607AF9C98365ECCA52"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.ResolvableType"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "bindAggregate_resolvableType1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.ResolvableType"
+        name: "getComponentType"
+        parameters: []
+        signature: "getComponentType(): ResolvableType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.core.ResolvableType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.core.ResolvableType"
+          uuid: "bindAggregate_resolvableType3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0018C00FC14C39185211397691357352"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "bindIndexed"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.source.ConfigurationPropertyName"
+            uuid: "bindAggregate_configurationPropertyName1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "target"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "of"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.ResolvableType"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "bindAggregate_resolvableType1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "org.springframework.boot.context.properties.bind.Bindable"
+              method: "of"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.springframework.core.ResolvableType"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.springframework.core.ResolvableType"
+                  uuid: "bindAggregate_resolvableType1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "org.springframework.boot.context.properties.bind.Bindable"
+            uuid: "bindAggregate_bindable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "elementBinder"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.properties.bind.AggregateElementBinder"
+            uuid: "bindAggregate_aggregateElementBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "aggregateType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.ResolvableType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.ResolvableType"
+            uuid: "bindAggregate_resolvableType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.ResolvableType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.ResolvableType"
+            uuid: "bindAggregate_resolvableType3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "result"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              parameters:
+              - name: "supplier"
+                value:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "java.util.Collection<java.lang.Object>"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              parameters:
+              - name: "supplier"
+                value:
+                  sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                  valueType: "java.util.function.Supplier"
+                  genericValueType: "java.util.Collection<java.lang.Object>"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+            uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bindIndexed(ConfigurationPropertyName,Bindable,AggregateElementBinder,ResolvableType,ResolvableType,IndexedElementsBinder$IndexedCollectionSupplier):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "bindAggregate_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 20
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "C867A6F10602A74318F05A8185650170"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+        uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "wasSupplied"
+        parameters: []
+        signature: "wasSupplied(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "bindAggregate_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "result"
+      modelFingerprint: "1BA93BA3D7DA62A0D2D6B8A901646489"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+          parameters:
+          - name: "supplier"
+            value:
+              sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+              valueType: "java.util.function.Supplier"
+              genericValueType: "java.util.Collection<java.lang.Object>"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+        uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "result"
+        name: "get"
+        parameters: []
+        signature: "get(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "java.lang.Object"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+                parameters:
+                - name: "supplier"
+                  value:
+                    sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                    valueType: "java.util.function.Supplier"
+                    genericValueType: "java.util.Collection<java.lang.Object>"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+                parameters:
+                - name: "supplier"
+                  value:
+                    sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                    valueType: "java.util.function.Supplier"
+                    genericValueType: "java.util.Collection<java.lang.Object>"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "get"
+          suggestedContent: !<method_return_from_value>
+            target: "java.lang.Object"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+                parameters:
+                - name: "supplier"
+                  value:
+                    sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+                    valueType: "java.util.function.Supplier"
+                    genericValueType: "java.util.Collection<java.lang.Object>"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.context.properties.bind.IndexedElementsBinder$IndexedCollectionSupplier"
+              uuid: "bindAggregate_indexedElementsBinder.IndexedCollectionSupplier1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "get"
+          valueType: "java.util.List"
+          uuid: "bindAggregate_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "elementType"
+      modelFingerprint: "18133835090846EFAF88E5B7FA3D51F9"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.ResolvableType"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.ResolvableType"
+        uuid: "bindAggregate_resolvableType3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "elementType"
+        name: "resolve"
+        parameters: []
+        signature: "resolve(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "bindAggregate_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "bindAggregate_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "72274d74-1f0b-3808-9f6e-51f3a942e2d8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "result"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "if (result.wasSupplied()) {"
+      lineNumber: 47
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: result - Method: wasSupplied"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "merge"
+    returnType: "java.lang.Object"
+    signature: "merge(java.util.function.Supplier<java.lang.Object>,java.lang.Object)\
+      \ : java.lang.Object"
+    instructionFingerprint: "9F85287B312AC442AEA0D784650F6112"
+    parametersTypes:
+    - "java.util.function.Supplier"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "mergeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Binder$Context)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6369B06D0062B5FB4CB34CC6DC23864F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "71F997F17CD09A93E5D6112805633269"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.ArrayBinder"
+          parameters:
+          - name: "context"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.properties.bind.Binder$Context"
+              uuid: "<init>_binder.Context1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.ArrayBinder"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "existing"
+      modelFingerprint: "0079BABE937C1716034538BE3900AC4E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Supplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Supplier"
+        uuid: "merge_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additional"
+      modelFingerprint: "E6627FD7E3E0069E00276D15CBCEB188"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "merge_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "merge_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d7d042c3-124b-3792-8757-207cd3cb67b4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

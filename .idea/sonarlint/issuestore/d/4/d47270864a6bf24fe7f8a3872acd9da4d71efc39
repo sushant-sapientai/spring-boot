@@ -1,0 +1,9 @@
+
+T
+java:S16116"9Remove the parentheses around the "contributor" parameter(áêğ¼ûÿÿÿÿ
+P
+java:S1611×"9Remove the parentheses around the "contributor" parameter(¦Ğ·
+s
+java:S3077Œ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¤ã‹Íûÿÿÿÿ
+W
+java:S1117—";Rename "binder" which hides the field declared at line 268.(½Ëïëÿÿÿÿÿ

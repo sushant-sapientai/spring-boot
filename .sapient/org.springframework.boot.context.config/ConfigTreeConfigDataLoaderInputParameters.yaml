@@ -1,0 +1,543 @@
+---
+modelFingerprint: "81CAE786662FAB2995DECBCDD16B4CEB"
+methods:
+- method:
+    name: "load"
+    returnType: "org.springframework.boot.context.config.ConfigData"
+    signature: "load(org.springframework.boot.context.config.ConfigDataLoaderContext,org.springframework.boot.context.config.ConfigTreeConfigDataResource)\
+      \ : org.springframework.boot.context.config.ConfigData"
+    throwsExceptions:
+    - "java.io.IOException"
+    - "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+    instructionFingerprint: "F5BEF8FCE3F0BDF00ADE8F8E5BBB5286"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataLoaderContext"
+    - "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "loadTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "510F247B7BB0EC8CBF62A46434AFF673"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigTreeConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigTreeConfigDataLoader"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigTreeConfigDataLoader"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "A77FA42C1218B17B3106286D9F01EEA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "load_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "C252926492BA85DC62DBCCEB6DBB1A90"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+        uuid: "load_configTreeConfigDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "1F580CCE3749E82EA132EEC00FFB7076"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+        uuid: "load_configTreeConfigDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "getPath"
+        parameters: []
+        signature: "getPath(): Path"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.nio.file.Path"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.nio.file.Path"
+          uuid: "load_path1"
+          fixed: false
+          nameForMock: "load_path1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigDataResourceNotFoundException"
+      modelFingerprint: "98B87600C45E4217A02A93C565CA097D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        name: "throwIfDoesNotExist"
+        parameters:
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigTreeConfigDataResource"
+            uuid: "load_configTreeConfigDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "pathToCheck"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.nio.file.Path"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.nio.file.Path"
+            uuid: "load_path1"
+            fixed: false
+            nameForMock: "load_path1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "throwIfDoesNotExist(ConfigTreeConfigDataResource,Path): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "load_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7279F1C557DAAD5BC15EBC8981E107B3"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.env.ConfigTreePropertySource"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "Config tree 'load_path1'"
+                        suggestedContent: !<regular>
+                          value: "Config tree 'load_path1'"
+                        valueType: "java.lang.String"
+                        uuid: "load_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sourceDirectory"
+                      value:
+                        sapientType: "MOCK"
+                        suggestedContent: !<unknown_object>
+                          target: "java.nio.file.Path"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.nio.file.Path"
+                        uuid: "load_path1"
+                        fixed: false
+                        nameForMock: "load_path1"
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "options"
+                      value:
+                        sapientType: "ARRAY"
+                        content: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        suggestedContent: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option[]"
+                        uuid: "load_configTreePropertySource.Option[]1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.env.ConfigTreePropertySource"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "Config tree 'load_path1'"
+                        valueType: "java.lang.String"
+                        uuid: "load_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sourceDirectory"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.nio.file.Path"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.nio.file.Path"
+                        uuid: "load_path1"
+                        fixed: false
+                        nameForMock: "load_path1"
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "options"
+                      value:
+                        sapientType: "ARRAY"
+                        suggestedContent: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option[]"
+                        uuid: "load_configTreePropertySource.Option[]1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "org.springframework.boot.env.ConfigTreePropertySource"
+                  uuid: "load_configTreePropertySource1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "org.springframework.boot.env.ConfigTreePropertySource"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "Config tree 'load_path1'"
+                        suggestedContent: !<regular>
+                          value: "Config tree 'load_path1'"
+                        valueType: "java.lang.String"
+                        uuid: "load_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sourceDirectory"
+                      value:
+                        sapientType: "MOCK"
+                        suggestedContent: !<unknown_object>
+                          target: "java.nio.file.Path"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.nio.file.Path"
+                        uuid: "load_path1"
+                        fixed: false
+                        nameForMock: "load_path1"
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "options"
+                      value:
+                        sapientType: "ARRAY"
+                        content: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        suggestedContent: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option[]"
+                        uuid: "load_configTreePropertySource.Option[]1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.env.ConfigTreePropertySource"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "Config tree 'load_path1'"
+                        valueType: "java.lang.String"
+                        uuid: "load_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sourceDirectory"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.nio.file.Path"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.nio.file.Path"
+                        uuid: "load_path1"
+                        fixed: false
+                        nameForMock: "load_path1"
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "options"
+                      value:
+                        sapientType: "ARRAY"
+                        suggestedContent: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option[]"
+                        uuid: "load_configTreePropertySource.Option[]1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "org.springframework.boot.env.ConfigTreePropertySource"
+                  uuid: "load_configTreePropertySource1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.env.ConfigTreePropertySource"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "options"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.springframework.boot.context.config.ConfigData$Option[]"
+              uuid: "load_configData.Option[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  suggestedContent: !<new>
+                    target: "org.springframework.boot.env.ConfigTreePropertySource"
+                    parameters:
+                    - name: "name"
+                      value:
+                        sapientType: "BASIC"
+                        suggestedContent: !<regular>
+                          value: "Config tree 'load_path1'"
+                        valueType: "java.lang.String"
+                        uuid: "load_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sourceDirectory"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.nio.file.Path"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.nio.file.Path"
+                        uuid: "load_path1"
+                        fixed: false
+                        nameForMock: "load_path1"
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "options"
+                      value:
+                        sapientType: "ARRAY"
+                        suggestedContent: !<array>
+                          values:
+                            0:
+                              sapientType: "ENUM"
+                              content: !<regular>
+                                value: "AUTO_TRIM_TRAILING_NEW_LINE"
+                              valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option"
+                              uuid: "Enum-org.springframework.boot.env.ConfigTreePropertySource$Option-AUTO_TRIM_TRAILING_NEW_LINE"
+                              fixed: true
+                              equalsMethodPresent: false
+                              explicitCastNeeded: false
+                        valueType: "org.springframework.boot.env.ConfigTreePropertySource$Option[]"
+                        uuid: "load_configTreePropertySource.Option[]1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "org.springframework.boot.env.ConfigTreePropertySource"
+                  uuid: "load_configTreePropertySource1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.springframework.boot.env.ConfigTreePropertySource"
+              uuid: "load_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "options"
+            value:
+              sapientType: "ARRAY"
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.springframework.boot.context.config.ConfigData$Option[]"
+              uuid: "load_configData.Option[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "load_configData1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ff42effe-8e08-33e3-9690-b409079214e3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

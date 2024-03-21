@@ -1,0 +1,844 @@
+---
+modelFingerprint: "223C802F71A67DC17F2657F851CB3A13"
+methods:
+- method:
+    name: "registerHints"
+    returnType: "void"
+    signature: "registerHints(org.springframework.aot.hint.RuntimeHints,java.lang.ClassLoader)\
+      \ : void"
+    instructionFingerprint: "8A3FBEB8E4BB81576FA0A4D4D654A53F"
+    parametersTypes:
+    - "org.springframework.aot.hint.RuntimeHints"
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerHintsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Bindable<?>[])\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "68E6C4E1931968F1246C33B34D3AC08A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "477EF4485FDB8A32D47DB4EF9FE98472"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "<init>_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "<init>_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hints"
+      modelFingerprint: "F1141265B348CB226B42612737E5FE71"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "EE299BDC26205B7BAC15A9BAB1622CBF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "registerHints_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "885CB9C646B0A2D863B5686289B85FF0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "registerHints"
+        parameters:
+        - name: "hints"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.aot.hint.RuntimeHints"
+            uuid: "registerHints_runtimeHints1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "registerHints(RuntimeHints): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "registerHints_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b1fc7be3-9a56-3b28-acf9-0d8d8fa91d7d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "registerHints"
+    returnType: "void"
+    signature: "registerHints(org.springframework.aot.hint.RuntimeHints) : void"
+    instructionFingerprint: "FD0229C4E56D03F0D407A328A869163C"
+    parametersTypes:
+    - "org.springframework.aot.hint.RuntimeHints"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "registerHints1WhenCompiledWithoutParametersIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Bindable<?>[])\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "839D659418332235C74399F0D3AFB9DE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "3AD77CC612132F016F8FC4C4FAB7BB6B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values:
+                  0:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                    uuid: "registerHints_bindable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<array>
+                values:
+                  0:
+                    sapientType: "MOCK"
+                    valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                    uuid: "registerHints_bindable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "<init>_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              suggestedContent: !<array>
+                values:
+                  0:
+                    sapientType: "UNKNOWN"
+                    valueType: "org.springframework.boot.context.properties.bind.Bindable"
+                    uuid: "registerHints_bindable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "<init>_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hints"
+      modelFingerprint: "7FF56B1861637B3DDB635C56C3562869"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.RuntimeHints"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "hints"
+      modelFingerprint: "73E2789813796209D0B18E4C52DA95DC"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.aot.hint.RuntimeHints"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.aot.hint.RuntimeHints"
+        uuid: "registerHints_runtimeHints1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "hints"
+        name: "reflection"
+        parameters: []
+        signature: "reflection(): ReflectionHints"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.aot.hint.ReflectionHints"
+          uuid: "registerHints_reflectionHints1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "94213cdb-311d-376f-81f8-48586bfd4718"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "registerHints1WhenThisBindablesIsEmptyAndCompiledWithoutParametersIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.properties.bind.Bindable<?>[])\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "87C7FA3740C8E128F7CD3419453A38FA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "7b351269-9936-372e-8c04-20a81859b3d0"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "forTypes"
+    returnType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    signature: "forTypes(java.lang.Iterable<java.lang.Class<?>>) : org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    instructionFingerprint: "B3A1E8D16B7304CF728B2FC6F70E0559"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forTypesTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6FF59FE570AA8C7545B4DCC40171EFBF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "types"
+      modelFingerprint: "C3CB2D5A1AB0DF08FDB1017B413D123C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "forTypes_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "C108F02667D5368DC9044ECBAE06C7FD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Iterable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Iterable"
+            uuid: "forTypes_iterable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Types must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Iterable,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "forTypes_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindableRuntimeHintsRegistrar"
+      modelFingerprint: "558E16EEA29AD8B3C35FD6AB782D5CD2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        name: "forTypes"
+        parameters:
+        - name: "types"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            uuid: "forTypes_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "forTypes(Class[]): BindableRuntimeHintsRegistrar"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          uuid: "forTypes_bindableRuntimeHintsRegistrar1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F382BCB19C37A776462089BF142B4AA1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "forTypes_bindableRuntimeHintsRegistrar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bc32b462-c0e2-3b0a-8d60-1ededd13d7e9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.spliterator() : java.util.Spliterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "forTypes"
+    returnType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    signature: "forTypes(java.lang.Class<?>[]) : org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    instructionFingerprint: "8676ACEEF896B65CDBDB3C84F75F2633"
+    parametersTypes:
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forTypes1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9271FFB7CD2C68D43D74824A4F1A816"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "types"
+      modelFingerprint: "280B2FEC8A6E47DB93F0D5E0EAAA6EA8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "forTypes_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "46C8DEC81E0FCD0A72183B04FF3BAAF9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "types"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.Class[]"
+              genericValueType: "?"
+              uuid: "forTypes_class[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "types"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.Class[]"
+              genericValueType: "?"
+              uuid: "forTypes_class[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "forTypes_bindableRuntimeHintsRegistrar1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "55cc2ab7-c9de-3c22-a6fe-af0d4c42310b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "forBindables"
+    returnType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    signature: "forBindables(java.lang.Iterable<org.springframework.boot.context.properties.bind.Bindable<?>>)\
+      \ : org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    instructionFingerprint: "FDB43B12CEEA730007DEB2ADD427518E"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forBindablesTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "65E3EECF6ED5DB9F11179F971F2BB6E1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "bindables"
+      modelFingerprint: "E8D7AFD6580AFDB1526BB52FE24A561E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "forBindables_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "6BB3BDB028EDF6562633F0B10CAE3906"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Iterable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Iterable"
+            uuid: "forBindables_iterable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Bindables must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Iterable,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "forBindables_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindableRuntimeHintsRegistrar"
+      modelFingerprint: "EBBF9E7C9405332165BB34B3B4D90D3A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        name: "forBindables"
+        parameters:
+        - name: "bindables"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+            uuid: "forBindables_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "forBindables(Bindable[]): BindableRuntimeHintsRegistrar"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          uuid: "forBindables_bindableRuntimeHintsRegistrar1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F382BCB19C37A776462089BF142B4AA1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "forBindables_bindableRuntimeHintsRegistrar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9fbf1158-262c-310f-a0b2-fd9cc0ebcdc6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Iterable.spliterator() : java.util.Spliterator"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "forBindables"
+    returnType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    signature: "forBindables(org.springframework.boot.context.properties.bind.Bindable<?>[])\
+      \ : org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+    instructionFingerprint: "24BF199FD279BA5F194F3074E251B3D5"
+    parametersTypes:
+    - "org.springframework.boot.context.properties.bind.Bindable[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forBindables1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7B1348F580F3048802769986379F8367"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "bindables"
+      modelFingerprint: "B5947AF814A354136BC1704AAF695E33"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+        genericValueType: "?"
+        uuid: "forBindables_bindable[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CFB4DC842A6C6FCAE71BCC01F0992793"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "forBindables_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+          parameters:
+          - name: "bindables"
+            value:
+              sapientType: "ARRAY"
+              valueType: "org.springframework.boot.context.properties.bind.Bindable[]"
+              genericValueType: "?"
+              uuid: "forBindables_bindable[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar"
+        uuid: "forBindables_bindableRuntimeHintsRegistrar1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "81b33437-9e76-3aa7-a922-56dd13cbf50f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

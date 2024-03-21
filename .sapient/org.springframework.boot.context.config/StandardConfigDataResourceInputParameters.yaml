@@ -1,0 +1,1336 @@
+---
+modelFingerprint: "A404719E16F93C0084317803EED12754"
+methods:
+- method:
+    name: "getReference"
+    returnType: "org.springframework.boot.context.config.StandardConfigDataReference"
+    signature: "getReference() : org.springframework.boot.context.config.StandardConfigDataReference"
+    instructionFingerprint: "D17C85DEC15202AB32EB92E55A05AF46"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getReferenceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "15369AAD163ABE43DB200540160DBD58"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cc2aa5ec-0ad0-364b-adf6-7ae0d32baaa7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getResource"
+    returnType: "org.springframework.core.io.Resource"
+    signature: "getResource() : org.springframework.core.io.Resource"
+    instructionFingerprint: "3278742F4F102B31C4A4A31646655DA4"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getResourceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "80CCBBBBBF5084B105DBD0EB70648B34"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "24daa76f-4779-35df-9343-1e51757b70c3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getProfile"
+    returnType: "java.lang.String"
+    signature: "getProfile() : java.lang.String"
+    instructionFingerprint: "E0D1FC38D24C8F8F7CCC019204E0D372"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProfileTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DE1071AA3D4FBFDC78176B1A3C784383"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "3B1C530AA883B618B946ED60DCB987FD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.StandardConfigDataReference"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.Resource"
+              uuid: "<init>_resource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.StandardConfigDataReference"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.Resource"
+              uuid: "<init>_resource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "5D6D4751FC5E72FD40E7384BF2F114CA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.StandardConfigDataReference"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+            uuid: "<init>_standardConfigDataReference1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Reference must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(StandardConfigDataReference,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "67862177DA7F2A6DFCF4615E841E127B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "<init>_resource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Resource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "reference"
+      modelFingerprint: "05E46B8823C4FDE28574C6B915394430"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "<init>_standardConfigDataReference1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.reference"
+        name: "getProfile"
+        parameters: []
+        signature: "getProfile(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProfile1"
+          valueType: "java.lang.String"
+          uuid: "getProfile_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProfile1"
+        valueType: "java.lang.String"
+        uuid: "getProfile_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6780309b-92bc-33e6-800b-154b82269244"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "isEmptyDirectory"
+    returnType: "boolean"
+    signature: "isEmptyDirectory() : boolean"
+    instructionFingerprint: "9B83169AFD1DE39547AB7A7C5D1DBE26"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isEmptyDirectoryWhenThisEmptyDirectory"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E66E14139332D916EE70A982DCE93862"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5842b1e7-e9cf-33bd-b8e1-fa5bc930e563"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isEmptyDirectoryWhenThisNotEmptyDirectory"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2D24C91FBC4BC22F5ECE54623F97FA27"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6b7f6ce1-2172-38b1-bcb7-7132d4bc6004"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "4A0C372A5BBA2E2230A4343BD1FC831C"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenThisEqualsObj"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FE5CA51724333889BFDA80E35799992E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d0712d51-f0f8-381e-af89-bd29c8516608"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenObjIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C6387C3C4F3E5040CAE5C020D86F33DA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "42f03dea-2e61-3c4b-bbc0-1a97b94b4d90"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenGetClassNotEqualsObjGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "42AE5BEC334ADA50EDCE71C16387EB6E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "26ff6ba6-6f29-3ff2-bca0-b8c532e7a53b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path4"
+    testPathName: "equalsWhenThisEmptyDirectoryNotEqualsOtherEmptyDirectory"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B77D7ABA7FD56B63504334121CF92A4E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "24221f3a-0518-3e33-a0dd-48663c095db3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path5"
+    testPathName: "equalsWhenIsSameUnderlyingResourceThisResourceOtherResource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "08517E3F7F4D681EBE9EA4E99F6AFA21"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "33dc6303-9129-3d3c-a89f-1e84af25ec17"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path6"
+    testPathName: "equalsWhenIsSameUnderlyingResourceNotThisResourceOtherResource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6785AA3E6C0A961D0CF605D6977182B3"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "fb82b28a-417f-3136-bfe9-826eed40c53d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "96AE30CA57748E3B6B986E6FD96E1D19"
+    parametersTypes: []
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "toStringWhenThisResourceInstanceOfFileSystemResource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B6B7463581E31D42BCE44DD900D8EBE1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "7fb3702b-3d07-3b53-a104-03c0f39d483e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "toStringWhenThisResourceInstanceOfFileUrlResource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "376DA63E459736EC7680683D17CC9C2E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BF395AB12CF744ECB77A76755D28A46B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.FileUrlResource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.FileUrlResource"
+              uuid: "<init>_resource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.FileUrlResource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.FileUrlResource"
+              uuid: "<init>_resource1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "69010237AFB6F4BCA28FA249FAF77F65"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+            uuid: "<init>_standardConfigDataReference1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Reference must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(StandardConfigDataReference,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "55FEF1F99B3B7FA57C117C04F50595E6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.io.FileUrlResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.io.FileUrlResource"
+            uuid: "<init>_resource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(FileUrlResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resource"
+      modelFingerprint: "E21A939D9BB9642A727E8A2C755EAE0D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.FileUrlResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.FileUrlResource"
+        uuid: "<init>_resource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resource"
+        name: "getFile"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getFile(): File throws java.io.IOException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.io.File"
+            parameters:
+            - name: "pathname"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "pathname1"
+                valueType: "java.lang.String"
+                uuid: "toString_file1-pathname"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.io.File"
+            parameters:
+            - name: "pathname"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "toString_file1-pathname"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.io.File"
+          uuid: "toString_file1"
+          fixed: false
+          nameForMock: "toString_file1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "94E94189F484B8054781451BE9224220"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "file [toString_file1]"
+        suggestedContent: !<regular>
+          value: "file [toString_file1]"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c5555d08-d01a-3a52-a66e-e1e21ecbfbf3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "toStringWhenThisResourceNotInstanceOfFileUrlResource"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB44DEE5F85DFFC56B2397588F2F4E05"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "CDFC9B96F052A62CFCA53935BF3D8598"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.Resource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.Resource"
+              uuid: "<init>_resource1"
+              fixed: false
+              nameForMock: "<init>_resource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.Resource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.Resource"
+              uuid: "<init>_resource1"
+              fixed: false
+              nameForMock: "<init>_resource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "69010237AFB6F4BCA28FA249FAF77F65"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+            uuid: "<init>_standardConfigDataReference1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Reference must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(StandardConfigDataReference,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "3E32111A8061AA6F16CF44AEBD74331A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.io.Resource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.io.Resource"
+            uuid: "<init>_resource1"
+            fixed: false
+            nameForMock: "<init>_resource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Resource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1EADF35162D772CDC3718CCEBADCA8F3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "<init>_resource1"
+        suggestedContent: !<regular>
+          value: "<init>_resource1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "18106b5f-54ff-3ffc-a7e0-efa49143f1e2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "toStringWhenCaughtIOException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.StandardConfigDataReference,org.springframework.core.io.Resource,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF9743B9D5BF1F11419150F3DBFAC668"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BF395AB12CF744ECB77A76755D28A46B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.FileUrlResource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.FileUrlResource"
+              uuid: "<init>_resource1"
+              fixed: false
+              nameForMock: "<init>_resource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataResource"
+          parameters:
+          - name: "reference"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+              uuid: "<init>_standardConfigDataReference1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.core.io.FileUrlResource"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.core.io.FileUrlResource"
+              uuid: "<init>_resource1"
+              fixed: false
+              nameForMock: "<init>_resource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "emptyDirectory"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataResource"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "69010237AFB6F4BCA28FA249FAF77F65"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+            uuid: "<init>_standardConfigDataReference1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Reference must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(StandardConfigDataReference,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "55FEF1F99B3B7FA57C117C04F50595E6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.core.io.FileUrlResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.core.io.FileUrlResource"
+            uuid: "<init>_resource1"
+            fixed: false
+            nameForMock: "<init>_resource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(FileUrlResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resource"
+      modelFingerprint: "E21A939D9BB9642A727E8A2C755EAE0D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.FileUrlResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.FileUrlResource"
+        uuid: "<init>_resource1"
+        fixed: false
+        nameForMock: "<init>_resource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resource"
+        name: "getFile"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "getFile(): File throws java.io.IOException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.io.File"
+            parameters:
+            - name: "pathname"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "pathname1"
+                valueType: "java.lang.String"
+                uuid: "toString_file1-pathname"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.io.File"
+            parameters:
+            - name: "pathname"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "toString_file1-pathname"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.io.File"
+          uuid: "toString_file1"
+          fixed: false
+          nameForMock: "toString_file1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1EADF35162D772CDC3718CCEBADCA8F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "<init>_resource1"
+        suggestedContent: !<regular>
+          value: "<init>_resource1"
+        valueType: "java.lang.String"
+        uuid: "toString_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "75dc4ff8-2cf2-313b-a667-5df014450199"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

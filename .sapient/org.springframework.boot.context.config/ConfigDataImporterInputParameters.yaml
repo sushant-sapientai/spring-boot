@@ -1,0 +1,3752 @@
+---
+modelFingerprint: "CBCDBC269A5D59A6363CE0CC9792A954"
+methods:
+- method:
+    name: "resolveAndLoad"
+    returnType: "java.util.Map"
+    signature: "resolveAndLoad(org.springframework.boot.context.config.ConfigDataActivationContext,org.springframework.boot.context.config.ConfigDataLocationResolverContext,org.springframework.boot.context.config.ConfigDataLoaderContext,java.util.List<org.springframework.boot.context.config.ConfigDataLocation>)\
+      \ : java.util.Map<org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData>"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    instructionFingerprint: "086B11FA39BCC6E72F23386A3CB5DF70"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataActivationContext"
+    - "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+    - "org.springframework.boot.context.config.ConfigDataLoaderContext"
+    - "java.util.List"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "resolveAndLoadWhenILessThan0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7A8FB4A41D47EB226ABC51CBACCFDD61"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "10546206-ce3b-3304-a9e4-f54bd49fb08a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path6"
+    pathIdForUser: "path2"
+    testPathName: "resolveAndLoadWhenLocationsIsEmptyAndILessThan0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8DFE6C20D394333482FCE91313D25BC7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "053b0785-d459-3928-b475-849a7cc7b434"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path7"
+    pathIdForUser: "path3"
+    testPathName: "resolveAndLoadWhenActivationContextIsNullAndLocationsIsEmptyAndILessThan0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9B3A9A6D2994D6D0CD65486D44369D39"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "5A60B26DED4826BD9BA3482A7761F9F7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "07B9EF5EED72F65F3154254A6BDF69D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "71A674FC38975D6D0A7581CB6763BD24"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "23A055F56842988AE1C18DA9140A91C4"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values: []
+        valueType: "java.util.Map"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+        uuid: "load_map1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "34f58acc-aa3c-3127-929b-a7af5c4a067c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path9"
+    pathIdForUser: "path4"
+    testPathName: "resolveAndLoadWhenCaughtIOExceptionThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CF4FAEBB67A3E6D6BFB75FB61970EBB9"
+    problemWasSolvedByProver: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: true
+    inputParameters: []
+    uuid: "b858ec4f-2448-3990-8efe-9dadbbd72416"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path10"
+    pathIdForUser: "path5"
+    testPathName: "resolveAndLoadWhenILessThan0AndCaughtIOExceptionThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95A52C6786F57D5F96F00A795A2FC7AE"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "5A60B26DED4826BD9BA3482A7761F9F7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "07B9EF5EED72F65F3154254A6BDF69D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "71A674FC38975D6D0A7581CB6763BD24"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7E2407A89FD623DE9CC0A0E5D916470"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "IO error on loading imports from []"
+              suggestedContent: !<regular>
+                value: "IO error on loading imports from []"
+              valueType: "java.lang.String"
+              uuid: "resolveAndLoad_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "resolveAndLoad_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "IO error on loading imports from []"
+              valueType: "java.lang.String"
+              uuid: "resolveAndLoad_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "resolveAndLoad_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "resolveAndLoad_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ea38d006-ae53-35ca-9c3e-0c861d82b40a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "DEPENDENCY_TO_THROW_EXCEPTION_NOT_FOUND"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path1"
+    pathIdForUser: "path6"
+    testPathName: "resolveAndLoadWhenLoadedIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B6B0D5DE0DC006820E38B2D2308FBE3C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "987DD5D39689685C8224B702072F1DB3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "62EE4A687ED2631DF44B8EECD39BE6FA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "F2068DFDB84010CAB27A322FBABE661D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "activationContext"
+      modelFingerprint: "7020F794B88B09B3E97B1CB01CAE4312"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "activationContext"
+        name: "getProfiles"
+        parameters: []
+        signature: "getProfiles(): Profiles"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.Profiles"
+          uuid: "resolveAndLoad_profiles1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resolvers"
+      modelFingerprint: "11AC05CE5D5E310DEE0CF7422B40FF0C"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 290002
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "<init>_configDataLocationResolvers1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resolvers"
+        name: "resolve"
+        parameters:
+        - name: "resolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+            uuid: "resolveAndLoad_configDataLocationResolverContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.Profiles"
+            uuid: "resolveAndLoad_profiles1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolve(ConfigDataLocationResolverContext,ConfigDataLocation,Profiles):\
+          \ List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          uuid: "resolve_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "165C6F0957D55CB6371219BF6A3FDF1E"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getLocation"
+        parameters: []
+        signature: "getLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "8147B593FA43EFD7645CEE2FD486ACDE"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataResource"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "load_configDataResource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "A6480EEBE925611DFD7C4E5049C5055B"
+      index: 11
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Considering resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "8FAE98805F9151A2785EF148F2647F39"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "load_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "loaders"
+      modelFingerprint: "FC2BFC6CA3185B60F1C61E548DD023FC"
+      index: 13
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLoaders"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+        uuid: "<init>_configDataLoaders1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.loaders"
+        name: "load"
+        parameters:
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+            uuid: "resolveAndLoad_configDataLoaderContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "load(ConfigDataLoaderContext,ConfigDataResource): ConfigData throws\
+          \ java.io.IOException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigData"
+          uuid: "load_configData1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "D28FBAD275DB3B5D24C650F093645F88"
+      index: 14
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Loaded resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "88EFCC4C4303E0324A9BCBB277ABFFDF"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                uuid: "load_configDataResolutionResult1"
+                fixed: false
+                collectionUuid: "resolve_list2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.config.ConfigData"
+                uuid: "load_configData1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                uuid: "load_configDataResolutionResult1"
+                fixed: false
+                collectionUuid: "resolve_list2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.config.ConfigData"
+                uuid: "load_configData1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Map"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+        uuid: "load_map1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e0e90118-01cd-38fe-bbdf-a4ac99c10c1d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path7"
+    testPathName: "resolveAndLoadWhenLoadedIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "A3F4A484A6088EE585D55787657CBB71"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "11db6243-7df0-3fd9-83d5-0226c8e3d604"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "resolveAndLoadWhenThisLoadedNotContainsResourceAndLoadedIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "236EF7A8D1BF3FD74A5EA34C06318EA1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "92004cff-53cb-3cc1-a51c-81157d651e61"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "resolveAndLoadWhenThisLoadedNotContainsResourceAndLoadedIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "2426E13A2CEAC7E5450DFB40E7DAB88E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "32303ba4-6085-3c52-bc6c-b32310dd7b1c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path13"
+    pathIdForUser: "path10"
+    testPathName: "resolveAndLoadWhenResourceIsNullAndILessThan0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "60BF2491F97003BA82D6CEA9CC052896"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 29
+      id: 2
+      catchExceptions:
+      - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "3EA17D523012EC99067E1184CFD18D0D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "62EE4A687ED2631DF44B8EECD39BE6FA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "F26ADD068B795F775450FBD68FEE016B"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "activationContext"
+      modelFingerprint: "7020F794B88B09B3E97B1CB01CAE4312"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "activationContext"
+        name: "getProfiles"
+        parameters: []
+        signature: "getProfiles(): Profiles"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.Profiles"
+          uuid: "resolveAndLoad_profiles1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resolvers"
+      modelFingerprint: "4BFF58D9E6DF0D950AD87E79300C1E98"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 290002
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "<init>_configDataLocationResolvers1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resolvers"
+        name: "resolve"
+        parameters:
+        - name: "resolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+            uuid: "resolveAndLoad_configDataLocationResolverContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.Profiles"
+            uuid: "resolveAndLoad_profiles1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolve(ConfigDataLocationResolverContext,ConfigDataLocation,Profiles):\
+          \ List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          uuid: "resolve_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "notFoundException"
+      modelFingerprint: "15A16E4487BBEA56654C91C9BF101357"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "resolve_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "notFoundException"
+        name: "withLocation"
+        parameters:
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withLocation(ConfigDataLocation): ConfigDataResourceNotFoundException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          uuid: "handle_configDataResourceNotFoundException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "location"
+      modelFingerprint: "3CBB4E33D966C8DF421D0AABAE3D6646"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolve_object1"
+        fixed: false
+        collectionUuid: "resolveAndLoad_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "location"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getNotFoundAction_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "23A055F56842988AE1C18DA9140A91C4"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values: []
+        valueType: "java.util.Map"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+        uuid: "load_map1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a463e7ef-0f08-3411-9126-ffdbc47b0847"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.springframework.boot.context.config.ConfigDataNotFoundAction.handle(org.apache.commons.logging.Log,org.springframework.boot.context.config.ConfigDataResourceNotFoundException)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path8"
+    pathIdForUser: "path11"
+    testPathName: "resolveAndLoadWhenLoadedIsNotNullAndCaughtIOExceptionThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "6E4B03D0D0EC85698E0128BD28DFCC16"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "987DD5D39689685C8224B702072F1DB3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "62EE4A687ED2631DF44B8EECD39BE6FA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "F2068DFDB84010CAB27A322FBABE661D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "activationContext"
+      modelFingerprint: "7020F794B88B09B3E97B1CB01CAE4312"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "activationContext"
+        name: "getProfiles"
+        parameters: []
+        signature: "getProfiles(): Profiles"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.Profiles"
+          uuid: "resolveAndLoad_profiles1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resolvers"
+      modelFingerprint: "11AC05CE5D5E310DEE0CF7422B40FF0C"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 290002
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "<init>_configDataLocationResolvers1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resolvers"
+        name: "resolve"
+        parameters:
+        - name: "resolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+            uuid: "resolveAndLoad_configDataLocationResolverContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.Profiles"
+            uuid: "resolveAndLoad_profiles1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolve(ConfigDataLocationResolverContext,ConfigDataLocation,Profiles):\
+          \ List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          uuid: "resolve_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "165C6F0957D55CB6371219BF6A3FDF1E"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getLocation"
+        parameters: []
+        signature: "getLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "8147B593FA43EFD7645CEE2FD486ACDE"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataResource"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "load_configDataResource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "A6480EEBE925611DFD7C4E5049C5055B"
+      index: 11
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Considering resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "8FAE98805F9151A2785EF148F2647F39"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "load_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "loaders"
+      modelFingerprint: "FC2BFC6CA3185B60F1C61E548DD023FC"
+      index: 13
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLoaders"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+        uuid: "<init>_configDataLoaders1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.loaders"
+        name: "load"
+        parameters:
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+            uuid: "resolveAndLoad_configDataLoaderContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "load(ConfigDataLoaderContext,ConfigDataResource): ConfigData throws\
+          \ java.io.IOException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigData"
+          uuid: "load_configData1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "D28FBAD275DB3B5D24C650F093645F88"
+      index: 14
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Loaded resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7E2407A89FD623DE9CC0A0E5D916470"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "IO error on loading imports from []"
+              suggestedContent: !<regular>
+                value: "IO error on loading imports from []"
+              valueType: "java.lang.String"
+              uuid: "resolveAndLoad_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "resolveAndLoad_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "IO error on loading imports from []"
+              valueType: "java.lang.String"
+              uuid: "resolveAndLoad_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "resolveAndLoad_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "resolveAndLoad_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fd103a77-e3f1-3fd1-a0f6-27943e1d832e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path12"
+    pathIdForUser: "path12"
+    testPathName: "resolveAndLoadWhenLocationIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "C3897D062B72D63BD18F36F05BB0E26D"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 26
+      id: 3
+      catchExceptions:
+      - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    truncated: true
+    inputParameters: []
+    uuid: "550bf153-377e-3d2b-a4bc-e8569329049e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path11"
+    pathIdForUser: "path13"
+    testPathName: "resolveAndLoadWhenResourceIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "934296B5BE87C1E02DC91629C361CB59"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 26
+      id: 3
+      catchExceptions:
+      - "org.springframework.boot.context.config.ConfigDataNotFoundException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "987DD5D39689685C8224B702072F1DB3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "FAIL"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataImporter"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "notFoundAction"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.springframework.boot.context.config.ConfigDataNotFoundAction"
+              uuid: "<init>_configDataNotFoundAction1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resolvers"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+              uuid: "<init>_configDataLocationResolvers1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "loaders"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLoaders"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+              uuid: "<init>_configDataLoaders1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataImporter"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "activationContext"
+      modelFingerprint: "62EE4A687ED2631DF44B8EECD39BE6FA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locationResolverContext"
+      modelFingerprint: "385B39825F2177486144D992C533F799"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+        uuid: "resolveAndLoad_configDataLocationResolverContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "loaderContext"
+      modelFingerprint: "F2B64A9023B7FBD20CA9436E30741574"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+        uuid: "resolveAndLoad_configDataLoaderContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locations"
+      modelFingerprint: "F2068DFDB84010CAB27A322FBABE661D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "resolveAndLoad_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "F4DC8F9C9644958C032DC559D90F7466"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataImporter"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "activationContext"
+      modelFingerprint: "7020F794B88B09B3E97B1CB01CAE4312"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataActivationContext"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataActivationContext"
+        uuid: "resolveAndLoad_configDataActivationContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "activationContext"
+        name: "getProfiles"
+        parameters: []
+        signature: "getProfiles(): Profiles"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.Profiles"
+          uuid: "resolveAndLoad_profiles1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "resolvers"
+      modelFingerprint: "11AC05CE5D5E310DEE0CF7422B40FF0C"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 290002
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocationResolvers"
+        uuid: "<init>_configDataLocationResolvers1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.resolvers"
+        name: "resolve"
+        parameters:
+        - name: "resolver"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocationResolverContext"
+            uuid: "resolveAndLoad_configDataLocationResolverContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "resolve_object1"
+            fixed: false
+            collectionUuid: "resolveAndLoad_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.Profiles"
+            uuid: "resolveAndLoad_profiles1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "resolve(ConfigDataLocationResolverContext,ConfigDataLocation,Profiles):\
+          \ List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          uuid: "resolve_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "4F524A5DD4E212EA58A066076A44B083"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getLocation"
+        parameters: []
+        signature: "getLocation(): ConfigDataLocation"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataLocation"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+          uuid: "load_configDataLocation1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "8147B593FA43EFD7645CEE2FD486ACDE"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+        uuid: "load_configDataResolutionResult1"
+        fixed: false
+        collectionUuid: "resolve_list2"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "candidate"
+        name: "getResource"
+        parameters: []
+        signature: "getResource(): ConfigDataResource"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataResource"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataResource"
+          uuid: "load_configDataResource1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "B216E8A66DB20EC4FA4141397C1917A4"
+      index: 11
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Considering resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "8FAE98805F9151A2785EF148F2647F39"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "load_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "load_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "loaders"
+      modelFingerprint: "FC2BFC6CA3185B60F1C61E548DD023FC"
+      index: 13
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLoaders"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLoaders"
+        uuid: "<init>_configDataLoaders1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.loaders"
+        name: "load"
+        parameters:
+        - name: "context"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataLoaderContext"
+            uuid: "resolveAndLoad_configDataLoaderContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resource"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "load(ConfigDataLoaderContext,ConfigDataResource): ConfigData throws\
+          \ java.io.IOException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigData"
+          uuid: "load_configData1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LogMessage"
+      modelFingerprint: "8CCDEFBA5DC44A96FCA166CF90B5B479"
+      index: 14
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 260003
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.log.LogMessage"
+        uuid: "org.springframework.core.log.LogMessage"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.core.log.LogMessage"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Loaded resource %s from location %s"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataResource"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "load_configDataResource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg2"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,ConfigDataResource,ConfigDataLocation): LogMessage"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.log.LogMessage"
+          uuid: "load_logMessage2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "notFoundException"
+      modelFingerprint: "15A16E4487BBEA56654C91C9BF101357"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "load_configDataNotFoundException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "notFoundException"
+        name: "withLocation"
+        parameters:
+        - name: "location"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigDataLocation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            uuid: "load_configDataLocation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withLocation(ConfigDataLocation): ConfigDataResourceNotFoundException"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          uuid: "handle_configDataResourceNotFoundException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "location"
+      modelFingerprint: "3CBB4E33D966C8DF421D0AABAE3D6646"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "load_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "location"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getNotFoundAction_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resource"
+      modelFingerprint: "8FAE98805F9151A2785EF148F2647F39"
+      index: 17
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataResource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "load_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resource"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "getNotFoundAction_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "88EFCC4C4303E0324A9BCBB277ABFFDF"
+      index: 18
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                uuid: "load_configDataResolutionResult1"
+                fixed: false
+                collectionUuid: "resolve_list2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.config.ConfigData"
+                uuid: "load_configData1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.LinkedHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "org.springframework.boot.context.config.ConfigDataResolutionResult"
+                uuid: "load_configDataResolutionResult1"
+                fixed: false
+                collectionUuid: "resolve_list2"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "MOCK"
+                valueType: "org.springframework.boot.context.config.ConfigData"
+                uuid: "load_configData1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Map"
+        genericValueType: "org.springframework.boot.context.config.ConfigDataResolutionResult,org.springframework.boot.context.config.ConfigData"
+        uuid: "load_map1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3675beae-b7c7-342c-b6e4-b023070cb4e4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(org.springframework.core.log.LogMessage)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getLoadedLocations"
+    returnType: "java.util.Set"
+    signature: "getLoadedLocations() : java.util.Set<org.springframework.boot.context.config.ConfigDataLocation>"
+    instructionFingerprint: "BB0AC1DB2952A724A9C040B1F9320F72"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLoadedLocationsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2C7B570DCB669A6CE17EBFCE15D59E06"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "38e3d344-6267-38de-83ca-f5b21cf69f11"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOptionalLocations"
+    returnType: "java.util.Set"
+    signature: "getOptionalLocations() : java.util.Set<org.springframework.boot.context.config.ConfigDataLocation>"
+    instructionFingerprint: "80A271780423A00A0E7A4C86D87AE815"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOptionalLocationsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.context.config.ConfigDataNotFoundAction,org.springframework.boot.context.config.ConfigDataLocationResolvers,org.springframework.boot.context.config.ConfigDataLoaders)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2C7B570DCB669A6CE17EBFCE15D59E06"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "1ccbbc0e-2e93-31f8-8e81-df20cbec7160"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

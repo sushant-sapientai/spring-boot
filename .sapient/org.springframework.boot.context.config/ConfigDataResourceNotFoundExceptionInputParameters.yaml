@@ -1,0 +1,1594 @@
+---
+modelFingerprint: "4B32B63FD6E3BBDABC40B84465C4A61C"
+methods:
+- method:
+    name: "getResource"
+    returnType: "org.springframework.boot.context.config.ConfigDataResource"
+    signature: "getResource() : org.springframework.boot.context.config.ConfigDataResource"
+    instructionFingerprint: "00DF111282E4CCDA848F6D39D1B1A51E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getResourceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D09C1554E8A6C6C74680C5EE486E641A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "24daa76f-4779-35df-9343-1e51757b70c3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getLocation"
+    returnType: "org.springframework.boot.context.config.ConfigDataLocation"
+    signature: "getLocation() : org.springframework.boot.context.config.ConfigDataLocation"
+    instructionFingerprint: "EDAAE51B769561EB9940BA79DA30CE9E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLocationTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5DCBA76315B7B0E9F2D261E61D10A9B9"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ee6cb6cd-2929-3c2a-8c18-cd662e8fb11b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOrigin"
+    returnType: "org.springframework.boot.origin.Origin"
+    signature: "getOrigin() : org.springframework.boot.origin.Origin"
+    instructionFingerprint: "D28BC1E215F12AAA48010E922271F5AD"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOriginTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7FA9BC36F7270A7AA0C685F6C348CBD8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A7387281E7B707BC89C64463338FD8B1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "<init>_configDataResource1"
+            fixed: false
+            nameForMock: "<init>_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Origin"
+      modelFingerprint: "D65D1CDE55577E04A7B566EAF3EC0B04"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "org.springframework.boot.origin.Origin"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.origin.Origin"
+        name: "from"
+        parameters:
+        - name: "origin"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "from(ConfigDataLocation): Origin"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.origin.Origin"
+          uuid: "getOrigin_origin1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5F7FDFDDEDFBC96EDDAA057511F38A3C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.origin.Origin"
+        uuid: "getOrigin_origin1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7470ee36-9b2f-3d61-ac6f-ede146cc5169"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getReferenceDescription"
+    returnType: "java.lang.String"
+    signature: "getReferenceDescription() : java.lang.String"
+    instructionFingerprint: "188C302A79E477F3CF5349872D7D1A4E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getReferenceDescriptionWhenLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A52AA46D4E2AD5AEE2893DDE8BAE079C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A7387281E7B707BC89C64463338FD8B1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "<init>_configDataResource1"
+            fixed: false
+            nameForMock: "<init>_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E44C971418B4A02FD0D255420EC39093"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "resource 'null'"
+        suggestedContent: !<regular>
+          value: "resource 'null'"
+        valueType: "java.lang.String"
+        uuid: "getReferenceDescription_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b4470aa6-1ce4-3fc4-a2b4-8f47ac67a20a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "withLocation"
+    returnType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+    signature: "withLocation(org.springframework.boot.context.config.ConfigDataLocation)\
+      \ : org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+    instructionFingerprint: "0A519E5BD54E8EB9F802FE5D5F6F5E17"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataLocation"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withLocationWhenLocationIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "08A2B3E27D05562ABED19F29EDA5E3AB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A7387281E7B707BC89C64463338FD8B1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "location"
+      modelFingerprint: "7FF5B3182EB4F3025A108333158B65BF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "withLocation_configDataLocation1"
+        fixed: false
+        nameForMock: "withLocation_configDataLocation1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "<init>_configDataResource1"
+            fixed: false
+            nameForMock: "<init>_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "FD667F830E49BAC3AA647960C9EA8F8B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Throwable"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Throwable"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Throwable"
+          uuid: "withLocation_throwable1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "<init>_configDataResource1"
+            fixed: false
+            nameForMock: "<init>_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "84985B40184CABE54E6FCB733917C094"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "withLocation_configDataLocation1"
+              fixed: false
+              nameForMock: "withLocation_configDataLocation1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "withLocation_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "<init>_configDataResource1"
+              fixed: false
+              nameForMock: "<init>_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "location"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "withLocation_configDataLocation1"
+              fixed: false
+              nameForMock: "withLocation_configDataLocation1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "withLocation_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "withLocation_configDataResourceNotFoundException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "63e75f5a-2b88-3c37-bdb2-16bd9f87d912"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "withLocationWhenLocationIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataResource,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B241D53091D47E0CA2323B785C081323"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8e25e9c0-5abf-32b8-bf40-8161f89374b6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "throwIfDoesNotExist"
+    returnType: "void"
+    signature: "throwIfDoesNotExist(org.springframework.boot.context.config.ConfigDataResource,java.nio.file.Path)\
+      \ : void"
+    instructionFingerprint: "A2680F1F61CEFE82A39F881F50E3DB98"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataResource"
+    - "java.nio.file.Path"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "throwIfDoesNotExistWhenExists"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "61424A632C43B36D213E198DF3B2E4EE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pathToCheck"
+      modelFingerprint: "DF1713B5DA56C40DF34255DA4EBABBF3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.nio.file.Path"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.nio.file.Path"
+        uuid: "throwIfDoesNotExist_path1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8e39f001-ff63-3d33-94d7-fa209eb1ad0f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.nio.file.Files.exists(java.nio.file.Path,java.nio.file.LinkOption[])\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "throwIfDoesNotExistWhenLocationIsNullThrowsConfigDataResourceNotFoundException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "33031DB59EA07AD09682BFDD577FFEFF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        nameForMock: "throwIfDoesNotExist_configDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pathToCheck"
+      modelFingerprint: "DF1713B5DA56C40DF34255DA4EBABBF3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.nio.file.Path"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.nio.file.Path"
+        uuid: "throwIfDoesNotExist_path1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "throwIfDoesNotExist_configDataResource1"
+            fixed: false
+            nameForMock: "throwIfDoesNotExist_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2F902F5A70AFB4A407B368F91C068CC6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "throwIfDoesNotExist_configDataResourceNotFoundException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dc4bd248-8b37-3f2a-a9b0-4a944b46e201"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.nio.file.Files.exists(java.nio.file.Path,java.nio.file.LinkOption[])\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "throwIfDoesNotExist"
+    returnType: "void"
+    signature: "throwIfDoesNotExist(org.springframework.boot.context.config.ConfigDataResource,java.io.File)\
+      \ : void"
+    instructionFingerprint: "D571A1040C910EED62086FB7B0EB15FB"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataResource"
+    - "java.io.File"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "throwIfDoesNotExist1WhenExists"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D2983DD3EED592971B0C43DAADB93511"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fileToCheck"
+      modelFingerprint: "CF47B459E5E09A45BFCF08F5FFF26259"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pathname1"
+              valueType: "java.lang.String"
+              uuid: "throwIfDoesNotExist_file1-pathname"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "throwIfDoesNotExist_file1-pathname"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.io.File"
+        uuid: "throwIfDoesNotExist_file1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "938d5bf5-111a-3abc-9453-0daf6e32f4de"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.io.File.exists() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "throwIfDoesNotExist1WhenLocationIsNullThrowsConfigDataResourceNotFoundException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "00B4E1B480033D7ADE6B5E90E9B44600"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        nameForMock: "throwIfDoesNotExist_configDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fileToCheck"
+      modelFingerprint: "59FA8856DE2CD729F128724239DE13D1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pathname1"
+              suggestedContent: !<regular>
+                value: "pathname1"
+              valueType: "java.lang.String"
+              uuid: "throwIfDoesNotExist_file1-pathname"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pathname1"
+              suggestedContent: !<regular>
+                value: "pathname1"
+              valueType: "java.lang.String"
+              uuid: "throwIfDoesNotExist_file1-pathname"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.io.File"
+        uuid: "throwIfDoesNotExist_file1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "throwIfDoesNotExist_configDataResource1"
+            fixed: false
+            nameForMock: "throwIfDoesNotExist_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2F902F5A70AFB4A407B368F91C068CC6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "throwIfDoesNotExist_configDataResourceNotFoundException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8930b87e-cea2-3b95-93f3-2bdf661979ac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "throwIfDoesNotExist"
+    returnType: "void"
+    signature: "throwIfDoesNotExist(org.springframework.boot.context.config.ConfigDataResource,org.springframework.core.io.Resource)\
+      \ : void"
+    instructionFingerprint: "64BD698C1399246B2F8532A903C683E1"
+    parametersTypes:
+    - "org.springframework.boot.context.config.ConfigDataResource"
+    - "org.springframework.core.io.Resource"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "throwIfDoesNotExist2WhenExists"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C40100CFAF8DD53E26593839D7A778AB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceToCheck"
+      modelFingerprint: "C9E2C951C782C30B79DF9C2F80450B0E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.Resource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.Resource"
+        uuid: "throwIfDoesNotExist_resource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resourceToCheck"
+      modelFingerprint: "CDC060D1337192722749F27190A3E3AC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.Resource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.Resource"
+        uuid: "throwIfDoesNotExist_resource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resourceToCheck"
+        name: "exists"
+        parameters: []
+        signature: "exists(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "throwIfDoesNotExist_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "86be841f-c1bf-3884-8357-8e496ee16d22"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "throwIfDoesNotExist2WhenLocationIsNullThrowsConfigDataResourceNotFoundException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EAA7D5F82C23C5D8F5DC0AE9238B1B5C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "resource"
+      modelFingerprint: "6204E08D5D4EA8DBA742FA576D02EDE2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataResource"
+        uuid: "throwIfDoesNotExist_configDataResource1"
+        fixed: false
+        nameForMock: "throwIfDoesNotExist_configDataResource1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceToCheck"
+      modelFingerprint: "C9E2C951C782C30B79DF9C2F80450B0E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.Resource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.Resource"
+        uuid: "throwIfDoesNotExist_resource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "resourceToCheck"
+      modelFingerprint: "A86CC84F8AC460EF63909AC0EFD5B2CB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.core.io.Resource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.core.io.Resource"
+        uuid: "throwIfDoesNotExist_resource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "resourceToCheck"
+        name: "exists"
+        parameters: []
+        signature: "exists(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "throwIfDoesNotExist_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "EF09B1450480125E828C76638377351D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.context.config.ConfigDataResource"
+            uuid: "throwIfDoesNotExist_configDataResource1"
+            fixed: false
+            nameForMock: "throwIfDoesNotExist_configDataResource1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Resource must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigDataResource,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2F902F5A70AFB4A407B368F91C068CC6"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+          parameters:
+          - name: "resource"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataResource"
+              uuid: "throwIfDoesNotExist_configDataResource1"
+              fixed: false
+              nameForMock: "throwIfDoesNotExist_configDataResource1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataResourceNotFoundException"
+        uuid: "throwIfDoesNotExist_configDataResourceNotFoundException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "867986a8-087a-3ba7-953f-c0d52ff36ff4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

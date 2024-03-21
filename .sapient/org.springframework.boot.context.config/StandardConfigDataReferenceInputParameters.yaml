@@ -1,0 +1,1600 @@
+---
+modelFingerprint: "6101664ACC46492F3007C80881B83EB8"
+methods:
+- method:
+    name: "getConfigDataLocation"
+    returnType: "org.springframework.boot.context.config.ConfigDataLocation"
+    signature: "getConfigDataLocation() : org.springframework.boot.context.config.ConfigDataLocation"
+    instructionFingerprint: "568F7650108F7FFC2E82ABD6D4A370A2"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getConfigDataLocationTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "567B9742563CCDA2C05F56F0EB126C5D"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0c7ede8a-c3f3-3ff0-877f-a562f593d4b9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getResourceLocation"
+    returnType: "java.lang.String"
+    signature: "getResourceLocation() : java.lang.String"
+    instructionFingerprint: "296325CC5924EB4877448E28130B9E79"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getResourceLocationTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8E94FFB62082CBC3B90D55AE3F0DD07"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3c9a8573-82f5-3703-a933-0f94a5a5878a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "isMandatoryDirectory"
+    returnType: "boolean"
+    signature: "isMandatoryDirectory() : boolean"
+    instructionFingerprint: "7677FD6E634AA6C0B7775D8C22A7DBB7"
+    parametersTypes: []
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isMandatoryDirectoryWhenThisConfigDataLocationIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "066CDC65D4ABE2DE157BCEBDB4C8C6FE"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0f9a09b9-b243-3c10-91f9-8988cf288cf8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isMandatoryDirectoryWhenThisDirectoryIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6CAED112E13F55EDFD9A5A380803426A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "F2A230A4D6A4C697865A244DD8AAC2C1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "directory1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "C"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "<init>_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "<init>_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "configDataLocation"
+      modelFingerprint: "17E2675D7E5BBDD5283694E4E3E8703F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "<init>_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.configDataLocation"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isMandatoryDirectory_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4949dc69-4738-3b4e-b2db-10fb02ae170b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isMandatoryDirectoryWhenThisDirectoryIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "09C78CF9C481E9AE718EB6BC3ECFD5BE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9D3E2899F8AE3E7C90A00142A8FD00D5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "C"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "<init>_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "<init>_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "configDataLocation"
+      modelFingerprint: "17E2675D7E5BBDD5283694E4E3E8703F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "<init>_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.configDataLocation"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isMandatoryDirectory_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "47b214d9-a0ff-3e67-95b6-c8bfb51d2c5b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getDirectory"
+    returnType: "java.lang.String"
+    signature: "getDirectory() : java.lang.String"
+    instructionFingerprint: "6E6E018569CC2D94279B28C7646E3C17"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getDirectoryTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1E71A20F17FECF7EE69DAFFE4D38F7FC"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "526624a2-3523-319b-90eb-0e0c05afd89c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getProfile"
+    returnType: "java.lang.String"
+    signature: "getProfile() : java.lang.String"
+    instructionFingerprint: "BE491A43AE3E7EE0ABA3D10F9A11820A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProfileTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5D84602D73FECCD88FCEF7361C2B438C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6780309b-92bc-33e6-800b-154b82269244"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "isSkippable"
+    returnType: "boolean"
+    signature: "isSkippable() : boolean"
+    instructionFingerprint: "D540918773EED0517F62FEB08453BFFD"
+    parametersTypes: []
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isSkippableWhenThisConfigDataLocationIsOptional"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4B1F4043E2AD20152D688AED65A8184A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "49faaf97-8822-3ff2-8ac1-5ca18964ea3b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isSkippableWhenThisProfileIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BCB7948E8168C49AF3788B9E8743D8FF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9D3E2899F8AE3E7C90A00142A8FD00D5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "C"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "<init>_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "<init>_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "configDataLocation"
+      modelFingerprint: "17E2675D7E5BBDD5283694E4E3E8703F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "<init>_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.configDataLocation"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isSkippable_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "faa0e684-2865-3735-9717-f56bbd1524bd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isSkippableWhenThisProfileIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E6D1E2EE3AE23E32440D3FB677AAA9BD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A0103FB7B522912ACE29C4BC91CB006B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "C"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "NULL"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigDataLocation"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "DCCCAE4C497C6298388703D0CB9DC8C1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "NULL"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "<init>_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "<init>_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "configDataLocation"
+      modelFingerprint: "17E2675D7E5BBDD5283694E4E3E8703F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataLocation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+        uuid: "<init>_configDataLocation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.configDataLocation"
+        name: "isOptional"
+        parameters: []
+        signature: "isOptional(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isSkippable_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "30d89b15-ceef-3b14-929f-485720ecbf8a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getPropertySourceLoader"
+    returnType: "org.springframework.boot.env.PropertySourceLoader"
+    signature: "getPropertySourceLoader() : org.springframework.boot.env.PropertySourceLoader"
+    instructionFingerprint: "4B150E2CE75453609BC345A90638DACA"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPropertySourceLoaderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "263EFEF85B5987AE7554A1D1DB15E9B1"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8f2c714b-850b-35db-b632-d65b1c8169b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "66D80C8160477A2F15E4758D4F4F9D6C"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenThisEqualsObj"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B22C0A2408286C1D0D6EE3FA35529D7C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d0712d51-f0f8-381e-af89-bd29c8516608"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenObjIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7290C0AB36F617D44375FEAFACBC6715"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "42f03dea-2e61-3c4b-bbc0-1a97b94b4d90"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenGetClassNotEqualsObjGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "126EFF5518449799C39A5CE0F9FB58CD"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "26ff6ba6-6f29-3ff2-bca0-b8c532e7a53b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "equalsWhenThisResourceLocationEqualsOtherResourceLocation"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "31429690DDC1B40C1329C1D3E9DD2A2E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "83c6e4d4-b81d-3dba-b2cd-15b1b540da90"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path5"
+    testPathName: "equalsWhenThisResourceLocationNotEqualsOtherResourceLocation"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B6612F96136B6CDDB681DA8F28B5DB09"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8bc16403-206e-3240-9b47-c2a9eb554d6a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "945C4C08B941432C70CF9F99111416BA"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.context.config.ConfigDataLocation,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.boot.env.PropertySourceLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8E94FFB62082CBC3B90D55AE3F0DD07"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "EF47D86DB40F31EA6C9AE00A4C0AE6D6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "directory1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "C"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.StandardConfigDataReference"
+          parameters:
+          - name: "configDataLocation"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataLocation"
+              uuid: "<init>_configDataLocation1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "directory"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "root"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "<init>_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "profile"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "extension"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "C"
+              valueType: "java.lang.String"
+              uuid: "<init>_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.env.PropertySourceLoader"
+              uuid: "<init>_propertySourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.StandardConfigDataReference"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StringUtils"
+      modelFingerprint: "B14C8D6DDAD46E99E5D365AB7143391E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "org.springframework.util.StringUtils"
+        uuid: "org.springframework.util.StringUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.StringUtils"
+        name: "hasText"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "<init>_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "hasText(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "<init>_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "35B5E8E959035CD3EBECD253EEB6F898"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B-A.C"
+        suggestedContent: !<regular>
+          value: "B-A.C"
+        valueType: "java.lang.String"
+        uuid: "<init>_string7"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

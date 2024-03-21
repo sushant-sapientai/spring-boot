@@ -1,0 +1,588 @@
+---
+modelFingerprint: "A704918E3E41887CA5756D8C6D17B59F"
+methods:
+- method:
+    name: "getPropertySources"
+    returnType: "java.util.List"
+    signature: "getPropertySources() : java.util.List<org.springframework.core.env.PropertySource<?>>"
+    instructionFingerprint: "7CB24862E95CA88AA30FB1F986F2609C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPropertySourcesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.Collection<? extends org.springframework.core.env.PropertySource<?>>,org.springframework.boot.context.config.ConfigData$PropertySourceOptions)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4C5267494456E5B5886DA2BB444D1CE7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d1ed9975-a055-3ae2-ae07-91a9afad825b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getOptions"
+    returnType: "org.springframework.boot.context.config.ConfigData$Options"
+    signature: "getOptions(org.springframework.core.env.PropertySource<?>) : org.springframework.boot.context.config.ConfigData$Options"
+    instructionFingerprint: "1EA7B9C813251BBAC02B59558E447C70"
+    parametersTypes:
+    - "org.springframework.core.env.PropertySource"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOptionsWhenOptionsIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.Collection<? extends org.springframework.core.env.PropertySource<?>>,org.springframework.boot.context.config.ConfigData$PropertySourceOptions)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "889B0796F2E4DDCC754F8D4F43D15F5D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4713ECB6C023C56E82E4E8CACE456D95"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<init>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Collection"
+              genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<init>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "propertySource"
+      modelFingerprint: "1507B1A06C175A4ED7FF5042921FAA7D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.PropertySource"
+        genericValueType: "?"
+        uuid: "getOptions_propertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "FE55F40C19F6BD2B54D817D88E2F4225"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "PropertySources must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Collection,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "5C5EEDBE65D4ED46FB79FE67686FA1CB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+            uuid: "<init>_configData.PropertySourceOptions2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "PropertySourceOptions must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigData$PropertySourceOptions,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "propertySourceOptions"
+      modelFingerprint: "D0CBCC9C39729538DC36CFB6E148A754"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+        uuid: "<init>_configData.PropertySourceOptions2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.propertySourceOptions"
+        name: "get"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.PropertySource"
+            genericValueType: "?"
+            uuid: "getOptions_propertySource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(PropertySource): ConfigData$Options"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.boot.context.config.ConfigData$Options"
+          uuid: "getOptions_configData.Options1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D729A98C0FCA5691EE895C7CAB977F3C"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigData$Options"
+        uuid: "getOptions_configData.Options1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "35c45523-e5c7-34f7-8d6d-4e96598349f7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getOptionsWhenOptionsIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.Collection<? extends org.springframework.core.env.PropertySource<?>>,org.springframework.boot.context.config.ConfigData$PropertySourceOptions)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C7059E8F6DEB285A62376BEB79E5576"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4713ECB6C023C56E82E4E8CACE456D95"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<init>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigData"
+          parameters:
+          - name: "propertySources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Collection"
+              genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "propertySourceOptions"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              uuid: "<init>_configData.PropertySourceOptions2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigData"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "propertySource"
+      modelFingerprint: "1507B1A06C175A4ED7FF5042921FAA7D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.PropertySource"
+        genericValueType: "?"
+        uuid: "getOptions_propertySource1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "FE55F40C19F6BD2B54D817D88E2F4225"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "? extends org.springframework.core.env.PropertySource<?>"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "PropertySources must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(Collection,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Assert"
+      modelFingerprint: "5C5EEDBE65D4ED46FB79FE67686FA1CB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.util.Assert"
+        uuid: "org.springframework.util.Assert"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.util.Assert"
+        name: "notNull"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+            uuid: "<init>_configData.PropertySourceOptions2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "PropertySourceOptions must not be null"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notNull(ConfigData$PropertySourceOptions,String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "propertySourceOptions"
+      modelFingerprint: "1908110C42D15647E3D8E9EBCDB88CE1"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigData$PropertySourceOptions"
+        uuid: "<init>_configData.PropertySourceOptions2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.propertySourceOptions"
+        name: "get"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.PropertySource"
+            genericValueType: "?"
+            uuid: "getOptions_propertySource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(PropertySource): ConfigData$Options"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.springframework.boot.context.config.ConfigData$Options"
+          uuid: "getOptions_configData.Options1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8562AB18C970D1FF90E0A0DA5096D017"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "org.springframework.boot.context.config.ConfigData$Options"
+          fieldName: "NONE"
+        suggestedContent: !<static_field_return>
+          target: "org.springframework.boot.context.config.ConfigData$Options"
+          fieldName: "NONE"
+        valueType: "org.springframework.boot.context.config.ConfigData$Options"
+        uuid: "getOptions_configData.Options2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "50b37f37-bd4b-33ea-95ca-e144f7ee5a35"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

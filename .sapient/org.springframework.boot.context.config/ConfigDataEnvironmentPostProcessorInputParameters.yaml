@@ -1,0 +1,2828 @@
+---
+modelFingerprint: "AD32693AB8BADA9D58C1536ABE76CD97"
+methods:
+- method:
+    name: "getOrder"
+    returnType: "int"
+    signature: "getOrder() : int"
+    instructionFingerprint: "B89BF078D019EE88A68D082D3752B86A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOrderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D5A24AB3AB187C65B4897FC3402BD200"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c0bb632e-c120-35d3-9fe3-7fc42c801bce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "postProcessEnvironment"
+    returnType: "void"
+    signature: "postProcessEnvironment(org.springframework.core.env.ConfigurableEnvironment,org.springframework.boot.SpringApplication)\
+      \ : void"
+    instructionFingerprint: "53454D42423240F3BA8FB1310E0E9C60"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.boot.SpringApplication"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "postProcessEnvironmentTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CDD5EA9CD7DF9F3B44997EFD96399EB4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2E3272525EDDDA2D786F2C3A80169500"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "postProcessEnvironment_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "application"
+      modelFingerprint: "38FF5AA0A3B299D66DAF41C8232CB27C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.SpringApplication"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "postProcessEnvironment_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "application"
+      modelFingerprint: "A89925AABD05EB752750D22957A63293"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.SpringApplication"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "postProcessEnvironment_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "application"
+        name: "getResourceLoader"
+        parameters: []
+        signature: "getResourceLoader(): ResourceLoader"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "org.springframework.core.io.ResourceLoader"
+          uuid: "postProcessEnvironment_resourceLoader1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "application"
+      modelFingerprint: "D0EB2C47CBECE8AB5058FD83152550FC"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.SpringApplication"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.SpringApplication"
+        uuid: "postProcessEnvironment_springApplication1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "application"
+        name: "getAdditionalProfiles"
+        parameters: []
+        signature: "getAdditionalProfiles(): Set"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Set"
+          genericValueType: "java.lang.String"
+          uuid: "postProcessEnvironment_set1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "768836992BEBBF4A850D857EA5E00482"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "postProcessEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "postProcessEnvironment_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "postProcessEnvironment_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Set"
+            genericValueType: "java.lang.String"
+            uuid: "postProcessEnvironment_set1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "postProcessEnvironment(ConfigurableEnvironment,ResourceLoader,Set):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "postProcessEnvironment_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2bf0d88c-87ae-32ff-8715-263d7bb08637"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "postProcessEnvironment"
+    returnType: "void"
+    signature: "postProcessEnvironment(org.springframework.core.env.ConfigurableEnvironment,org.springframework.core.io.ResourceLoader,java.util.Collection<java.lang.String>)\
+      \ : void"
+    instructionFingerprint: "02841BD519029923FF362CD13F326631"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.core.io.ResourceLoader"
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "postProcessEnvironment1WhenResourceLoaderIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8673A1CAFB7983E04002B86715CD9F84"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2E3272525EDDDA2D786F2C3A80169500"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "postProcessEnvironment_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "postProcessEnvironment_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "postProcessEnvironment_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D1182B36C9D4FE9C17DAFDC500E22761"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getConfigDataEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "postProcessEnvironment_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "postProcessEnvironment_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "postProcessEnvironment_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigDataEnvironment(ConfigurableEnvironment,ResourceLoader,Collection):\
+          \ ConfigDataEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          uuid: "postProcessEnvironment_configDataEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "3BCB3C268688036F95F729B116F87252"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+        uuid: "postProcessEnvironment_configDataEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+        name: "processAndApply"
+        parameters: []
+        signature: "processAndApply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "postProcessEnvironment_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f9fd88f1-e402-3928-aca0-4872b16f1937"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(java.lang.String)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "postProcessEnvironment1WhenResourceLoaderIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DBF9DE0F113C8D8E9263F542C29FA94D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2E3272525EDDDA2D786F2C3A80169500"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "postProcessEnvironment_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "366477B5EE7AD0DCB852D61F2F26001D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "postProcessEnvironment_resourceLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "postProcessEnvironment_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "53E9A1F840A8BC7E5A8325ABFC72FC64"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getConfigDataEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "postProcessEnvironment_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.springframework.core.io.DefaultResourceLoader"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "org.springframework.core.io.DefaultResourceLoader"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "org.springframework.core.io.DefaultResourceLoader"
+            uuid: "postProcessEnvironment_defaultResourceLoader1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "postProcessEnvironment_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getConfigDataEnvironment(ConfigurableEnvironment,DefaultResourceLoader,Collection):\
+          \ ConfigDataEnvironment"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          uuid: "postProcessEnvironment_configDataEnvironment1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "3BCB3C268688036F95F729B116F87252"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+        uuid: "postProcessEnvironment_configDataEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+        name: "processAndApply"
+        parameters: []
+        signature: "processAndApply(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "postProcessEnvironment_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "182cd80d-88d1-3ad1-8fd6-fbdc758e91cf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.logging.Log.trace(java.lang.String)\
+        \ : void"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getConfigDataEnvironment"
+    returnType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+    signature: "getConfigDataEnvironment(org.springframework.core.env.ConfigurableEnvironment,org.springframework.core.io.ResourceLoader,java.util.Collection<java.lang.String>)\
+      \ : org.springframework.boot.context.config.ConfigDataEnvironment"
+    instructionFingerprint: "B9B6037795CEB30139AAE5DE21B8958A"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.core.io.ResourceLoader"
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getConfigDataEnvironmentTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.springframework.boot.logging.DeferredLogFactory,org.springframework.boot.ConfigurableBootstrapContext)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D327C407D0E516B0220F9D4686200B3F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2E3272525EDDDA2D786F2C3A80169500"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "getConfigDataEnvironment_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "getConfigDataEnvironment_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "getConfigDataEnvironment_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "<init>_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "869AE4A23B53B11C47D5BEC28B7CFE11"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "getConfigDataEnvironment_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "getConfigDataEnvironment_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "additionalProfiles"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.String"
+              uuid: "getConfigDataEnvironment_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironment"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "<init>_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "<init>_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environment"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.env.ConfigurableEnvironment"
+              uuid: "getConfigDataEnvironment_configurableEnvironment1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "resourceLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.core.io.ResourceLoader"
+              uuid: "getConfigDataEnvironment_resourceLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "additionalProfiles"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.String"
+              uuid: "getConfigDataEnvironment_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "NULL"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironment"
+        uuid: "getConfigDataEnvironment_configDataEnvironment1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "23a64fe5-9a99-3ed7-988e-508cc9b0149d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return new ConfigDataEnvironment(this.logFactory, this.bootstrapContext,\
+        \ environment, resourceLoader,"
+      lineNumber: 101
+      details: "No constructor found to create an object without any exception for\
+        \ class org.springframework.boot.context.config.ConfigDataEnvironment"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(org.springframework.core.env.ConfigurableEnvironment) : void"
+    instructionFingerprint: "B5DC7EBEACFC718AA0CCBB4E0EC85327"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyToTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "791A78724D3C9CDFBE8BCC701F6A77EC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigDataEnvironmentPostProcessor"
+      modelFingerprint: "2599624D6BD3716B27B4C2302175DD3D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        name: "applyTo"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bootstrapContext"
+          value:
+            sapientType: "NULL"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            uuid: "applyTo_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "applyTo(ConfigurableEnvironment,ResourceLoader,ConfigurableBootstrapContext,List):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(org.springframework.core.env.ConfigurableEnvironment,org.springframework.core.io.ResourceLoader,org.springframework.boot.ConfigurableBootstrapContext,java.lang.String[])\
+      \ : void"
+    instructionFingerprint: "1572E3F107418EAF6E99E22E917AE06F"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.core.io.ResourceLoader"
+    - "org.springframework.boot.ConfigurableBootstrapContext"
+    - "java.lang.String[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyTo1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E1B860C526698931CA2DD344EEF87623"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "applyTo_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bootstrapContext"
+      modelFingerprint: "446184A4A4343527F66F98FE23F7274E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+        uuid: "applyTo_configurableBootstrapContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "65574F3CE1226254E7227E4D58FDBFED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.String[]"
+        uuid: "applyTo_string[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConfigDataEnvironmentPostProcessor"
+      modelFingerprint: "117E02388F3CBBADD7F8CDA3D2646A11"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        name: "applyTo"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "applyTo_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "bootstrapContext"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+            uuid: "applyTo_configurableBootstrapContext1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.String"
+            uuid: "applyTo_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "applyTo(ConfigurableEnvironment,ResourceLoader,ConfigurableBootstrapContext,List):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd9cc7ed-2bcd-3b9e-92ea-37cc65615b1f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(org.springframework.core.env.ConfigurableEnvironment,org.springframework.core.io.ResourceLoader,org.springframework.boot.ConfigurableBootstrapContext,java.util.Collection<java.lang.String>)\
+      \ : void"
+    instructionFingerprint: "105F425848359465D095B302BD15B642"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.core.io.ResourceLoader"
+    - "org.springframework.boot.ConfigurableBootstrapContext"
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyTo2WhenBootstrapContextIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "784895A3F0E782A3C7799E0D7238CC74"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "applyTo_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bootstrapContext"
+      modelFingerprint: "446184A4A4343527F66F98FE23F7274E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+        uuid: "applyTo_configurableBootstrapContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "applyTo_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "applyTo_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "postProcessor"
+      modelFingerprint: "316293F440371E1C2A66F8DF8BD4A0DD"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "applyTo_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "applyTo_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "applyTo_configDataEnvironmentPostProcessor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "postProcessor"
+        name: "postProcessEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "applyTo_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "applyTo_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "postProcessEnvironment(ConfigurableEnvironment,ResourceLoader,Collection):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "66433c20-bae2-3b8a-93d0-ae3b3333ce38"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "postProcessor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "postProcessor.postProcessEnvironment(environment, resourceLoader, additionalProfiles);"
+      lineNumber: 146
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: postProcessor - Method: postProcessEnvironment"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "applyTo2WhenBootstrapContextIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0ABE32800643003CE386E6C32E638DBC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "applyTo_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bootstrapContext"
+      modelFingerprint: "85ADF699E7E304E6E9D04B691908E749"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+        uuid: "applyTo_configurableBootstrapContext1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "applyTo_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "applyTo_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "postProcessor"
+      modelFingerprint: "D06CF72AFC52A0D6F8B8365A83A9D293"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.DefaultBootstrapContext"
+              uuid: "applyTo_defaultBootstrapContext1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.DefaultBootstrapContext"
+              uuid: "applyTo_defaultBootstrapContext1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "applyTo_configDataEnvironmentPostProcessor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "postProcessor"
+        name: "postProcessEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "applyTo_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "applyTo_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "postProcessEnvironment(ConfigurableEnvironment,ResourceLoader,Collection):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "585bc3a1-dad3-32d9-ac64-63f9489a09b6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "postProcessor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "postProcessor.postProcessEnvironment(environment, resourceLoader, additionalProfiles);"
+      lineNumber: 146
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: postProcessor - Method: postProcessEnvironment"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(org.springframework.core.env.ConfigurableEnvironment,org.springframework.core.io.ResourceLoader,org.springframework.boot.ConfigurableBootstrapContext,java.util.Collection<java.lang.String>,org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener)\
+      \ : void"
+    instructionFingerprint: "748C870052177977FF7EEB07CD744DD5"
+    parametersTypes:
+    - "org.springframework.core.env.ConfigurableEnvironment"
+    - "org.springframework.core.io.ResourceLoader"
+    - "org.springframework.boot.ConfigurableBootstrapContext"
+    - "java.util.Collection"
+    - "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyTo3WhenBootstrapContextIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C38A37E4861894ACB8D7E4222D2BDA2F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "applyTo_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bootstrapContext"
+      modelFingerprint: "446184A4A4343527F66F98FE23F7274E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+        uuid: "applyTo_configurableBootstrapContext1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "applyTo_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environmentUpdateListener"
+      modelFingerprint: "23FA4E3CADC64A7224DC14DA1AB576EE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+        uuid: "applyTo_configDataEnvironmentUpdateListener1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "applyTo_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "postProcessor"
+      modelFingerprint: "46C6F9F1B031E729228789A833E7DB32"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "applyTo_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              uuid: "applyTo_configDataEnvironmentUpdateListener1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+              uuid: "applyTo_configurableBootstrapContext1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              uuid: "applyTo_configDataEnvironmentUpdateListener1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "applyTo_configDataEnvironmentPostProcessor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "postProcessor"
+        name: "postProcessEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "applyTo_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "applyTo_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "postProcessEnvironment(ConfigurableEnvironment,ResourceLoader,Collection):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8d5c6b39-2150-3b76-9e7f-3a640d378b82"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "postProcessor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "postProcessor.postProcessEnvironment(environment, resourceLoader, additionalProfiles);"
+      lineNumber: 169
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: postProcessor - Method: postProcessEnvironment"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "applyTo3WhenBootstrapContextIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E7B818146AC75E32DB770C7B430E6785"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "environment"
+      modelFingerprint: "962B65C2F1EA756AFD656B8B0436E5E4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.env.ConfigurableEnvironment"
+        uuid: "applyTo_configurableEnvironment1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resourceLoader"
+      modelFingerprint: "0A4554D35259C2DCA83F2D6E7C71EC66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.core.io.ResourceLoader"
+        uuid: "applyTo_resourceLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bootstrapContext"
+      modelFingerprint: "85ADF699E7E304E6E9D04B691908E749"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.springframework.boot.ConfigurableBootstrapContext"
+        uuid: "applyTo_configurableBootstrapContext1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "additionalProfiles"
+      modelFingerprint: "2E4950B6280B3C32B14475A6DB100DE1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.String"
+        uuid: "applyTo_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "environmentUpdateListener"
+      modelFingerprint: "23FA4E3CADC64A7224DC14DA1AB576EE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+        uuid: "applyTo_configDataEnvironmentUpdateListener1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "logFactory"
+      modelFingerprint: "715752266F6745FE2E07198B8ECB14F3"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "org.springframework.boot.logging.DeferredLogFactory"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.springframework.boot.logging.DeferredLogFactory"
+        uuid: "applyTo_deferredLogFactory1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "logFactory"
+        name: "getLog"
+        parameters:
+        - name: "destination"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+            valueType: "java.lang.Class"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getLog(Class): Log"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.logging.impl.NoOpLog"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.logging.impl.NoOpLog"
+          uuid: "<init>_log1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "postProcessor"
+      modelFingerprint: "E2E7FE0E45FA48E3E4E698CE23E1F06E"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.DefaultBootstrapContext"
+              uuid: "applyTo_defaultBootstrapContext1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "MOCK"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              uuid: "applyTo_configDataEnvironmentUpdateListener1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+          parameters:
+          - name: "logFactory"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.springframework.boot.logging.DeferredLogFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.springframework.boot.logging.DeferredLogFactory"
+              uuid: "applyTo_deferredLogFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bootstrapContext"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "org.springframework.boot.DefaultBootstrapContext"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "org.springframework.boot.DefaultBootstrapContext"
+              uuid: "applyTo_defaultBootstrapContext1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "environmentUpdateListener"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentUpdateListener"
+              uuid: "applyTo_configDataEnvironmentUpdateListener1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor"
+        uuid: "applyTo_configDataEnvironmentPostProcessor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "postProcessor"
+        name: "postProcessEnvironment"
+        parameters:
+        - name: "environment"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.env.ConfigurableEnvironment"
+            uuid: "applyTo_configurableEnvironment1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resourceLoader"
+          value:
+            sapientType: "MOCK"
+            valueType: "org.springframework.core.io.ResourceLoader"
+            uuid: "applyTo_resourceLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "additionalProfiles"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.String"
+            uuid: "applyTo_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "postProcessEnvironment(ConfigurableEnvironment,ResourceLoader,Collection):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "658966d4-8dea-3d12-99b4-6e34f58a6282"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "postProcessor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "postProcessor.postProcessEnvironment(environment, resourceLoader, additionalProfiles);"
+      lineNumber: 169
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: postProcessor - Method: postProcessEnvironment"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
