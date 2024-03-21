@@ -217,3 +217,5 @@ lspring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/
 ™spring-boot-project/spring-boot/src/test/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrarForBindablesEnhancedTest.java,3/2/32170b7b0a66525c3fbc881044ca6ad5699e23b0
 ¡
 qspring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindConverter.java,3/1/3188d8e05644b828986c557049405b43cefbd101
+Æ
+•spring-boot-project/spring-boot/src/test/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrarForTypesEnhancedTest.java,8/3/83c82d7d816f65a8e38e14b8cdd789d39206465e
